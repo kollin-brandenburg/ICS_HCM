@@ -274,6 +274,9 @@ Once you have done this, click the "Ok" to close the menu.
 
 ![](images/200/image097.png)
 
+User Name  =  Domain SFTP User Name
+Password  =  Same password as cloud.admin  which is provided in demo launch pad
+
 
 
 
