@@ -5,9 +5,9 @@ Updated: 11-6-17
 
 ## Introduction
 
-This is the second of several labs that are part of the **ICS Development Workshop**.
+This is the second of several labs that are part of the **ICS HCM Development Workshop**.
 
-In this lab, you will learn how to create a basic 'hello world' echo service, using a basic orchestration.
+In this lab, you will learn how to create a basic ICS connection, using a basic orchestration.
 
 ## Objectives
 
