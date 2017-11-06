@@ -14,31 +14,31 @@
             {
                 "number": "0",
                 "filename": "StudentGuide.md",
-                "title": "Student Guide",
+                "title": "Prerequisites",
                 "description": "Workshop guidance and prerequisites"
             },
             {
                 "number": "100",
                 "filename": "LabGuide100.md",
-                "title": "Lab 100: Agile Project Management",
+                "title": "Lab 100: Exploring ICS",
                 "description": "Use Developer Cloud Service to create issues, tasks, and sprints"
             },
             {
                 "number": "200",
                 "filename": "LabGuide200.md",
-                "title": "Lab 200:  Title of Lab 200",
+                "title": "Lab 200:  Creating Connections",
                 "description": "Short description of lab 200"
             },
             {
                 "number": "300",
                 "filename": "LabGuide300.md",
-                "title": "Lab 300:  Title of Lab 300",
+                "title": "Lab 300:  ICS Development",
                 "description": "Short description of lab 300"
             },
             {
                 "number": "400",
                 "filename": "LabGuide400.md",
-                "title": "Lab 400: Title of Lab 400",
+                "title": "Lab 400: HCM Integration",
                 "description": "Short description of lab 400"
             }
         ]
