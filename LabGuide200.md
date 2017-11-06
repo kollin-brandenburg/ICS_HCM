@@ -277,6 +277,15 @@ Once you have done this, click the "Ok" to close the menu.
 User Name  =  Domain SFTP User Name
 Password  =  Same password as cloud.admin  which is provided in demo launch pad
 
+**1.9** Click on the "Save", then click the "Save" button to close the prompt.
+
+![](images/200/image098.png)
+
+
+Then click "Test" in order to test the connect. A green bar should come across the top of the screen that reads, "Connection FTP was saved successfully."
+
+![](images/200/image099.png)
+
 
 
 
