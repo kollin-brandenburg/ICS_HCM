@@ -80,7 +80,7 @@ Your first connection appears in the list of configured connections and is even 
 
 ![](images/200/image010.png)
 
-### Creating an Integration
+### Creating an Integration!
 
 **1.1** Click on the **Integrations** section on the ICS home page
 
@@ -209,6 +209,76 @@ You will notice that the **Map to echo** icon is filled in _all blue_ now indica
 You should see your _New_ integration in list of _Integrations_
 
 ![](images/200/image046.png)
+
+### Creating an FTP Connection
+
+**1.1** Go to the cloud dashboard page -> click on "Integration" service. Ex: Ex: https://myservices.us2.oraclecloud.com/mycloud/faces/dashboard.jspx
+
+![](images/200/image086.png)
+
+**1.2** Check the Additional Information. The Ftp server details are given.
+
+Copy “Domain SFTP User Name, Host ,port “and save it somewhere.
+
+This will be the FTP user which is used in FTP connection creation
+
+![](images/200/image087.png)
+
+**1.3** You can also access this info by clicking  on “Users“ on the top right  ->SFTP Users  Username
+
+![](images/200/image088.png)
+
+**1.4** Now click on the SFTP Users in the panel to see the users with Secure FTP user accounts.
+
+![](images/200/image089.png)
+
+**1.5** Navigate back to the ICS console
+
+![](images/200/image090.png)
+
+![](images/200/image091.png)
+
+Now click on the "Connections"
+
+![](images/200/image092.png)
+
+
+
+**1.6** In the search box, search for "FTP"
+
+![](images/200/image093.png)
+
+**1.7** Click on the hamburger button to bring up the drop and then click "Edit"
+
+![](images/200/image094.png)
+
+**1.8** Click on “Configure Connectivity." Use the
+Domain sftp host as FTP server host address  from step 1.2 which was retrieved from dashboard
+
+Port : 22
+SFTP connection :Yes
+Click ok
+
+![](images/200/image095.png)
+
+**1.9** Scroll further down the page and click on the “Configure Security" to bring up the following menu.
+
+
+![](images/200/image096.png)
+
+When the Credentials menu pops up enter the Domain SFTP User Name that you found in step 1.2 in the "User Name" field.
+
+In the "Password" field use the password that you used in order to log into Oracle cloud for the cloud.admin user.
+
+Once you have done this, click the "Ok" to close the menu.
+
+![](images/200/image097.png)
+
+
+
+
+
+
 
 ### Activating Integration
 
