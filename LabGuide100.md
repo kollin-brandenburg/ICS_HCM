@@ -89,27 +89,21 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/300/image005.png)  
 
-**1.2.1.2:** Make note of the connections that have been created. Notice that, among others, there are three connections, one called *eBusiness Suite OPERATIONS*, one called *On-Premises Oracle DB 12c* and the other called *Create Order*.
+**1.2.1.2:** Make note of the connections that have been created. Notice that, among others, there are four connections, one called *ICSHCM_SOAP_TalentProfile_Input_UserXX*, one called *ICSHCM-POC-FA-HCM-Conn_ UserXX*, one called *ICSHCM-POC-FA-UCM-Conn_UserXX* and the other called *ICSHCM-POC-FTP_UserXX*.
 
 ![](images/100/image010.png)  
 
-**1.2.1.3:** Note that the *On-Premises Oracle DB 12c* connector is using the ICS Connectivity Agent.  You can identify this by the note that it has an associated agent group.  This agent allows ICS to call on-premise systems.
-
-![](images/100/image010a.png)
-
-*(More information about the ICS Connectivity Agent will be given later)*
-
-**1.2.1.4:** Click on the `Create` button in the upper-right so we can see all the different ICS Connectors that are available.
+**1.2.1.3:** Click on the `Create` button in the upper-right so we can see all the different ICS Connectors that are available.
 
 ![](images/100/image010b.png)
 
-**1.2.1.5:** Scroll through the list of connection types that are available in ICS:
+**1.2.1.4:** Scroll through the list of connection types that are available in ICS:
 
 ![](images/100/image010c.png)
 
-**1.2.1.6:** Note that the icons with the plug are those that support the ICS Connectivity Agent for those service types which are not in the cloud, but on-premise, behind the company firewall.
+**1.2.1.5:** Note that the icons with the plug are those that support the ICS Connectivity Agent for those service types which are not in the cloud, but on-premise, behind the company firewall.
 
-**1.2.1.7:** When you are done browsing, select the “Cancel” button to dismiss the “Select an Adapter” dialog.
+**1.2.1.6:** When you are done browsing, select the “Cancel” button to dismiss the “Select an Adapter” dialog.
 
 ### **1.2.2:**	Explore ICS Integrations
 
@@ -123,11 +117,11 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.2.2.3** Select the `Hamburger` menu icon again to dismiss the left-hand navigation and get some screen real-estate back.
 
-**1.2.2.4** Make note of the integrations that have been created. We will be working with the integration called *Lab 400 Create EBS Order Solution*.
+**1.2.2.4** Make note of the integrations that have been created. We will be working with the integration called *ICSHCM Add Talent Profile UserXX*.
 
 ![](images/100/image012.png)  
 
-**1.2.2.5** Open the integration `Lab 400 Create EBS Order Solution` by clicking on the integration name.  We want to see what it looks like.  Since the integration is already active, we’ll be looking at it in `Viewing` mode.  There will be a warning that _Edit is not possible..._ in yellow displayed along the top.  You can dismiss the warning bar by selecting the little "X" on the very right of the warning.
+**1.2.2.5** Open the integration `ICSHCM Add Talent Profile UserXX` by clicking on the integration name.  We want to see what it looks like.  Since the integration is already active, we’ll be looking at it in `Viewing` mode.  There will be a warning that _Edit is not possible..._ in yellow displayed along the top.  You can dismiss the warning bar by selecting the little "X" on the very right of the warning.
 
 ![](images/100/image012a.png)
 
@@ -151,7 +145,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.2.2.12** The component at the very top of the orchestration is the `Trigger`.  The trigger is representative of the connector that’s sending data into the integration.  It is highlighted with a little lightning bolt signifying an incoming event.
 
-**1.2.2.13** If you hover over the Trigger node, you can see the details.  Our trigger is a SOAP connector type.  It is called *CreateOrder* and it is using the connection named *Create Order* that we looked at before in the Connection section of the ICS Designer.
+**1.2.2.13** If you hover over the Trigger node, you can see the details.  Our trigger is a SOAP connector type.  It is called *addTalentprofileData* and it is using the connection named *addTalentprofileData* that we looked at before in the Connection section of the ICS Designer.
 
 ![](images/100/image012e.png)
 
@@ -177,7 +171,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.2.2.19** Select the `Close` button to dismiss the Trigger view wizard.
 
-**1.2.2.20** Let’s view the next node down in the integration.  This is an *Assign* node.  The job of this Assign activity is to initialize variables that will be used in the calls to be made to the eBusiness Suite.
+**1.2.2.20** Let’s view the next node down in the integration.  This is an *Assign* node.  The job of this Assign activity is to initialize variables that will be used in the calls to be made to the File system.
 
 ![](images/100/image012j.png)
 
@@ -227,7 +221,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 - Note that ICS also has Database adapters for *MySQL*, *DB2*, and *SQL Server*.
 
-**1.2.2.35** We’ve spent a lot of time exploring the `Lab 400 Create EBS Order SOlution` integration.  Let’s move on and explore the Agent setup.  Select the `Close` button in the upper-right to navigate back to the ICS Designer.
+**1.2.2.35** We’ve spent a lot of time exploring the `ICSHCM Add Talent Profile UserXX` integration.  Let’s move on and explore the Agent setup.  Select the `Close` button in the upper-right to navigate back to the ICS Designer.
 
 ![](images/100/image012s.png)
 
@@ -241,27 +235,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/100/image110.png)
 
-**1.2.3.3** Make note of the agent that has been created to communicate with the Database instance called *On-prem Agent Group*.
-
-![](images/100/image014.png)  
-
-**1.2.3.4** Selecting the `1` shows the on-premise connectivity agent that is registered with the *On-prem Agent Group* agent group.  Select the little `i` (information) icon next to the Agent number can be select to see details.
-
-**1.2.3.5** The agent identifier along with the ICS version is shown in the details.  You can also remove the agent by selecting the `X` to the right of the dialog. Click on the `X` so you can see the connections that are currently associated with this agent.
-
-![](images/100/image014a.png)
-
-**1.2.3.6** You can see that both the *On-Premises Oracle DB 12c* and *User03 Oracle DB 12c* ICS Connectors are both using this agent so you can’t just remove it without first removing the references to it in those connections.
-
-- Select the `Close` button _twice_ to dismiss the `“Agent Is In Use` and `Agent` dialogs.
-
-![](images/100/image014b.png)
-
-**1.2.3.7** The Connectivity Agent is available from the `Download` pull-down on the Agent page shown below:
-
-![](images/100/image014d.png)
-
-**1.2.3.8** The `Execution Agent` that you see in the download dropdown is a version of ICS that can run on-premise behind the customer firewall.  You can use ICS both in the cloud and on-premise for creating integrations.
+**1.2.3.3** The `Execution Agent` that you see in the download dropdown is a version of ICS that can run on-premise behind the customer firewall.  You can use ICS both in the cloud and on-premise for creating integrations.
 
 ## 1.3: Explore the ICS Monitoring User Interface
 
