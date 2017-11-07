@@ -15,7 +15,7 @@
 
 This is the first of several labs that are part of the **ICS Development** workshop.
 
-In this lab, we will explore the main parts of Integration Cloud Service (ICS).  You will acquire a good overview of the Oracle Integration Cloud Service (ICS), the next generation integration platform. You will explore various consoles and tools available to interact with your integration. The exercise will get your familiar with all the tooling available to work with this cloud service.
+In this lab, we will explore the main parts of Integration Cloud Service (ICS).  You will acquire a good overview of the Oracle Integration Cloud Service (ICS), the next generation integration platform. You will explore various consoles and tools available to interact with your integration. The exercise will get your familiar with all the tooling available to work with this cloud service. Oracle ICS can function as a central hub for taking in external data feeds, correctly formatting it for HCM Cloud, and automating the final upload of external data into HCM Cloud via HCM Data Loader, With all feeds flowing through ICS, there is greater visibility into the end-to-end data flow between HCM Cloud and external systems. This greatly reduces the integration cost.
 
 We’ll look at the following:
 1.	Oracle Cloud Services Dashboard
@@ -23,13 +23,20 @@ We’ll look at the following:
 3.	ICS Monitoring User Interface
 4.  ICS Connectivity Agents - view more about them [here](https://www.youtube.com/watch?v=nsbvR027GXY&list=PLKCk3OyNwIzumLMaNpSEDXCaYqyRCBAX-&index=13)
 
-The ICS integration that we'll be working with is shown in the following picture:
+Here is a description of what is happening with ICS integration that we'll be working in the lab:
 
-![](images/100/image000.png)
+Oracle HCM manages persons (workers) of an organization. Each person in HCM has an associated profile. A person’s profile can contain all kinds of information relevant to the person and the organization they belong to. Different categories of information in a profile are organized as Content Sections. Each content section is associated with a Content Type. One example of a content section (or content type) is “Competencies”, which describes a person’s various competency levels.
+In our use case, a custom content type called “Additional Qualifications” has been created in HCM. This content type has three content items defined: Artist, Athlete and Photographer. The use case in this example calls for adding additional qualifications to a person’s profile.
 
-Here is a description of what is happening with this integration:
+Steps for Integration:
 
-SoapUI will be used to test the exposed Web Service endpoint of the ICS integration called *UserXX Create EBS Order* (where XX will be 00 -> 10).  This integration has 3 connections.  The incoming message is received by the incoming *UserXX SOAP* Soap Connection.  The *UserXX Create EBS Order* orchestration makes 1 query into the database using the *UserXX Oracle DB 12c* connection to get details needed to create an order.  The orchestration finally uses the *UserXX EBS OPERATIONS* EBS Adapter connection for creating the order in EBS.  After the order is created in EBS, the Order Number is returned to the calling web service.
+1.	Accept an XML document as input
+2.	Convert input XML data into HDL format data
+3.	Zip HDL format data (HCM Data Loader requires zipped file)
+4.	Base64 encode zipped HDL format data (base64 encoding is required to transmit binary data in SOAP/XML web service)
+5.	Call UCM Generic SOAP Service to upload the zip file content (base64 encoded zipped data from the prior step)
+6.	Call HCM Data Loader SOAP Service to schedule an Import and Load HCM File Data process
+7.	Return the HCM processed ID to ICS caller
 
 Let’s start by logging into the Oracle Cloud account and explore the Services Dashboard
 
