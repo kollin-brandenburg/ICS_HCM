@@ -1,5 +1,5 @@
 # Tips for Workshop Developers
-    
+
 ## Steps for creating a new workshop
 
 - To start a new workshop, use git to create a branch from this (workshop-template) branch.
@@ -21,28 +21,28 @@
     - It should document where to get and how to install any required software
     - Any networking settings likely to need attention should be discussed in the guide
 - Images
-    - Store lab images under the images/x00 folder corresponding to the lab number they belong to. 
+    - Store lab images under the images/x00 folder corresponding to the lab number they belong to.
     - Images that are used in multiple lab guides can be stored directly in the images/ folder.
 
 # Example Readme:
 ## IMPORTANT: How to prepare for this workshop
 
-**First**, ***Get an Oracle Cloud Account*** 
-- Oracle provides several methods for gaining access to Oracle Cloud Accounts used to complete the Labs in this Hands-on-Workshop. 
-    - For some workshop events, cloud environments will be provided. 
-    - For others events (e.g. **Oracle Code**), or when completing this workshop in a self-service model, you must gain access to your own Trial account. Trial accounts can be obtained at [Try It](http://cloud.oracle.com/tryit) 
+**First**, ***Get an Oracle Cloud Account***
+- Oracle provides several methods for gaining access to Oracle Cloud Accounts used to complete the Labs in this Hands-on-Workshop.
+    - For some workshop events, cloud environments will be provided.
+    - For others events (e.g. **Oracle Code**), or when completing this workshop in a self-service model, you must gain access to your own Trial account. Trial accounts can be obtained at [Try It](http://cloud.oracle.com/tryit)
     - If you are attending an Oracle sponsored event, please **review your Event invitation** for more instruction on how to gain access to your Workshop Account.
-        
+
 **Second**, ***Configure your Client Environment***
-- Your client enviroment **must be configured prior** to attempting the Hands-on-Workshop labs. 
-- You have two options for configuring your workshop client environment. 
+- Your client enviroment **must be configured prior** to attempting the Hands-on-Workshop labs.
+- You have two options for configuring your workshop client environment.
      - ***Option 1:*** You can install Virtual Box and download and run a pre-configured **Virtual Box Image**.
-     - ***Option 2:*** You can **install and configure** Eclipse, Brackets and Git on your laptop. 
-- Both **Option 1 and 2 are documented** in the [Student Guide](StudentGuide.md). ***Please follow the instruction in the Student Guide*** prior to attempting the Labs. 
-      
+     - ***Option 2:*** You can **install and configure** Eclipse, Brackets and Git on your laptop.
+- Both **Option 1 and 2 are documented** in the [Student Guide](StudentGuide.md). ***Please follow the instruction in the Student Guide*** prior to attempting the Labs.
+
 ## How to View the Lab Guides
 
-- The Labguides are best viewed using the Workshop's [GitHub Pages Website URL](https://derekoneil.github.io/cloud-native-devops-workshop/microservices) 
+- The Labguides are best viewed using the Workshop's [GitHub Pages Website URL](https://derekoneil.github.io/cloud-native-devops-workshop/microservices)
 
 - Once you are viewing the Workshop's GitHub Pages website, you can see a list of Lab Guides at any time by clicking on the **Menu Icon**
 
@@ -50,7 +50,7 @@
 
 - To log issues and view the Lab Guide source, go to the [github oracle](https://github.com/derekoneil/cloud-native-devops-workshop/tree/master/microservices) repository.
 
-- Visit the [Workshop Interactive Labguide](http://launch.oracle.com/?cloudnative) for a visual overview of the workshop content. 
+- Visit the [Workshop Interactive Labguide](http://launch.oracle.com/?cloudnative) for a visual overview of the workshop content.
 
 ## DevOps and Cloud Native Microservices Workshop
 
@@ -60,9 +60,9 @@ This Oracle Public Cloud DevOps Cloud Native Microservices workshop will walk yo
 
 **Reference the following Lab Guides by opening their Documentation Files:**
 
-## Lab 100: Agile Project Management
+## Lab 100: Exploring Integration Cloud Service (ICS)
 
-**Documenation**: [LabGuide100.md](LabGuide100.md)
+**Documentation**: [LabGuide100.md](LabGuide100.md)
 
 ### Objectives
 
@@ -74,9 +74,9 @@ This Oracle Public Cloud DevOps Cloud Native Microservices workshop will walk yo
 - Create Agile Board and initial Sprint
 - Add Issues to Sprint
 
-## Lab 200: Continuous Delivery of Java Microservices
+## Lab 200: Creating Connections
 
-**Documenation**: [LabGuide200.md](LabGuide200.md)
+**Documentation**: [LabGuide200.md](LabGuide200.md)
 
 ### Objectives
 
@@ -85,9 +85,9 @@ This Oracle Public Cloud DevOps Cloud Native Microservices workshop will walk yo
 - Import Project into Eclipse
 - Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service
 
-## Lab 300: Cloud Native Rapid Javascript Devlopment with node.js
+## Lab 300: Integration Cloud Service Development
 
-**Documenation**: [LabGuide300.md](LabGuide300.md)
+**Documentation**: [LabGuide300.md](LabGuide300.md)
 
 ### Objectives
 
@@ -96,9 +96,9 @@ This Oracle Public Cloud DevOps Cloud Native Microservices workshop will walk yo
 - Import Project into Brackets
 - Build and Deploy project using Developer Cloud Service and Oracle Application Container Cloud Service
 
-## Lab 400:  Cloud Native Develper Cloud Service Administration
+## Lab 400:  HCM Integration
 
-**Documenation**: [LabGuide400.md](LabGuide400.md)
+**Documentation**: [LabGuide400.md](LabGuide400.md)
 
 ### Objectives
 
