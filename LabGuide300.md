@@ -1,7 +1,7 @@
 ![](images/300/Picture-lab.png)  
 Updated: Date
 
-## Introduction
+## Lab 3: ICS Development
 
 Introductory Text Test
 
