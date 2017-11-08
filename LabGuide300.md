@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This is the third of several labs that are part of the **ICS Development** workshop. 
+This is the third of several labs that are part of the **ICS Development** workshop.
 
 In this lab, you develop an integration in ICS using a database adapter to query an On-Premises Oracle database.
 
@@ -53,79 +53,150 @@ SoapUI will be used to test the exposed Web Service endpoint of the ICS integrat
 
 ![](images/300/image004c.png)
 
-### **1.2**: Create the SOAP Connector
+### ICS and HCM Connections
 
----
+**1.1** From the Integration Cloud Dashboard, click on the "Connections".
+ICS console will be loaded in new window.
 
-**1.2.1** Select the `Connections` graphic in the designer portal
+![](images/300/image100.png)
 
-![](images/300/image005.png) 
+**1.2** In the search bar, search for "ICSHCM". You should see green checks if they are all configured correctly.
 
-**1.2.2** Click on **Create** in the upper-right
+![](images/300/image101.png)
 
-![](images/300/image006.png) 
+If you see anything other than green checks, then go back to the previous steps and set up the connections.
 
-**1.2.3** Select the **SOAP** Connection, by either doing a search, or by scrolling down to the **SOAP** connection, then click on the **Select** button of the **SOAP** connection.
+![](images/300/image102.png)
 
-![](images/300/image007.png)
 
-**1.2.4** Fill in the information for the new connection 
+**1.3** Now go back to the dashboard and go to the "Integrations". Click on “ICSHCM_Add Talent Profile” or search if it is not in view on the screen.
 
-- **Name:** Enter in the form of _UserXX SOAP_ where XX is the number in your allocated user.
-- **Role:** Select _Trigger_ since we going to use the connection as a trigger to start the integration
 
-Note that the **Identifier** will automatically be created based on the **Name** you entered.
+![](images/300/image103.png)
 
-**1.2.5** Click **Create**
+If the integration is not activated then you will need to click on the slider to activate the integration. Do not enable tracing or include payload.
 
-![](images/300/image008.png) 
+![](images/300/image104.png)
 
-**1.2.6** Click the **Configure Connectivity** button
 
-NOTE: The "SOAP" header will show that the connection is both "Trigger and Invoke" even though it was setup to be a "Trigger" only. This is a known issue.
+Since the integration is already created and imported we won’t be recreating integration. Let’s review the various steps in the ICS – HCM data load integration
+Please see the below image for the entire integration flow. The orchestration flow generally matches the logic flow described earlier. Details of each node are discussed in sequence in the following section.
 
-![](images/300/image009.png) 
+![](images/300/image105.png)
+![](images/300/image106.png)
+![](images/300/image107.png)
 
-**1.2.7** For the *WSDL URL*, enter the property value for the WSDL as follows:
-_https://cloudaccelerate.github.io/TTC-iPaaSArtifacts/ics/createOrder.wsdl_
 
-![](images/300/image010.png) 
+**1.4** Click on “addTalentProfileData”. Do not edit anything, just review.
 
-**1.2.8** In the field *Suppress insertion of timestamp into the re..." field, select *No*, then select the *OK* button.  This selection will disable the need for the WS-Utility (WSU) Timestamp in the WS-Security header.  When we test inbound requests with Basic Auth security policy, no timestamps will be required.
+![](images/300/image108.png)
 
-![](images/300/image013.png)
+This is the start node of the integration is based on the SOAP_TalentProfile_Input connection (trigger). After the wizard completes, the summary page should look like the following:
 
-**1.2.9** Select the *Configure Security* button so we can change the default security configuration which is set to **Username Token**. 
+Click on the eye to open up the prompt screen.
 
-![](images/300/image014.png)
+![](images/300/image109.png)
 
-**1.2.10** Select *No Security Policy* from the picklist of _Security Policies_ (because only ICS credentials will be needed for this SOAP API), then select the *OK* button.
 
-![](images/300/image015.png)
+Now close the prompt.
 
-**1.2.11** At the top of the connection configuration screen, Click on the **Test** button to test the connection.
+**1.5** Click on “AssignFileName” and click on the eye again to open up the prompt.
 
-![](images/300/image016.png)
+![](images/300/image110.png)
 
-**1.2.12** In the dialog that pops up, select the **Validate and Test** button because we want to both validate the WSDL and test the connection.
 
-![](images/300/image016a.png)
+![](images/300/image111.png)
 
-Note how the progress indicator will go from 75% to 100% after the connection tests successfully.
+There are two file names involved in HCM Data Loader.
+First, the zip file name can be any name with a zip extension.
+Second file name is the actual data file contained in the zip file. HCM Data Loader defines a file name for each data object. In our case, the data file name must be TalentProfile.dat.
+In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”. The zip extension is appended in a later step.
 
-![](images/300/image017.png) 
+Now click the close in order to go back to the map screen.
 
-**1.2.13** Click on the **Save** button in the upper right corner of the connection configuration screen.
+![](images/300/image112.png)
 
-![](images/300/image018.png) 
+**1.6** Click on the “Map to writeInputAsHDLFormat” and click on the eye again to open up the prompt.
 
-**1.2.14** Click on the **Close** button in the upper right of the connection configuration screen.
+![](images/300/image113.png)
 
-![](images/300/image019.png)
+![](images/300/image114.png)
 
-Your new SOAP connection appears in the list of configured connections and is even marked as **New** !
+This third step maps an input XML data to a full XML data set that contains additional meta data labels required by HDL.Below is a picture of the mapper UI.
 
-![](images/300/image020.png) 
+Now click the close in order to go back to the map screen.
+
+**1.7** Click on the “writeInputAsHDLFormat” and click on the eye again to open up the prompt.
+
+![](images/300/image115.png)
+
+The fourth step uses an early adopter feature called Stage File.
+The Stage File activity allows read, write and zip operations to files local to ICS instance. When reading and writing files, Stage File allows translation of file content between XML and native format via a native schema file (.nxsd). For common native formats such CSV (Comma Separated Values), Stage File supplies a mapping tool for drag and drop mapping.
+At this step of integration, Stage File is used to write the full XML data set with labels from step 3 to a temporary file with a translation defined by hcm-talentprofile.nxsd. The resulting HDL Format data file looks like TalentProfile.dat. Notice that the file name is fixed to TalentProfile.dat as required by HCM Data Loader.
+
+
+![](images/300/image117.png)
+
+Click on "Next" to move to move to the next screen.
+
+![](images/300/image118.png)
+
+Click on "Next" to move to move to the next screen.
+
+![](images/300/image119.png)
+
+Click on "Next" to move to move to the next screen.
+
+![](images/300/image120.png)
+
+Click on "Next" to move to move to the next screen.
+
+![](images/300/image121.png)
+
+
+Now click the close in order to go back to the map screen.
+
+**1.8** Click on the “zipHDLFile” and click on the eye again to open up the prompt.
+
+![](images/300/image122.png)
+
+Now click through the "Next" to move through the prompt screens and then finally "close" to close the screen.
+
+![](images/300/image123.png)
+
+Bottom Page 34
+
+**1.9** Click on the “map to ftpSendZippedHDLFile” and click on the eye again to open up the prompt.
+
+![](images/300/image124.png)
+
+Now click through the "Next" to move through the prompt screens and then finally "close" to close the screen.
+
+![](images/300/image125.png)
+
+**1.10** Click on the “ftpSendZippedHDLFile” and click on the eye again to open up the prompt.
+
+![](images/300/image126.png)
+
+Step 7 sends the zipped HDL file from ICS local drive to the FTP server. Notice the File Name Pattern is set. But in our implementation, this default file name pattern is overridden by the file name in the input XML data set in the Step 6.
+
+
+Now click through the "Next" to move through the prompt screens and then finally "close" to close the screen.
+
+![](images/300/image127.png)
+
+**1.11** Click on the “ftpSendZippedHDLFile” and click on the eye again to open up the prompt.
+
+![](images/300/image128.png)
+
+Step 8 maps the file name and directory from the output of Step 7 to the input of Step 9. The mapping should look like the following:
+
+![](images/300/image129.png)
+
+Now click through the "Next" to move through the prompt screens and then finally "close" to close the screen.
+
+
+----
 
 ### **1.3**: Create the Database Connector
 
@@ -133,7 +204,7 @@ Your new SOAP connection appears in the list of configured connections and is ev
 
 **1.3.1** Click on **Create** button again in the upper right
 
-![](images/300/image021a.png) 
+![](images/300/image021a.png)
 
 **1.3.2** Select the **Oracle Database** Connection, by either doing a search, or by scrolling down to the **Oracle Database** connection, then click on the **Select** button of the **Oracle Database** connection.
 
@@ -150,13 +221,13 @@ Note that the **Identifier** will automatically be created based on the **Name**
 
 **1.3.4** Click **Create**
 
-![](images/300/image022.png) 
+![](images/300/image022.png)
 
 **1.3.5** Click the **Configure Connectivity** button
 
 _NOTE:_ The "Oracle Database" header will show that the connection is both "Trigger and Invoke" even though it was setup to be a "Invoke" only.  This is a known issue.
 
-![](images/300/image023.png) 
+![](images/300/image023.png)
 
 **1.3.6** Enter the values given to you by your workshop instructor for the *Connection Properties*, then select the _OK_ button:
 
@@ -165,19 +236,19 @@ _NOTE:_ The "Oracle Database" header will show that the connection is both "Trig
 - **SID:** - leave this blank, you need either a SID, or a Service Name which we gave, but not both
 - **Service Name:** - `pdborcl` - this is the Service Name for the sample database we will be using
 
-![](images/300/image024.png) 
+![](images/300/image024.png)
 
 **1.3.7** Next scroll down in the Connection Configuration page and select the **Configure Security** button.
 
-![](images/300/image025.png) 
+![](images/300/image025.png)
 
 **1.3.8** Enter the following Username and Password for the EBS adapter connection.
 
 The following values are example DB schema username/password and may not be the one used in your workshop.  
 Your workshop instructor will tell you if it needs to be changed.
 
-- **Username:** - `ttc_user` 
-- **Password:** - _provided by your instructor_ 
+- **Username:** - `ttc_user`
+- **Password:** - _provided by your instructor_
 
 **1.3.9** Click on the **OK** button to save the credentials.
 
@@ -197,11 +268,11 @@ Your workshop instructor will tell you if it needs to be changed.
 
 Note how the progress indicator will go from 85% to 100% after the connection tests successfully.
 
-![](images/300/image029a.png) 
+![](images/300/image029a.png)
 
 **1.3.13** Click on the **Save** button in the upper right corner of the connection configuration screen.
 
-![](images/300/image029b.png) 
+![](images/300/image029b.png)
 
 **1.3.14** Click on the **Close** button in the upper right of the connection configuration screen.
 
@@ -211,7 +282,7 @@ Your new Database connection appears in the list of configured connections and i
 
 **Note** how the icon for the connection is different between the SOAP and Database connector.
 
-![](images/300/image031.png) 
+![](images/300/image031.png)
 
 ## Part 2: Create the ICS Integration
 
@@ -330,7 +401,7 @@ Note 2: The double pipes in the query above are SQL concatenation operators for 
 
 Click on the **Validate SQL Query** button so the query can be validated for proper SQL syntax.
 
-![](images/300/image048.png) 
+![](images/300/image048.png)
 
 **2.2.6** Verify that the SQL query was validated by the `Success!` message that will appear in the **Status** on the *Enter a SQL Query* dialog page.
 
@@ -517,7 +588,7 @@ This integration is now complete.  We now need to activate (deploy) it so it can
 
 **3.1** Open SoapUI.  If you don't already have this installed, follow the instructions provided in the **Prerequisites** section of this workshop.
 
-![](images/200/image052.png)
+![](images/300/image052.png)
 
 **3.2** Click on the **SOAP** button so we can create a new project for testing our new ICS SOAP Web Service
 
