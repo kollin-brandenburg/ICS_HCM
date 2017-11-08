@@ -3,7 +3,7 @@
 
 ---
 
-### **1.3**:ICS and HCM Connections
+### **1.3** ICS and HCM Connections
 
 **1.3** Now go back to the dashboard and go to the "Integrations". Click on “ICSHCM_Add Talent Profile” or search if it is not in view on the screen.
 
