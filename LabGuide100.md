@@ -182,7 +182,8 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/100/image012j.png)
 
-**1.2.2.21** The variables defined in this Assign activity are view only.  Later on in this lab, we’ll de-activate the integration and all the values will be changeable.  These variables are constants that are needed for the EBS API call for creating an order.  You can see that variables such as the *EBS_Responsibility*, *EBS_Application*, *EBS_SecurityGroup*, and *EBS_OrgID* are needed.  Using variable rather than hard-coding these in the mapping for the adapter is preferable because they can be re-used across multiple EBS adapter invocations if necessary.
+**1.2.2.21** The variables defined in this Assign activity are view only.  Later on in this lab, we’ll de-activate the integration and all the values will be changeable. You can see the variable fileName defined. Using variable rather than hard-coding these in the mapping for the adapter is preferable because they can be re-used across multiple adapter invocations if necessary.There are two file names involved in HCM Data Loader. First, the zip file name can be any name with a zip extension. Second file name is the actual data file contained in the zip file. HCM Data Loader defines a file name for each data object. In our case, the data file name must be TalentProfile.dat. In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”. The zip extension is appended in a later step.
+
 
 ![](images/100/image012k.png)
 
