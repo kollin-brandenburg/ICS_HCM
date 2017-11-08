@@ -27,6 +27,28 @@ To install SoapUI for testing the ICS integration follow these instructions:
 
 ---
 
+### Install FileZilla
+
+We will use FileZilla to connect to FTP server.
+
+If you don't already have FileZilla installed on your workstation, you'll need to install it.
+
+To install FileZilla:
+
+- Download the FileZilla OpenSource application for your desktop/laptop from the URL: <https://filezilla-project.org/download.php>
+
+![](images/studentguide/image004.png)
+
+- Save the download file to a temporary directory on your workstation. (Note: choose FileZilla for download)
+
+![](images/studentguide/image005.png)
+
+- Run the installer from the temporary directory
+
+![](images/studentguide/image006.png)
+
+---
+
 ## Supported Browsers
 
 Most modern browsers including Chrome, Safari, Internet Explorer, Edge and Firefox are supported.

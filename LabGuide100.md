@@ -15,7 +15,7 @@
 
 This is the first of several labs that are part of the **ICS Development** workshop.
 
-In this lab, we will explore the main parts of Integration Cloud Service (ICS).  You will acquire a good overview of the Oracle Integration Cloud Service (ICS), the next generation integration platform. You will explore various consoles and tools available to interact with your integration. The exercise will get your familiar with all the tooling available to work with this cloud service.
+In this lab, we will explore the main parts of Integration Cloud Service (ICS).  You will acquire a good overview of the Oracle Integration Cloud Service (ICS), the next generation integration platform. You will explore various consoles and tools available to interact with your integration. The exercise will get your familiar with all the tooling available to work with this cloud service. Oracle ICS can function as a central hub for taking in external data feeds, correctly formatting it for HCM Cloud, and automating the final upload of external data into HCM Cloud via HCM Data Loader, With all feeds flowing through ICS, there is greater visibility into the end-to-end data flow between HCM Cloud and external systems. This greatly reduces the integration cost.
 
 We’ll look at the following:
 1.	Oracle Cloud Services Dashboard
@@ -23,13 +23,20 @@ We’ll look at the following:
 3.	ICS Monitoring User Interface
 4.  ICS Connectivity Agents - view more about them [here](https://www.youtube.com/watch?v=nsbvR027GXY&list=PLKCk3OyNwIzumLMaNpSEDXCaYqyRCBAX-&index=13)
 
-The ICS integration that we'll be working with is shown in the following picture:
+Here is a description of what is happening with ICS integration that we'll be working in the lab:
 
-![](images/100/image000.png)
+Oracle HCM manages persons (workers) of an organization. Each person in HCM has an associated profile. A person’s profile can contain all kinds of information relevant to the person and the organization they belong to. Different categories of information in a profile are organized as Content Sections. Each content section is associated with a Content Type. One example of a content section (or content type) is “Competencies”, which describes a person’s various competency levels.
+In our use case, a custom content type called “Additional Qualifications” has been created in HCM. This content type has three content items defined: Artist, Athlete and Photographer. The use case in this example calls for adding additional qualifications to a person’s profile.
 
-Here is a description of what is happening with this integration:
+Steps for Integration:
 
-SoapUI will be used to test the exposed Web Service endpoint of the ICS integration called *UserXX Create EBS Order* (where XX will be 00 -> 10).  This integration has 3 connections.  The incoming message is received by the incoming *UserXX SOAP* Soap Connection.  The *UserXX Create EBS Order* orchestration makes 1 query into the database using the *UserXX Oracle DB 12c* connection to get details needed to create an order.  The orchestration finally uses the *UserXX EBS OPERATIONS* EBS Adapter connection for creating the order in EBS.  After the order is created in EBS, the Order Number is returned to the calling web service.
+1.	Accept an XML document as input
+2.	Convert input XML data into HDL format data
+3.	Zip HDL format data (HCM Data Loader requires zipped file)
+4.	Base64 encode zipped HDL format data (base64 encoding is required to transmit binary data in SOAP/XML web service)
+5.	Call UCM Generic SOAP Service to upload the zip file content (base64 encoded zipped data from the prior step)
+6.	Call HCM Data Loader SOAP Service to schedule an Import and Load HCM File Data process
+7.	Return the HCM processed ID to ICS caller
 
 Let’s start by logging into the Oracle Cloud account and explore the Services Dashboard
 
@@ -45,37 +52,37 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 **1.1.1.2** Click _Sign In_ in the upper right hand corner of the browser
 **IMPORTANT** - Under My Services, change Data Center to `US Commercial 2 (us2)` and click on Sign In to My Services
 
-![](images/300/image001.png)
+![](images/100/image001.png)
 
 **1.1.1.3** If your identity domain is not already set, enter it and click **Go**
 
 **NOTE:** the **Identity Domain** values will be given to you from your instructor.
 
-![](images/300/image002.png)  
+![](images/100/image002.png)  
 
 **1.1.1.4** Once your Identity Domain is set, enter your `User Name` and `Password` and click **Sign In**
 
 ***NOTE:*** the **User Name and Password** values will be given to you by your instructor.
 
-![](images/300/image003.png)  
+![](images/100/image003.png)  
 
 **1.1.1.5** You will be presented with a Dashboard displaying the various cloud services available to this account.
 
 **NOTE:** The Cloud Services dashboard is intended to be used by the *Cloud Administrator* user role.  The Cloud Administrator is responsible for adding users, service instances, and monitoring usage of the Oracle cloud service account.  Developers and Operations roles will go directly to the service console link, not through the service dashboard.
 
-![](images/300/image004.png)
+![](images/100/image004.png)
 
 **1.1.1.6**  To get to the Integration Cloud Service (ICS) service console where you will work on developing the integration, click on the `hamburger` icon in the _Integration_ section, then click on the `View Details` link.
 
-![](images/300/image004a.png)
+![](images/100/image004a.png)
 
 **1.1.1.7**  Select the `Open Service Console` link to go to the ICS Service Console.  
 
-![](images/300/image004b.png)  
+![](images/100/image004b.png)  
 
 **1.1.1.8**  You will now be presented with the ICS Service Console from which you will be performing the rest of this workshop lab.
 
-![](images/300/image004c.png)  
+![](images/100/image004c.png)  
 
 ## 1.2: Explore the ICS Designer User Interface
 
@@ -87,7 +94,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.2.1.1:** Select the `Connections` graphic in the designer portal
 
-![](images/300/image005.png)  
+![](images/100/image005.png)  
 
 **1.2.1.2:** Make note of the connections that have been created. Notice that, among others, there are four connections, one called *ICSHCM_SOAP_TalentProfile_Input_UserXX*, one called *ICSHCM-POC-FA-HCM-Conn_ UserXX*, one called *ICSHCM-POC-FA-UCM-Conn_UserXX* and the other called *ICSHCM-POC-FTP_UserXX*.
 
@@ -113,7 +120,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.2.2.2** Select the `Integrations` menu selection
 
-![](images/400/image034.png)
+![](images/100/image034.png)
 
 **1.2.2.3** Select the `Hamburger` menu icon again to dismiss the left-hand navigation and get some screen real-estate back.
 
@@ -175,7 +182,8 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/100/image012j.png)
 
-**1.2.2.21** The variables defined in this Assign activity are view only.  Later on in this lab, we’ll de-activate the integration and all the values will be changeable.  These variables are constants that are needed for the EBS API call for creating an order.  You can see that variables such as the *EBS_Responsibility*, *EBS_Application*, *EBS_SecurityGroup*, and *EBS_OrgID* are needed.  Using variable rather than hard-coding these in the mapping for the adapter is preferable because they can be re-used across multiple EBS adapter invocations if necessary.
+**1.2.2.21** The variables defined in this Assign activity are view only.  Later on in this lab, we’ll de-activate the integration and all the values will be changeable. You can see the variable fileName defined. Using variable rather than hard-coding these in the mapping for the adapter is preferable because they can be re-used across multiple adapter invocations if necessary.There are two file names involved in HCM Data Loader. First, the zip file name can be any name with a zip extension. Second file name is the actual data file contained in the zip file. HCM Data Loader defines a file name for each data object. In our case, the data file name must be TalentProfile.dat. In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”. The zip extension is appended in a later step.
+
 
 ![](images/100/image012k.png)
 
@@ -185,13 +193,13 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/100/image012l.png)
 
-**1.2.2.24** Pan down to the map called `createEBSOrder`.  Click on this map activity and select the view icon.  We are going to see the values that are mapped into EBS.
+**1.2.2.24** Pan down to the map called `writeInputAsHDLFormat`.  Click on this map activity and select the view icon.  We are going to see the mapping between an input XML data to a full XML data set that contains additional meta data labels required by HDL.
 
 ![](images/100/image012m.png)
 
-**1.2.2.25** This is the most complex mapping in this integration because the EBS API we’re leveraging has thousands of attributes that can be passed.
+**1.2.2.25** This is the most complex mapping in this integration because we’re leveraging has thousands of attributes that can be passed.
 
-**1.2.2.26** What you’ll see in the mapper is the possible input variables on the left and the EBS inbound variables that can be mapped to on the right.  The values that have been mapped are shown to the right of the EBS inbound variables in the mapper.
+**1.2.2.26** What you’ll see in the mapper is the possible input variables on the left and that can be mapped to on the right.  The values that have been mapped are shown to the right side of the inbound variables in the mapper.
 
 **1.2.2.27** In order to simplify this view, we want to `Filter` the Target variables.  Select the `Filter` button above the Target section and then select the radio button labeled `Mapped`, then select the `Apply` button.
 
@@ -201,27 +209,10 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/100/image012o.png)
 
-**1.2.2.29** Note that the icon next to the `P_LINE_TBL_ITEM` has a double bar on top of it.  This indicates that it is a variable that can have multiple values in it (an array).  The ICS mapper automatically adds the `for-each(Lines)` function to that mapping so all possible order lines passed in from the Source will be mapped to the EBS adapter’s invocation.
 
-**1.2.2.30** Once you are done exploring this complex ICS map, select the `Close` button in the upper-right to return back to the ICS orchestration.
+**1.2.2.29** Once you are done exploring this complex ICS map, select the `Close` button in the upper-right to return back to the ICS orchestration.
 
-**1.2.2.31** One last orchestration node we want to explore is one of the *Database Adapter* invocations.  Click on the database adapter call just above the `createEBSOrder` which is called `lookupAccountID`.   When you click on the little eye icon to view it, the DB Connector wizard will initialize.
-
-![](images/100/image012p.png)
-
-**1.2.2.32** Along with the basic information about this invoke activity like the name and description, you can see that this connection is being used to execute a SQL query on the EBS database from ICS.  Select the `Next` button after reviewing the "Basic Info" screen.
-
-![](images/100/image012q.png)
-
-**1.2.2.33** The SQL query being run can be examined.  This query is joining together 6 tables to provide the shipping information needed to create the EBS order for the customer. Select the `Next` button after reviewing the "Run a SQL Statement" screen.
-
-![](images/100/image012r.png)
-
-**1.2.2.34** Select the `Close` button now that we have seen the SQL used in the Database Adapter invocation to the EBS Oracle Database.
-
-- Note that ICS also has Database adapters for *MySQL*, *DB2*, and *SQL Server*.
-
-**1.2.2.35** We’ve spent a lot of time exploring the `ICSHCM Add Talent Profile UserXX` integration.  Let’s move on and explore the Agent setup.  Select the `Close` button in the upper-right to navigate back to the ICS Designer.
+**1.2.2.30** We’ve spent a lot of time exploring the `ICSHCM Add Talent Profile UserXX` integration.  Let’s move on and explore the Agent setup.  Select the `Close` button in the upper-right to navigate back to the ICS Designer.
 
 ![](images/100/image012s.png)
 
