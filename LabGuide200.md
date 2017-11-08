@@ -27,17 +27,9 @@ In this lab, you will learn how to create a basic ICS connection, using a basic 
 
 ## Creating Simple Orchestration Integration
 
-### Create a REST Connection
+### Create the FA-HCM SOAP Connection
 
-In this first part of the lab, we will create a connection :
-
-Let’s start by logging into the Oracle Cloud account using your allocated user (demo.user1..10)  
-
->**NOTE:** All the screenshots use the _demo.user10_ account. Replace the _demo.user10_ with your assigned account to validate the steps illustrated in the screenshots.
-
----
-
-**2.1** Click on the **Connection** section
+**1.1** Click on the **Connection** section
 
 ![](images/200/image002.png)
 
@@ -45,22 +37,52 @@ Let’s start by logging into the Oracle Cloud account using your allocated user
 
 ![](images/200/image003.png)
 
-**2.3** Select the **REST** Connection, by either doing a search, or by scrolling down to the **REST** connection, by clicking on the **Select** button of the **REST** connection.
+**2.3** Select the **SOAP** Connection, by either doing a search, or by scrolling down to the **SOAP** connection, by clicking on the **Select** button of the **SOAP** connection.
 
-![](images/200/image004.png)
+![](images/200/image139.png)
 
 **2.4** Fill in the information for the new connection
 
-- **Name** in the form of _UserXX REST_ where XX is the number in your allocated user.
-- **Role** _Trigger_ since we going to use the connection as a trigger to start the integration
+- **Name** in the form of _ICSHCM-POC-FA-HCM-Conn_UserXX_ where XX is the number in your allocated user.
+- **Role** _Invoke_ since we going to use the connection as an invoke to start the integration
 
-![](images/200/image005.png)
+![](images/200/image140.png)
 
 **2.7** click **Create**
 
-![](images/200/image006.png)
+![](images/200/image141.png)
+
+**2.8** Click on **Configure Connectivity**.
+In the **WSDL URL** field enter "https://ucf6-fap0868-hcm.oracledemos.com/hcmCommonDataLoader/HCMDataLoader?WSDL"
+
+Then click **Ok** to close.
+
+![](images/200/image134.png)
 
 >***Note*** The default security configuration is set to **Basic Authentication**, which by the way, is the only option available for REST trigger connections. When invoking the trigger, we will use our ICS username/password.
+
+**2.9** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
+
+![](images/200/image135.png)
+
+**2.10** In another tab, go to demo environment launch pad, click on the "Get SaaS Passwords” to get latest username and passwords for UCM cloud. Write these down to use in the next step.
+
+![](images/200/image142.png)
+
+
+
+**2.11** You will now be asked to create the Security credentials for your FTP connection.
+
+Leave the **Security Policy** as **Basic Authentication**, or else change it if something else is selected.
+
+For the **User Name** use the **User name** that you previously saved from step **2.10**.
+
+In the **Password** field user the password that you found in step **2.10**
+
+Now click on **Ok** to close the prompt.
+
+![](images/200/image143.png)
+
 
 **2.6** Click on **Test**
 
@@ -74,13 +96,10 @@ Let’s start by logging into the Oracle Cloud account using your allocated user
 
 Your first connection appears in the list of configured connections and is even marked as **New** !
 
-![](images/200/image009.png)
+![](images/200/image144.png)
 
-**2.9** Click on the **Oracle Integration Cloud** link in the upper left to get back to the Home page
 
-![](images/200/image010.png)
-
-### Creating an Integration!
+### Creating an Integration
 
 **1.1** Click on the **Integrations** section on the ICS home page
 
