@@ -156,7 +156,7 @@ In the **Password** field use "fusionfa1"
 
 Now click on **Ok** to close the prompt.
 
-![](images/200/image143.png)
+![](images/200/image154.png)
 
 
 **2.11** Click on **Test**
