@@ -212,22 +212,27 @@ You should see your _New_ integration in list of _Integrations_
 
 ### Creating an FTP Connection
 
-**1.1** Go to the cloud dashboard page -> click on "Integration" service. Ex: Ex: https://myservices.us2.oraclecloud.com/mycloud/faces/dashboard.jspx
+**1.1** Go to the cloud dashboard page and click on **Integration** service. Ex: https://myservices.us2.oraclecloud.com/mycloud/faces/dashboard.jspx
 
 Every domain will have FTP server associated with it. We will use this FTP server to host our files.
 
 
 ![](images/200/image086.png)
 
-**1.2** Check the Additional Information. The Ftp server details are given.
+**1.2** Check the Additional Information. The FTP server details are given.
 
-Copy “Domain SFTP User Name, Host ,port “and save it somewhere.
+Copy Domain SFTP User Name, Host, port, and save it somewhere.
 
-This will be the FTP user which is used in FTP connection creation
+**Domain SFTP User Name:**
+**SFTP Host:**
+**Port:**
+
+
+This will be the FTP user which is used in FTP connection creation.
 
 ![](images/200/image087.png)
 
-**1.3** You can also access this info by clicking  on “Users“ on the top right  ->SFTP Users  Username
+**1.3** You can also access this info by clicking  on **Users** on the top right  ->SFTP Users  Username
 
 ![](images/200/image088.png)
 
@@ -241,53 +246,65 @@ This will be the FTP user which is used in FTP connection creation
 
 ![](images/200/image091.png)
 
-Now click on the "Connections"
+Now click on the **Connections**
 
 ![](images/200/image092.png)
 
+**1.6** On the top bar click on **Create** to bring up the menu to create a new Connection.
 
+![](images/200/image130.png)
 
-**1.6** In the search box, search for "FTP"
+The following prompt should pop up. Either scroll down and select or search for "FTP"
 
-![](images/200/image093.png)
+![](images/200/image131.png)
 
-**1.7** Click on the hamburger button to bring up the drop and then click "Edit"
+**1.7** The following screen should display when you click to create a new FTP Connection.
 
-![](images/200/image094.png)
+![](images/200/image132.png)
 
-**1.8** Click on “Configure Connectivity." Use the
-Domain sftp host as FTP server host address  from step 1.2 which was retrieved from dashboard
+**1.8** In the **Name** field enter "ICSHCM-POC-FTP_UserXX" and replace the "XX" with your assigned user name.
+
+Set the Role to **Trigger and Invoke**
+
+![](images/200/image133.png)
+
+**1.9** Click on **Configure Connectivity**. Use the
+Domain **SFTP Host** as **FTP server host address** from step **1.2** which was retrieved from dashboard, without the port included.
+
+Enter the **Port** as found in step **1.2**. It is most likely **22**.
+
+Set the **SFTP Connection** to **True**.
 
 Port : 22
-SFTP connection :Yes
-Click ok
+SFTP connection: True
 
-![](images/200/image095.png)
+Then click **Ok** to close.
 
-**1.9** Scroll further down the page and click on the “Configure Security" to bring up the following menu.
+![](images/200/image134.png)
 
+**1.10** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your FTP Security.
 
-![](images/200/image096.png)
+![](images/200/image135.png)
 
-When the Credentials menu pops up enter the Domain SFTP User Name that you found in step 1.2 in the "User Name" field.
+**1.11** You will now be asked to create the Security credentials for your FTP connection.
 
-In the "Password" field use the password that you used in order to log into Oracle cloud for the cloud.admin user.
+Leave the **Security Policy** as **FTP Server Access Policy**, or else change it if something else is selected.
 
-Once you have done this, click the "Ok" to close the menu.
+For the **User Name** use the **Domain SFTP User Name** that you previously saved from step **1.2**.
 
-![](images/200/image097.png)
+In the **Password** field user the password that you originally used to log into Oracle Cloud. It will be the password for either the cloud.admin or UserXX users.
 
-User Name  =  Domain SFTP User Name
-Password  =  Same password as cloud.admin  which is provided in demo launch pad
+Now click on **Ok** to close the prompt.
 
-**1.9** Click on the "Save", then click the "Save" button to close the prompt.
+![](images/200/image136.png)
 
-![](images/200/image098.png)
+**1.12** Then click **Test** in order to test the connect. A green bar should come across the top of the screen that reads, "Connection ICSHCM-POC-FTP_UserXX was tested successfully."
 
+![](images/200/image137.png)
 
-Then click "Test" in order to test the connect. A green bar should come across the top of the screen that reads, "Connection FTP was saved successfully."
+Click on the **Save** in order to save your Connection. A green bar should come across the top of the screen that reads, "Connection ICSHCM-POC-FTP_UserXX was saved successfully."
 
-![](images/200/image099.png)
+![](images/200/image138.png)
 
 ----
 
@@ -886,156 +903,5 @@ definitions:
 
 ----
 
-## Documenting APIs
-
-Documenting the API for the activated integration can be done using Apiary among other available tools.  The use of Apiary for documenting your new API follows.
-
-----
-
-### **APIARY** Swagger	_WORK IN PROGRESS_
-
-----
-
-Apiary does not support Swagger (JSON) format at the moment, so we first have to convert the Swagger JSON into Swagger.
-
-**1.1** Back in a browser window, open the URL we have captured in **Activating Integration**, step **1.3**. Append ***/swagger*** - supply your username and password if asked for it.
-
-![](images/200/image068.png)
-
-**1.2** Copy the Swagger text displayed in the browser window, it should look similar to the following.
-
-```javascript
-{
-  "swagger" : "2.0",
-  "info" : {
-    "description" : "Description of the service [Title is not available at Runtime unless we store it in JCA. Need to check for Description]",
-    "version" : "1.0",
-    "title" : "Title of the Service [Reference Binding Name]"
-  },
-  "host" : "ttcics-gse00011451.integration.us2.oraclecloud.com:443",
-  "basePath" : "/integration/flowapi/rest/USERXX_HELLO_WORLD/v01",
-  "schemes" : [ "https" ],
-  "paths" : {
-    "/echo" : {
-      "post" : {
-        "consumes" : [ "application/json" ],
-        "produces" : [ "application/json" ],
-        "parameters" : [ {
-          "in" : "body",
-          "name" : "request-wrapper",
-          "required" : false,
-          "schema" : {
-            "$ref" : "#/definitions/echo"
-          }
-        } ],
-        "responses" : {
-          "default" : {
-            "description" : "A sample description of the Response",
-            "schema" : {
-              "$ref" : "#/definitions/return"
-            }
-          }
-        }
-      }
-    }
-  },
-  "definitions" : {
-    "echo" : {
-      "type" : "string"
-    },
-    "return" : {
-      "type" : "string"
-    }
-  }
-}
-```
-
-**1.3** Open http://editor.swagger.io
-
-**1.4** Open File -> Paste JSON...
-
-![](images/200/image075.png)
-
-**1.5** Paste the Swagger Editor in the text box, and click on **OK** to convert JSON into YAML
-
-![](images/200/image075b.png)
-
-**1.6** In the editor you will see Swagger YAML. Copy this text.
-
-![](images/200/image077.png)
-
-**1.7** Log into APIARY
-
->**Note:** Follow instructions on the APIARY website to create an account.
-
-**1.8** Create new API, making sure to **Start your API in** _Swagger_
-
-![](images/200/image078.png)
-
-![](images/200/image079.png)
-
-**1.9** Copy your selected text (from 1.6) into the editor in the left side
-
-![](images/200/image080.png)
-
-**1.10** Now, we have to add security definitions.
-
-- Change the code to the following, changes __marked <--__
-
-```
-swagger: '2.0'
-info:
-  description: >-
-    Description of the service [Title is not available at Runtime unless we
-    store it in JCA. Need to check for Description]
-  version: '1.0'
-  title: 'Title of the Service [Reference Binding Name]'
-host: 'ttcics-gse00003021.integration.us2.oraclecloud.com:443'
-basePath: /integration/flowapi/rest/USER10_HELLO_WORLD/v01
-schemes:
-  - https
-```
-<-- Insert the following
-```
-securityDefinitions:
-  basicAuth:
-    type: basic
-    description: HTTP Basic Authentication.
-```
-<-- Up to here
-```
-paths:
-  /echo:
-    post:
-```
-<-- Insert the following
-```
-      security:
-       - basicAuth: []
-```
-<-- Up to here
-```
-      consumes:
-        - application/json
-      produces:
-        - application/json
-      parameters:
-        - in: body
-          name: request-wrapper
-          required: true
-          schema:
-            $ref: '#/definitions/echo'
-      responses:
-        default:
-          description: A sample description of the Response
-          schema:
-            $ref: '#/definitions/return'
-definitions:
-  echo:
-    type: string
-  return:
-    type: string
-
-```
 
 - This Lab is now completed.
