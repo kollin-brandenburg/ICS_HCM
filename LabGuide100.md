@@ -52,37 +52,37 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 **1.1.1.2** Click _Sign In_ in the upper right hand corner of the browser
 **IMPORTANT** - Under My Services, change Data Center to `US Commercial 2 (us2)` and click on Sign In to My Services
 
-![](images/300/image001.png)
+![](images/100/image001.png)
 
 **1.1.1.3** If your identity domain is not already set, enter it and click **Go**
 
 **NOTE:** the **Identity Domain** values will be given to you from your instructor.
 
-![](images/300/image002.png)  
+![](images/100/image002.png)  
 
 **1.1.1.4** Once your Identity Domain is set, enter your `User Name` and `Password` and click **Sign In**
 
 ***NOTE:*** the **User Name and Password** values will be given to you by your instructor.
 
-![](images/300/image003.png)  
+![](images/100/image003.png)  
 
 **1.1.1.5** You will be presented with a Dashboard displaying the various cloud services available to this account.
 
 **NOTE:** The Cloud Services dashboard is intended to be used by the *Cloud Administrator* user role.  The Cloud Administrator is responsible for adding users, service instances, and monitoring usage of the Oracle cloud service account.  Developers and Operations roles will go directly to the service console link, not through the service dashboard.
 
-![](images/300/image004.png)
+![](images/100/image004.png)
 
 **1.1.1.6**  To get to the Integration Cloud Service (ICS) service console where you will work on developing the integration, click on the `hamburger` icon in the _Integration_ section, then click on the `View Details` link.
 
-![](images/300/image004a.png)
+![](images/100/image004a.png)
 
 **1.1.1.7**  Select the `Open Service Console` link to go to the ICS Service Console.  
 
-![](images/300/image004b.png)  
+![](images/100/image004b.png)  
 
 **1.1.1.8**  You will now be presented with the ICS Service Console from which you will be performing the rest of this workshop lab.
 
-![](images/300/image004c.png)  
+![](images/100/image004c.png)  
 
 ## 1.2: Explore the ICS Designer User Interface
 
@@ -94,7 +94,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.2.1.1:** Select the `Connections` graphic in the designer portal
 
-![](images/300/image005.png)  
+![](images/100/image005.png)  
 
 **1.2.1.2:** Make note of the connections that have been created. Notice that, among others, there are four connections, one called *ICSHCM_SOAP_TalentProfile_Input_UserXX*, one called *ICSHCM-POC-FA-HCM-Conn_ UserXX*, one called *ICSHCM-POC-FA-UCM-Conn_UserXX* and the other called *ICSHCM-POC-FTP_UserXX*.
 
