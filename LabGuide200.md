@@ -55,7 +55,7 @@ This connection is used to call the importAndLoadData operation of the HCM Dat
 
 ![](images/200/image141.png)
 
-**1.6** In a separate window, go to: https://drive.google.com/file/d/1RxOPqO3NpPuQ1WvPIj4VVjpmhfufpRCx/view?usp=sharing
+**1.6** In a separate window, go to: https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF68D22147B666DFAD2B6F76F6C3FF17C1177E4725F3/folder/FA2DEBB51750375B7979D4C4F6C3FF17C1177E4725F3/_ICS_HCM_Workshop
 and download the following zip file called "ICS Artifacts.zip"
 Open the zip file to decompress the file.
 
