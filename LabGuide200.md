@@ -131,6 +131,9 @@ This connection is used to call the importAndLoadData operation of the HCM Dat
 ![](images/200/image141.png)
 
 **2.8** Click on **Configure Connectivity**.
+
+![](images/200/image141.png)
+
 In the **WSDL URL** field enter "https://ucf6-fap0868-fs.oracledemos.com/idcws/GenericSoapPort?WSDL"
 
 Then click **Ok** to close.
@@ -205,7 +208,7 @@ In the **WSDL URL** field enter "https://ucf6-fap0868-hcm.oracledemos.com/hcmCom
 
 Then click **Ok** to close.
 
-![](images/200/image134.png)
+![](images/200/image153.png)
 
 >***Note*** The default security configuration is set to **Basic Authentication**, which by the way, is the only option available for REST trigger connections. When invoking the trigger, we will use our ICS username/password.
 
@@ -213,7 +216,7 @@ Then click **Ok** to close.
 
 ![](images/200/image135.png)
 
-**2.10** In another tab, go to demo environment launch pad, click on the "Get SaaS Passwords” to get latest username and passwords for UCM cloud. Write these down to use in the next step.
+**2.10** In another tab, go to demo environment launch pad, click on the **Get SaaS Passwords** to get latest username and passwords for UCM cloud. Write these down to use in the next step.
 
 ![](images/200/image142.png)
 
@@ -298,13 +301,13 @@ The following prompt should pop up. Either scroll down and select or search for 
 
 **1.7** The following screen should display when you click to create a new FTP Connection.
 
-![](images/200/image132.png)
+![](images/200/image133.png)
+
 
 **1.8** In the **Name** field enter "ICSHCM-POC-FTP_UserXX" and replace the "XX" with your assigned user name.
 
 Set the Role to **Trigger and Invoke**
 
-![](images/200/image133.png)
 
 **1.9** Click on **Configure Connectivity**. Use the
 Domain **SFTP Host** as **FTP server host address** from step **1.2** which was retrieved from dashboard, without the port included.
