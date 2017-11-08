@@ -53,20 +53,23 @@ SoapUI will be used to test the exposed Web Service endpoint of the ICS integrat
 
 ![](images/300/image004c.png)
 
-### ICS and HCM Connections
+### Check your Connections
 
 **1.1** From the Integration Cloud Dashboard, click on the "Connections".
 ICS console will be loaded in new window.
 
 ![](images/300/image100.png)
 
-**1.2** In the search bar, search for "ICSHCM". You should see green checks if they are all configured correctly.
+**1.2** In the search bar, search for "ICSHCM" and look at the Connections you previously created. You should see green checks if they are all configured correctly.
 
 ![](images/300/image101.png)
 
 If you see anything other than green checks, then go back to the previous steps and set up the connections.
 
 ![](images/300/image102.png)
+
+### ICS and HCM Connections
+
 
 
 **1.3** Now go back to the dashboard and go to the "Integrations". Click on “ICSHCM_Add Talent Profile” or search if it is not in view on the screen.
