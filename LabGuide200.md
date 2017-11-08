@@ -1,7 +1,7 @@
 ![](images/200/Picture-lab.png)  
 Updated: 11-6-17
 
-# Lab 200 - Integration Cloud Service
+# Lab 200 - Creating ICS Connections
 
 ## Introduction
 
@@ -27,7 +27,155 @@ In this lab, you will learn how to create a basic ICS connection, using a basic 
 
 ## Creating Simple Orchestration Integration
 
+### Create Talent Profile SOAP Input Connection
+
+This connection is used to call the importAndLoadData operation of the HCM Data Loader SOAP API. Its WSDL URL points to an HCM Cloud instance in Oracle’s demo environment.
+
+
+**1.1** Click on the **Connections** section
+
+![](images/200/image002.png)
+
+**1.2** Click on **Create** in the upper right of the screen
+
+![](images/200/image003.png)
+
+**1.3** Select the **SOAP** Connection, by either doing a search, or by scrolling down to the **SOAP** connection, by clicking on the **Select** button of the **SOAP** connection.
+
+![](images/200/image139.png)
+
+**1.4** Fill in the information for the new connection
+
+- **Name** in the form of _ICSHCM_SOAP_TalentProfile_Input_UserXX_ where XX is the number in your allocated user.
+- **Role** _Trigger_ since we going to use the connection as an trigger the start of an integration
+
+![](images/200/image148.png)
+
+**1.5** click **Create**
+
+![](images/200/image141.png)
+
+**1.6** In a separate window, go to: https://drive.google.com/file/d/1RxOPqO3NpPuQ1WvPIj4VVjpmhfufpRCx/view?usp=sharing
+and download the following zip file called "ICS Artifacts.zip"
+Open the zip file to decompress the file.
+
+**1.7** Click on **Configure Connectivity**.
+Check the box under the **Upload File** column.
+Then click on the **Upload Button**
+
+Open up the folder that was created when you opened the zip file in step **1.6**. In the folder "ICS-HCM" there is a file called TalentProfile.wsdl.
+Select this file and click **OK**.
+
+Then click **Ok** to close.
+
+![](images/200/image149.png)
+
+
+**1.7** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
+
+![](images/200/image135.png)
+
+**1.8** You will now be asked to create the Security credentials for your SOAP connection.
+
+Leave the **Security Policy** as **Username Password Token**, or else change it if something else is selected.
+
+This is what is required to login to Integration Cloud Service
+
+Now click on **Ok** to close the prompt.
+
+![](images/200/image150.png)
+
+
+**1.9** Click on **Test**
+
+![](images/200/image007.png)
+
+**1.10** Click **Save**
+
+![](images/200/image008.png)
+
+**1.11** Click on the **Close** link in the upper right
+
+Your connection appears in the list of configured connections and is even marked as **New** !
+
+![](images/200/image151.png)
+
+----
+
+### Create the FA-UCM SOAP Connection
+
+This connection is used to call the importAndLoadData operation of the HCM Data Loader SOAP API. Its WSDL URL points to an HCM Cloud instance in Oracle’s demo environment.
+
+
+**1.1** Click on the **Connection** section
+
+![](images/200/image002.png)
+
+**2.2** Click on **Create** in the upper right of the screen
+
+![](images/200/image003.png)
+
+**2.3** Select the **SOAP** Connection, by either doing a search, or by scrolling down to the **SOAP** connection, by clicking on the **Select** button of the **SOAP** connection.
+
+![](images/200/image139.png)
+
+**2.4** Fill in the information for the new connection
+
+- **Name** in the form of _ICSHCM-POC-FA-UCM-Conn_UserXX_ where XX is the number in your allocated user.
+- **Role** _Invoke_ since we going to use the connection as an invoke to start the integration
+
+![](images/200/image145.png)
+
+**2.7** click **Create**
+
+![](images/200/image141.png)
+
+**2.8** Click on **Configure Connectivity**.
+In the **WSDL URL** field enter "https://ucf6-fap0868-fs.oracledemos.com/idcws/GenericSoapPort?WSDL"
+
+Then click **Ok** to close.
+
+![](images/200/image146.png)
+
+>***Note*** The default security configuration is set to **Basic Authentication**, which by the way, is the only option available for REST trigger connections. When invoking the trigger, we will use our ICS username/password.
+
+**2.9** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
+
+![](images/200/image135.png)
+
+**2.10** You will now be asked to create the Security credentials for your SOAP connection.
+
+Leave the **Security Policy** as **Basic Authentication**, or else change it if something else is selected.
+
+For the **User Name** use the "faadmin".
+
+In the **Password** field use "fusionfa1"
+
+Now click on **Ok** to close the prompt.
+
+![](images/200/image143.png)
+
+
+**2.11** Click on **Test**
+
+![](images/200/image007.png)
+
+**2.12** Click **Save**
+
+![](images/200/image008.png)
+
+**2.13** Click on the **Close** link in the upper right
+
+Your connection appears in the list of configured connections and is even marked as **New** !
+
+![](images/200/image147.png)
+
+----
+
 ### Create the FA-HCM SOAP Connection
+
+This connection is used to call the GenericSoapPort service of UCM to upload the data file to UCM. Basic authentication must be configured. The WSDL URL points to the UCM instance associated with the HCM instance.
+
 
 **1.1** Click on the **Connection** section
 
@@ -77,26 +225,28 @@ Leave the **Security Policy** as **Basic Authentication**, or else change it if 
 
 For the **User Name** use the **User name** that you previously saved from step **2.10**.
 
-In the **Password** field user the password that you found in step **2.10**
+In the **Password** field use the password that you found in step **2.10**
 
 Now click on **Ok** to close the prompt.
 
 ![](images/200/image143.png)
 
 
-**2.6** Click on **Test**
+**2.12** Click on **Test**
 
 ![](images/200/image007.png)
 
-**2.7** Click **Save**
+**2.13** Click **Save**
 
 ![](images/200/image008.png)
 
-**2.8** Click on the **Close** link in the upper right
+**2.14** Click on the **Close** link in the upper right
 
 Your first connection appears in the list of configured connections and is even marked as **New** !
 
 ![](images/200/image144.png)
+
+----
 
 
 ### Creating an Integration
