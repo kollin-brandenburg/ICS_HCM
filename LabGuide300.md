@@ -53,7 +53,7 @@ SoapUI will be used to test the exposed Web Service endpoint of the ICS integrat
 
 ![](images/300/image004c.png)
 
-### Check your Connections
+### **1.2**:Check your Connections
 
 **1.1** From the Integration Cloud Dashboard, click on the "Connections".
 ICS console will be loaded in new window.
@@ -68,9 +68,7 @@ If you see anything other than green checks, then go back to the previous steps 
 
 ![](images/300/image102.png)
 
-### ICS and HCM Connections
-
-
+### **1.3**:ICS and HCM Connections
 
 **1.3** Now go back to the dashboard and go to the "Integrations". Click on “ICSHCM_Add Talent Profile” or search if it is not in view on the screen.
 
@@ -200,92 +198,6 @@ Now click through the "Next" to move through the prompt screens and then finally
 
 
 ----
-
-### **1.3**: Create the Database Connector
-
----
-
-**1.3.1** Click on **Create** button again in the upper right
-
-![](images/300/image021a.png)
-
-**1.3.2** Select the **Oracle Database** Connection, by either doing a search, or by scrolling down to the **Oracle Database** connection, then click on the **Select** button of the **Oracle Database** connection.
-
-Note: If there is still a filter typed in for the SOAP adapter, you can clear it by selecting the `X` next to the search box.
-
-![](images/300/image021.png)
-
-**1.3.3** Fill in the information for the new connection:
-
-- **Name:** Enter in the form of _UserXX Oracle DB 12c_ where XX is the number in your allocated user.
-- **Role:** Select _Invoke_ since we going to call the connection as an invocation from the integration
-
-Note that the **Identifier** will automatically be created based on the **Name** you entered.
-
-**1.3.4** Click **Create**
-
-![](images/300/image022.png)
-
-**1.3.5** Click the **Configure Connectivity** button
-
-_NOTE:_ The "Oracle Database" header will show that the connection is both "Trigger and Invoke" even though it was setup to be a "Invoke" only.  This is a known issue.
-
-![](images/300/image023.png)
-
-**1.3.6** Enter the values given to you by your workshop instructor for the *Connection Properties*, then select the _OK_ button:
-
-- **Host:** - `129.152.144.104` - this is only an example of an EBS hostname and may not be the EBS instance used in your workshop
-- **Port:** - `1521` - this is the default database port for the EBS database
-- **SID:** - leave this blank, you need either a SID, or a Service Name which we gave, but not both
-- **Service Name:** - `pdborcl` - this is the Service Name for the sample database we will be using
-
-![](images/300/image024.png)
-
-**1.3.7** Next scroll down in the Connection Configuration page and select the **Configure Security** button.
-
-![](images/300/image025.png)
-
-**1.3.8** Enter the following Username and Password for the EBS adapter connection.
-
-The following values are example DB schema username/password and may not be the one used in your workshop.  
-Your workshop instructor will tell you if it needs to be changed.
-
-- **Username:** - `ttc_user`
-- **Password:** - _provided by your instructor_
-
-**1.3.9** Click on the **OK** button to save the credentials.
-
-![](images/300/image026.png)
-
-**1.3.10** Now, scroll down again in the Connection Configuration page and select the **Configure Agents** button.
-
-![](images/300/image027.png)
-
-**1.3.11** Select the *ON_PREM_AGENT_GROUP* which should be the only entry in the agent list by clicking the name, then select the **Use** button.
-
-![](images/300/image028.png)
-
-**1.3.12** At the top of the connection configuration screen, Click on the **Test** button to test the connection.
-
-![](images/300/image029.png)
-
-Note how the progress indicator will go from 85% to 100% after the connection tests successfully.
-
-![](images/300/image029a.png)
-
-**1.3.13** Click on the **Save** button in the upper right corner of the connection configuration screen.
-
-![](images/300/image029b.png)
-
-**1.3.14** Click on the **Close** button in the upper right of the connection configuration screen.
-
-![](images/300/image030.png)
-
-Your new Database connection appears in the list of configured connections and is even marked as **New** !
-
-**Note** how the icon for the connection is different between the SOAP and Database connector.
-
-![](images/300/image031.png)
 
 ## Part 2: Create the ICS Integration
 
