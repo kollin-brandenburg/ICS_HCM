@@ -197,9 +197,9 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/100/image012m.png)
 
-**1.2.2.25** This is the most complex mapping in this integration because the EBS API we’re leveraging has thousands of attributes that can be passed.
+**1.2.2.25** This is the most complex mapping in this integration because we’re leveraging has thousands of attributes that can be passed.
 
-**1.2.2.26** What you’ll see in the mapper is the possible input variables on the left and the EBS inbound variables that can be mapped to on the right.  The values that have been mapped are shown to the right of the EBS inbound variables in the mapper.
+**1.2.2.26** What you’ll see in the mapper is the possible input variables on the left and that can be mapped to on the right.  The values that have been mapped are shown to the right side of the inbound variables in the mapper.
 
 **1.2.2.27** In order to simplify this view, we want to `Filter` the Target variables.  Select the `Filter` button above the Target section and then select the radio button labeled `Mapped`, then select the `Apply` button.
 
@@ -209,27 +209,10 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/100/image012o.png)
 
-**1.2.2.29** Note that the icon next to the `P_LINE_TBL_ITEM` has a double bar on top of it.  This indicates that it is a variable that can have multiple values in it (an array).  The ICS mapper automatically adds the `for-each(Lines)` function to that mapping so all possible order lines passed in from the Source will be mapped to the EBS adapter’s invocation.
 
-**1.2.2.30** Once you are done exploring this complex ICS map, select the `Close` button in the upper-right to return back to the ICS orchestration.
+**1.2.2.29** Once you are done exploring this complex ICS map, select the `Close` button in the upper-right to return back to the ICS orchestration.
 
-**1.2.2.31** One last orchestration node we want to explore is one of the *Database Adapter* invocations.  Click on the database adapter call just above the `createEBSOrder` which is called `lookupAccountID`.   When you click on the little eye icon to view it, the DB Connector wizard will initialize.
-
-![](images/100/image012p.png)
-
-**1.2.2.32** Along with the basic information about this invoke activity like the name and description, you can see that this connection is being used to execute a SQL query on the EBS database from ICS.  Select the `Next` button after reviewing the "Basic Info" screen.
-
-![](images/100/image012q.png)
-
-**1.2.2.33** The SQL query being run can be examined.  This query is joining together 6 tables to provide the shipping information needed to create the EBS order for the customer. Select the `Next` button after reviewing the "Run a SQL Statement" screen.
-
-![](images/100/image012r.png)
-
-**1.2.2.34** Select the `Close` button now that we have seen the SQL used in the Database Adapter invocation to the EBS Oracle Database.
-
-- Note that ICS also has Database adapters for *MySQL*, *DB2*, and *SQL Server*.
-
-**1.2.2.35** We’ve spent a lot of time exploring the `ICSHCM Add Talent Profile UserXX` integration.  Let’s move on and explore the Agent setup.  Select the `Close` button in the upper-right to navigate back to the ICS Designer.
+**1.2.2.30** We’ve spent a lot of time exploring the `ICSHCM Add Talent Profile UserXX` integration.  Let’s move on and explore the Agent setup.  Select the `Close` button in the upper-right to navigate back to the ICS Designer.
 
 ![](images/100/image012s.png)
 
