@@ -214,6 +214,9 @@ You should see your _New_ integration in list of _Integrations_
 
 **1.1** Go to the cloud dashboard page -> click on "Integration" service. Ex: Ex: https://myservices.us2.oraclecloud.com/mycloud/faces/dashboard.jspx
 
+Every domain will have FTP server associated with it. We will use this FTP server to host our files.
+
+
 ![](images/200/image086.png)
 
 **1.2** Check the Additional Information. The Ftp server details are given.
@@ -290,7 +293,8 @@ Then click "Test" in order to test the connect. A green bar should come across t
 
 ### ICS and HCM Connections
 
-**1.1** From the Integration Cloud Dashboard, click on the "Connections"
+**1.1** From the Integration Cloud Dashboard, click on the "Connections".
+ICS console will be loaded in new window.
 
 ![](images/200/image100.png)
 
