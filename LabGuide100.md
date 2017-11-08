@@ -120,7 +120,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.2.2.2** Select the `Integrations` menu selection
 
-![](images/400/image034.png)
+![](images/100/image034.png)
 
 **1.2.2.3** Select the `Hamburger` menu icon again to dismiss the left-hand navigation and get some screen real-estate back.
 
