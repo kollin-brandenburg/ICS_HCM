@@ -5,18 +5,17 @@
 
 ### **1.3** ICS and HCM Connections
 
-**1.3** Now go back to the dashboard and go to the "Integrations". Click on “ICSHCM_Add Talent Profile” or search if it is not in view on the screen.
+**1.3** Now, return to the dashboard and click "Integrations". Click on “ICSHCM_Add Talent Profile” or search for it if it is not in view on the screen.
 
 
 ![](images/300/image103.png)
 
-If the integration is not activated then you will need to click on the slider to activate the integration. Do not enable tracing or include payload.
+If the integration is not activated, click on the slider to activate the integration. Do not enable tracing or include payload.
 
 ![](images/300/image104.png)
 
 
-Since the integration is already created and imported we won’t be recreating integration. Let’s review the various steps in the ICS – HCM data load integration
-Please see the below image for the entire integration flow. The orchestration flow generally matches the logic flow described earlier. Details of each node are discussed in sequence in the following section.
+Since the integration is already created and imported, we will not be recreating it. Let’s review the various steps in the ICS – HCM data load integration. Please see the below image for the entire integration flow. The orchestration flow generally matches the logic flow described earlier. Details of each node are presented in sequence in the following section.
 
 ![](images/300/image105.png)
 ![](images/300/image106.png)
