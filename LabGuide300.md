@@ -13,7 +13,7 @@ In the previous lab, a REST connection was created.  In a similar manner we need
 
 The ICS integration that we'll be building is shown in the following picture:
 
-![](images/300/0.png)
+![](images/300/2.png)
 
 Here is a description of what is happening with this integration:
 
