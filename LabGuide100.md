@@ -193,7 +193,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/100/image012l.png)
 
-**1.2.2.24** Pan down to the map called `createEBSOrder`.  Click on this map activity and select the view icon.  We are going to see the values that are mapped into EBS.
+**1.2.2.24** Pan down to the map called `writeInputAsHDLFormat`.  Click on this map activity and select the view icon.  We are going to see the mapping between an input XML data to a full XML data set that contains additional meta data labels required by HDL.
 
 ![](images/100/image012m.png)
 
