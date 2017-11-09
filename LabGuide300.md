@@ -110,11 +110,22 @@ Step 11 executes a SOAP call to UCM to upload the zip file. (UploadHDLFileToUCM)
 
 Now we can execute the Data Loader SOAP call. (ScheduleImportProcessHcm)
 
+![](images/300/image314.png)
+
+Finally, map the process ID returned from HCM to response XML payload. (addTalentProfileData - Mapper)
+
+![](images/300/image315.png)
+
+This node ends the entire integration and returns response message to caller. (addTalentProfileData)
+
+
+
 When complete, the entire integration flow should look like this:
 
 ![](images/300/image105.png)
 ![](images/300/image106.png)
 ![](images/300/image107.png)
+
 
 ---
 
