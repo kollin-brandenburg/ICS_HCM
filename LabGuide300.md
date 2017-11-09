@@ -60,7 +60,7 @@ Now, we will edit the orchestration for this integration. The first step is to s
 
 The Wizard for configuring the SOAP endpoint will now appear. Enter the name "addTalentProfileData", as shown below, and click "Next" at the top.
 
-![](images/300/image322.png)
+![](images/300/image007.png)
 
 Next, on the Operations page, ensure that "Disable SoapAction Validation" is set to "No". Then, click "Next".
 
@@ -74,10 +74,22 @@ Now, a summary of the new Integration is presented. Review it and click "Done".
 
 ![](images/300/image010.png)
 
+The orchestration flow should now look like this:
+
 ![](images/300/image011.png)
+
+The digram can be stretched to add space, as follows:
+
 ![](images/300/image012.png)
+
+Next, click the "Actions" tab in the right-hand side menu to expand it. Drag and drop an "Assign" action to insert it into the flow as follows:
+
 ![](images/300/image013.png)
+
+You are now prompted to provide a name for the new action.
+
 ![](images/300/image014.png)
+
 ![](images/300/image015.png)
 ![](images/300/image016.png)
 ![](images/300/image017.png)
@@ -85,6 +97,14 @@ Now, a summary of the new Integration is presented. Review it and click "Done".
 ![](images/300/image019.png)
 ![](images/300/image020.png)
 ![](images/300/image021.png)
+![](images/300/image022.png)
+![](images/300/image023.png)
+![](images/300/image024.png)
+![](images/300/image025.png)
+![](images/300/image026.png)
+![](images/300/image027.png)
+![](images/300/image028.png)
+![](images/300/image029.png)
 
 
 
