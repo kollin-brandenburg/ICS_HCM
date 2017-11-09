@@ -178,73 +178,102 @@ Copy paste one of the below request in the 'Request 1 section'.
 
 ---
 
+
+
 ![](images/400/image107.png)
 
-**3.7** Next we need to add the authorization credentials so ICS will allow the request from SoapUI.  ICS uses basic username/password authentication.
+**1.2.8** Next we need to add the authorization credentials so ICS will allow the request from SoapUI.  ICS uses basic username/password authentication.
 
-**3.8** Click on the **Auth** button in the lower-left of the **Request 1** SoapUI window
+**1.2.9** Click on the **Auth** button in the lower-left of the **Request 1** SoapUI window
 
-**3.9** In the **Authorization** dropdown, select _Add New Authorization..._
+**1.2.10** In the **Authorization** dropdown, select _Add New Authorization..._
 
-![](images/300/image093.png)
+![](images/400/image108.png)
 
-**3.10** In the **Add Authorization** dialog pop-up window, select **Type** of _Basic_ form the picklist, then select the **OK** button.
+**1.2.11** In the **Add Authorization** dialog pop-up window, select **Type** of _Basic_ form the picklist, then select the **OK** button.
 
-![](images/300/image094.png)
+![](images/400/image109.png)
 
-**3.11** Fill in your assigned username and password in the **Auth (Basic)** window at the bottom of the SoapUI request window
+**1.2.12** Fill in your assigned username and password in the **Auth (Basic)** window at the bottom of the SoapUI request window
 
-![](images/300/image095.png)
+![](images/400/image110.png)
 
-**3.12** ICS needs two headers in the request payload to satisfy the enforced Web Services Security (WSS) standards.  It needs both the **WSS Username Token** and the **WS-Timestamp**.
+**1.2.13** ICS needs two headers in the request payload to satisfy the enforced Web Services Security (WSS) standards.  It needs both the **WSS Username Token** and the **WS-Timestamp**.
 
-**3.13** Insert the **WSS Username Token** by right-clicking in the Request payload body and select **Add WSS Username Token** from the pull-down list
+**1.2.14** Insert the **WSS Username Token** by right-clicking in the Request payload body and select **Add WSS Username Token** from the pull-down list
 
-![](images/300/image096.png)
+![](images/400/image096.png)
 
-**3.14** In the **Specify Password Type** dialog pop-up window, select _PasswordText_ as the WSS Username Token type, then click on the **OK** button.
+**1.2.15** In the **Specify Password Type** dialog pop-up window, select _PasswordText_ as the WSS Username Token type, then click on the **OK** button.
 
-![](images/300/image097.png)
+![](images/400/image097.png)
 
-**3.15** Insert the **WS-Timestamp** by right-clicking in the Request payload body and select **Add WS-Timestamp** from the pull-down list
+**1.2.16** Insert the **WS-Timestamp** by right-clicking in the Request payload body and select **Add WS-Timestamp** from the pull-down list
 
-![](images/300/image098.png)
+![](images/400/image098.png)
 
-**3.16** In the **Specify Time-To-Live value** dialog pop-up window, set the value (in milliseconds) to _60000_ (60 seconds), then click on the **OK** button.
+**1.2.17** In the **Specify Time-To-Live value** dialog pop-up window, set the value (in milliseconds) to _60000_ (60 seconds), then click on the **OK** button.
 
-![](images/300/image099.png)
+![](images/400/image099.png)
 
-**3.17** Finally your request payload is ready to send to ICS.
+**1.2.18** Finally your request payload is ready to send to ICS.
 
-**3.18** Click on the green _Submit Request_ arrow in the upper left of the **Request 1** window.
+**1.2.19** Click on the green _Submit Request_ arrow in the upper left of the **Request 1** window.
 
-![](images/300/image100.png)
+![](images/400/image111.png)
 
-**3.19** The right side of the **Request 1** SoapUI window will display the results of the ICS integration call.
+**1.2.20** The right side of the **Request 1** SoapUI window will display the results of the ICS integration call.
 
-**3.20** The return payload of the ICS integration will show the Order Number and the status of `S` for _Success_.
+**1.2.21** The return payload of the ICS integration will show the Job ID Number.
 
-![](images/400/image078.png)
+![](images/400/image112.png)
 
-### **3.2:**	Verify the Order was Created in EBS
+### **1.3:** Verify in HCM
+
+To verify data is actually loaded into HCM and associated with the right person, we need to access HCM web UI
 
 ---
 
-**3.2.1** Login to EBS using the endpoint and credentials provided to you by the workshop organizer.  You will use the user *operations*.
+**1.3.1** Log into the HCM Cloud application using the details:
 
-- *NOTE:* For the EBS instance used in this workshop, the Oracle Single Sign-On system is used to regulate access.  Unless individual users are explicitly added to have access to the EBS system, they will not be able to access the following EBS login page.  If you can't access the login page with your Oracle SSO login, then you can look at the following screenshots to see how you would be able to see your Order in an EBS R12.2 system.
+URL - https://ucf6-fap0868-fs.oracledemos.com/homePage/faces/AtkHomePageWelcome
 
-![](images/400/image79.png)
+Login as a HR Specialist - betty.anderson
 
-**3.2.2** Select the EBS Responsibility *Order Management, HTML User Interface*:
+password - sHj53464
 
-![](images/400/image80.png)
+![](images/400/image113.png)
 
-**3.2.3** Examine the list in the *Open Orders* report and verify that your new order shows up in the list.
+**1.3.2** You will see the home page. Select the `Hamburger` menu icon on left and within the navigator manual click on profiles under 'My Workforce'.
 
-Note that the _Order Amount_ shown is larger than that of the quote because of shipping costs and taxes that were added automatically by EBS .
+![](images/400/image114.png)
 
-![](images/400/image81.png)
+**1.3.3** Search for the person “doug” targeted in the data loading and you see “Additional Qualifications” section is added to that person’s profile.
+
+![](images/400/image115.png)
+
+
+**1.3.4** Click on “Edit “ to check the description.
+
+![](images/400/image116.png)
+
+
+**1.3.5** Testing is complete. Below given steps is additional info on debugging issues. If you want to debug  the data load issues  click on navigator and under 'My Workforce' click on 'Data Exchange' to check the data uploaded process details  using HCM user betty.anderson
+
+![](images/400/image117.png)
+
+
+**1.3.6** Click on task icon on the right hand side of the page.
+
+![](images/400/image118.png)
+
+
+**1.3.7** Click on Import and load data. The summary of data upload is shown. The status and process details can be seen. Logs can also be downloaded to debug issues.
+
+![](images/400/image119.png)
+![](images/400/image120.png)
+
+
 
 You have now completed the final lab of the ICS Developer Workshop.  
 
