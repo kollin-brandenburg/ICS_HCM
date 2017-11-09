@@ -99,17 +99,37 @@ Edit the "Name" field of the new variable to "fileName". Then, click the pen ico
 ![](images/300/image016.png)
 
 In the "Expression" field, enter the following:
-concat("TP", fn:year-from-dateTime(fn:current-dateTime()), fn:month-from-dateTime(fn:current-dateTime()), fn:day-from-dateTime(fn:current-dateTime()), fn:hours-from-dateTime(fn:current-dateTime()), fn:minutes-from-dateTime(fn:current-dateTime()), xsd:integer(fn:seconds-from-dateTime(fn:current-dateTime())))
+
+concat("TP_UserXX", fn:year-from-dateTime(fn:current-dateTime()), fn:month-from-dateTime(fn:current-dateTime()), fn:day-from-dateTime(fn:current-dateTime()), fn:hours-from-dateTime(fn:current-dateTime()), fn:minutes-from-dateTime(fn:current-dateTime()), xsd:integer(fn:seconds-from-dateTime(fn:current-dateTime())))
 
 ![](images/300/image017.png)
+
+Please be sure to replace "TP" with "TP_UserXX", where "XX" represents your initials.
+
 ![](images/300/image018.png)
 
+Click "Validate".
 
 ![](images/300/image019.png)
+
+The expression is now valid and ready to use. Click "Close" in the top right.
+
 ![](images/300/image020.png)
+
+Click "Close" again.
+
 ![](images/300/image021.png)
+
+Now, click "Invoke"
+
 ![](images/300/image022.png)
+
+Test
+
 ![](images/300/image023.png)
+
+Test
+
 ![](images/300/image024.png)
 ![](images/300/image025.png)
 ![](images/300/image026.png)
