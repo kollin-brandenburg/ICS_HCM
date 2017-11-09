@@ -1,5 +1,5 @@
 <img class="float-right" src="https://oracle.github.io/learning-library/workshops/common-content/images/touch-the-cloud/ttc-logo.png" width="200">
-# Lab 300 - Create an ICS Integration using a Database Adapter
+# Lab 300 - 
 
 ---
 
@@ -16,7 +16,7 @@ If the integration is not activated, click on the slider to activate the integra
 
 ---Added by RW---
 
-In the top right of the Integrations page, click “Create”.
+**1.3.1** In the top right of the Integrations page, click “Create”.
 
 ![](images/300/image300.png)
 
@@ -28,17 +28,26 @@ Enter the integration name “ICSHCM Add Talent Profile” and click “Create�
 
 ![](images/300/image302.png)
 
-Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be "addTalentProfileData".
+**1.3.2** Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be "addTalentProfileData".
 
 ![](images/300/image303.png)
-(MODIFY SCREENSHOT)
+(MODIFY THIS SCREENSHOT TO SHOW DRAG & DROP)
 
-The next step in the orchestration will be assigning the file name. There are two file names involved in the HCM Data Loader. First, the zip file name can be any name with a zip extension. The second file name is the actual data file contained in the zip file. The HCM Data Loader defines a file name for each data object. In our case, the data file name must be "TalentProfile.dat". In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”.
+**1.3.3** The next step in the orchestration is assigning the file name. There are two file names involved in the HCM Data Loader. First, the zip file name can be any name with a zip extension. The second file name is the actual data file contained in the zip file. The HCM Data Loader defines a file name for each data object. In our case, the data file name must be "TalentProfile.dat". In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”.
 
 (ADD SCREENSHOT)
 
-Next, 
+**1.3.4** The third step maps input XML data to a full XML data set that contains additional metadata labels required by HDL. 
 
+(ADD SCREENSHOT)
+
+Below is a picture of the mapper UI.
+
+![](images/300/image114.png)
+
+Now, click Close to return to the map screen.
+
+**1.3.5** 
 
 
 ---
