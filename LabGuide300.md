@@ -1,6 +1,46 @@
 # Lab 300 - Create Integration Flow
 
 ---
+## Check your Connections
+
+### Part 1: Create the ICS Connections
+
+ **1.1**: Login to the ICS Service Console
+
+ ---
+
+ **1.1.1** If you are not already logged in: From your browser (Firefox or Chrome recommended) login to the ICS Console using the following URL:
+ <https://ttcics-gse00011451.integration.us2.oraclecloud.com/ics/faces/global>
+
+ **1.1.2** Enter your `User Name` and `Password` and click **Sign In**
+
+ ***NOTE:*** the **User Name and Password** values will be given to you by your instructor.
+
+ ![](images/300/image003.png)  
+
+ **1.1.3** You may be presented with the tutorial overlay for the ICS Service Console - since we already went through ICS in Lab 100, dismiss the tutorial by clicking on _Got It!_
+
+ ![](images/300/image004d.png)
+
+ **1.1.4** You will now be presented with the ICS Service Console from which you will be performing the rest of this workshop lab.
+
+  ![](images/300/image004c.png)
+
+ **1.2**:Check your Connections
+
+  **1.1** From the Integration Cloud Dashboard, click on the "Connections".
+  ICS console will be loaded in new window.
+ If you see anything other than green checks, then go back to the previous steps
+
+  ![](images/300/image102.png)
+
+ **1.3**:ICS and HCM Connections
+
+  **1.3** Now go back to the dashboard and go to the "Integrations". Click on “ICSHCM_Add Talent Profile” or search if it is not in view on the screen.
+
+----
+
+### ICS Development
 
 **1.3.1** In the top right of the Integrations page, click “Create”.
 
@@ -23,7 +63,7 @@ Now, we will edit the orchestration for this integration. The first step is to s
 
 (ADD SCREENSHOT)
 
-**1.3.3** The third step maps input XML data to a full XML data set that contains additional metadata labels required by HDL. 
+**1.3.3** The third step maps input XML data to a full XML data set that contains additional metadata labels required by HDL.
 
 (ADD SCREENSHOT)
 
@@ -55,7 +95,7 @@ Click on "Next" to move to move to the next screen.
 
 Now, click "Close" to return to the map screen.
 
-**1.3.5** The fifth step of the orchestration involves zipping the HDL file. 
+**1.3.5** The fifth step of the orchestration involves zipping the HDL file.
 
 ![](images/300/image122.png)
 
@@ -100,7 +140,7 @@ At this point of the integration, a Base64 encoded text representing the zipped 
 
 ![](images/300/image311.png)
 
-Step 11 executes a SOAP call to UCM to upload the zip file. (UploadHDLFileToUCM) 
+Step 11 executes a SOAP call to UCM to upload the zip file. (UploadHDLFileToUCM)
 
 ![](images/300/image312.png)
 
@@ -142,7 +182,7 @@ Click on the info icon and note the endpoint url.
 
 ---
 
-NEXT PART IS TESTING IN SOAP UI 
+NEXT PART IS TESTING IN SOAP UI
 
 ---
 
