@@ -96,15 +96,15 @@ UploadHDLFileToUCM (Mapper) - Step 9 does the actual read operation. It encodes 
 
 ![](images/300/image310.png)
 
-At this point of the integration, a Base64 encoded text representing the zipped HDL data is ready to be uploaded to UCM. This step creates the XML payload required to invoke UCM Generic Soap Service to check in (upload) the file. The most import fields are
-•	dDocName: its value is used as content ID for this document. Content ID is required in invoking HCM importAndLoadData SOAP service.
-•	Contents: this field contains the actual Base64 encoded HDL data
+At this point of the integration, a Base64 encoded text representing the zipped HDL data is ready to be uploaded to UCM. This step creates the XML payload required to invoke UCM Generic Soap Service to check in (upload) the file. The two most import fields are as follows: 1) dDocName: its value is used as content ID for this document. Content ID is required in invoking HCM importAndLoadData SOAP service. 2) Contents: this field contains the actual Base64 encoded HDL data.
 
 ![](images/300/image311.png)
 
-UploadHDLFileToUCM - Step 11 executes a SOAP call to UCM to upload the zip file.
+(UploadHDLFileToUCM) Step 11 executes a SOAP call to UCM to upload the zip file.
 
 ![](images/300/image312.png)
+
+(ScheduleImportProcessHcm - Mapper)  This step prepares XML payload for invoking HCM SOAP Data Loader. The required Content ID value should be taken from the dDocName field from the UCM XML payload. A sample of generated XML payload is at sample-hcm-payload.xml.
 
 When complete, the entire integration flow should look like this:
 
