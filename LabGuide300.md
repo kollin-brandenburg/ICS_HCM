@@ -53,8 +53,51 @@ Click on "Next" to move to move to the next screen.
 
 ![](images/300/image121.png)
 
-Now click "Close" to return to the map screen.
+Now, click "Close" to return to the map screen.
 
+**1.3.5** The fifth step of the orchestration involves zipping the HDL file. 
+
+![](images/300/image122.png)
+
+Click through the "Next" buttons to move through the prompt screens, and then finally "close" to close the screen.
+
+![](images/300/image123.png)
+
+**1.3.6** Click on the “map to ftpSendZippedHDLFile” and click on the eye again to open up the prompt.
+
+![](images/300/image124.png)
+
+Now click through the "Next" to move through the prompt screens and then finally "close" to close the screen.
+
+![](images/300/image125.png)
+
+**1.10** Click on the “ftpSendZippedHDLFile” and click on the eye again to open up the prompt.
+
+![](images/300/image126.png)
+
+Step 7 sends the zipped HDL file from ICS local drive to the FTP server. Notice the File Name Pattern is set. But in our implementation, this default file name pattern is overridden by the file name in the input XML data set in the Step 6.
+
+
+Now click through the "Next" to move through the prompt screens and then finally "close" to close the screen.
+
+![](images/300/image127.png)
+
+**1.11** Click on the “ftpSendZippedHDLFile” and click on the eye again to open up the prompt.
+
+![](images/300/image128.png)
+
+Step 8 maps the file name and directory from the output of Step 7 to the input of Step 9. The mapping should look like the following:
+
+![](images/300/image129.png)
+
+Now click through the "Next" to move through the prompt screens and then finally "close" to close the screen.
+
+
+When complete, the entire integration flow should look like this:
+
+![](images/300/image105.png)
+![](images/300/image106.png)
+![](images/300/image107.png)
 
 ---
 
