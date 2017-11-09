@@ -15,16 +15,16 @@ Enter the integration name “ICSHCM Add Talent Profile” and click “Create�
 
 ![](images/300/image302.png)
 
-**1.3.2** Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be "addTalentProfileData".
+Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be "addTalentProfileData".
 
 ![](images/300/image303.png)
 (MODIFY THIS SCREENSHOT TO SHOW DRAG & DROP)
 
-**1.3.3** The next step in the orchestration is assigning the file name. There are two file names involved in the HCM Data Loader. First, the zip file name can be any name with a zip extension. The second file name is the actual data file contained in the zip file. The HCM Data Loader defines a file name for each data object. In our case, the data file name must be "TalentProfile.dat". In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”.
+**1.3.2** The next step in the orchestration is assigning the file name. There are two file names involved in the HCM Data Loader. First, the zip file name can be any name with a zip extension. The second file name is the actual data file contained in the zip file. The HCM Data Loader defines a file name for each data object. In our case, the data file name must be "TalentProfile.dat". In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”.
 
 (ADD SCREENSHOT)
 
-**1.3.4** The third step maps input XML data to a full XML data set that contains additional metadata labels required by HDL. 
+**1.3.3** The third step maps input XML data to a full XML data set that contains additional metadata labels required by HDL. 
 
 (ADD SCREENSHOT)
 
@@ -34,7 +34,27 @@ Below is a picture of the mapper UI.
 
 Now, click Close to return to the map screen.
 
-**1.3.5** 
+**1.3.4** The fourth step uses an early adopter feature called the Stage File. The Stage File activity allows read, write, and zip operations to files local to the ICS instance. When reading and writing files, the Stage File allows the translation of file content between XML and the native format via a native schema file (.nxsd). For common native formats such CSV (Comma Separated Values), the Stage File supplies a mapping tool for drag-and-drop mapping. At this step of integration, the Stage File is used to write the full XML data set with labels from step 3 to a temporary file with a translation defined by hcm-talentprofile.nxsd. The resulting HDL Format data file looks like TalentProfile.dat. Notice that the file name is fixed to TalentProfile.dat as required by HCM Data Loader.
+
+![](images/300/image117.png)
+
+Click on "Next" to move to move to the next screen.
+
+![](images/300/image118.png)
+
+Click on "Next" to move to move to the next screen.
+
+![](images/300/image119.png)
+
+Click on "Next" to move to move to the next screen.
+
+![](images/300/image120.png)
+
+Click on "Next" to move to move to the next screen.
+
+![](images/300/image121.png)
+
+Now click "Close" to return to the map screen.
 
 
 ---
