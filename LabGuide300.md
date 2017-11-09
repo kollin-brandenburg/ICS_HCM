@@ -118,7 +118,13 @@ Finally, map the process ID returned from HCM to response XML payload. (addTalen
 
 This node ends the entire integration and returns response message to caller. (addTalentProfileData)
 
+Now, we can exit the integration.
 
+![](images/300/image316.png)
+
+Then, click on the radio button to activate the integration.
+
+![](images/300/image317.png)
 
 When complete, the entire integration flow should look like this:
 
