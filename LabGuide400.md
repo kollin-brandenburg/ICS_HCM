@@ -1,6 +1,5 @@
 <img class="float-right" src="https://oracle.github.io/learning-library/workshops/common-content/images/touch-the-cloud/ttc-logo.png" width="200">
 # Lab 400 - HCM Integration
----
 
 ## Introduction
 
@@ -16,7 +15,7 @@ Before we start testing the integration, you need to activate the integration fo
 
 ![](images/400/image100.png)
 
-**1.2** Make sure to tick "enable tracing" and "include payload" when the window pops up.
+**1.2** Make sure to tick "enable tracing" and "include payload" when the window pops up. Click on the activate button to activate it.
 
 ![](images/400/image101.png)
 
@@ -59,125 +58,125 @@ Before we start testing the integration, you need to activate the integration fo
 Copy paste one of the below request in the 'Request 1 section'.
 
 
-1. Request  payload for Athlete:
+**1. Request  payload for Athlete:**
 
 
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
-<soapenv:Header>
+	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
+	<soapenv:Header>
 
-</soapenv:Header>
-<soapenv:Body>
-<tal:TalentProfileData>
-<tal:TalentProfile>
-<tal:PersonNumber>98</tal:PersonNumber>
-<tal:ProfileTypeCode>PERSON</tal:ProfileTypeCode>
-<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-<tal:ProfileStatusCode>A</tal:ProfileStatusCode>
-<tal:ProfileUsageCode>P</tal:ProfileUsageCode>
-</tal:TalentProfile>
-<!--1 or more repetitions:-->
-<tal:ProfileItem>
-<tal:SourceSystemOwner>ICS_HCM_GSE</tal:SourceSystemOwner>
+	</soapenv:Header>
+	<soapenv:Body>
+	<tal:TalentProfileData>
+	<tal:TalentProfile>
+	<tal:PersonNumber>98</tal:PersonNumber>
+	<tal:ProfileTypeCode>PERSON</tal:ProfileTypeCode>
+	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
+	<tal:ProfileStatusCode>A</tal:ProfileStatusCode>
+	<tal:ProfileUsageCode>P</tal:ProfileUsageCode>
+	</tal:TalentProfile>
+	<!--1 or more repetitions:-->
+	<tal:ProfileItem>
+	<tal:SourceSystemOwner>ICS_HCM_GSE</tal:SourceSystemOwner>
 
-<tal:SourceSystemId>ADDITIONAL_QUALIFICATIONS_98_ATHELETE</tal:SourceSystemId>
-<!--Make sure that SourceSystemId is always unique-->
-<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-<tal:ContentType>ADDITIONAL_QUALIFICATIONS</tal:ContentType>
+	<tal:SourceSystemId>ADDITIONAL_QUALIFICATIONS_98_ATHELETE</tal:SourceSystemId>
+	<!--Make sure that SourceSystemId is always unique-->
+	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
+	<tal:ContentType>ADDITIONAL_QUALIFICATIONS</tal:ContentType>
 
-<!--Can use inputs like Artist or Photographer (OOTB created) -->
+	<!--Can use inputs like Artist or Photographer (OOTB created) -->
 
-<tal:ContentItem>Athlete</tal:ContentItem>
-<tal:DateFrom>2017/05/31</tal:DateFrom>
+	<tal:ContentItem>Athlete</tal:ContentItem>
+	<tal:DateFrom>2017/05/31</tal:DateFrom>
 
-<!--Enter description of your choice-->
+	<!--Enter description of your choice-->
 
-<tal:ItemText24010>I'm an athlete </tal:ItemText24010>
-</tal:ProfileItem>
-</tal:TalentProfileData>
-</soapenv:Body>
-</soapenv:Envelope>
+	<tal:ItemText24010>I'm an athlete </tal:ItemText24010>
+	</tal:ProfileItem>
+	</tal:TalentProfileData>
+	</soapenv:Body>
+	</soapenv:Envelope>
 
-2. Request  payload for Artist:
-
-
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
-<soapenv:Header>
-
-</soapenv:Header>
-<soapenv:Body>
-<tal:TalentProfileData>
-<tal:TalentProfile>
-<tal:PersonNumber>98</tal:PersonNumber>
-<tal:ProfileTypeCode>PERSON</tal:ProfileTypeCode>
-<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-<tal:ProfileStatusCode>A</tal:ProfileStatusCode>
-<tal:ProfileUsageCode>P</tal:ProfileUsageCode>
-</tal:TalentProfile>
-<!--1 or more repetitions:-->
-<tal:ProfileItem>
-<tal:SourceSystemOwner>ICS_HCM_GSE</tal:SourceSystemOwner>
-
-<tal:SourceSystemId>ADDITIONAL_QUALIFICATIONS_98_ARTIST</tal:SourceSystemId>
-<!--Make sure that SourceSystemId is always unique-->
-<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-<tal:ContentType>ADDITIONAL_QUALIFICATIONS</tal:ContentType>
-
-<!--Can use inputs like Artist or Photographer (OOTB created) -->
-
-<tal:ContentItem>Artist</tal:ContentItem>
-<tal:DateFrom>2017/05/31</tal:DateFrom>
-
-<!--Enter description of your choice-->
-
-<tal:ItemText24010>I'm a painter </tal:ItemText24010>
-</tal:ProfileItem>
-</tal:TalentProfileData>
-</soapenv:Body>
-</soapenv:Envelope>
+**2. Request  payload for Artist:**
 
 
+	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
+	<soapenv:Header>
+
+	</soapenv:Header>
+	<soapenv:Body>
+	<tal:TalentProfileData>
+	<tal:TalentProfile>
+	<tal:PersonNumber>98</tal:PersonNumber>
+	<tal:ProfileTypeCode>PERSON</tal:ProfileTypeCode>
+	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
+	<tal:ProfileStatusCode>A</tal:ProfileStatusCode>
+	<tal:ProfileUsageCode>P</tal:ProfileUsageCode>
+	</tal:TalentProfile>
+	<!--1 or more repetitions:-->
+	<tal:ProfileItem>
+	<tal:SourceSystemOwner>ICS_HCM_GSE</tal:SourceSystemOwner>
+
+	<tal:SourceSystemId>ADDITIONAL_QUALIFICATIONS_98_ARTIST</tal:SourceSystemId>
+	<!--Make sure that SourceSystemId is always unique-->
+	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
+	<tal:ContentType>ADDITIONAL_QUALIFICATIONS</tal:ContentType>
+
+	<!--Can use inputs like Artist or Photographer (OOTB created) -->
+
+	<tal:ContentItem>Artist</tal:ContentItem>
+	<tal:DateFrom>2017/05/31</tal:DateFrom>
+
+	<!--Enter description of your choice-->
+
+	<tal:ItemText24010>I'm a painter </tal:ItemText24010>
+	</tal:ProfileItem>
+	</tal:TalentProfileData>
+	</soapenv:Body>
+	</soapenv:Envelope>
 
 
 
-3. Request  payload for Photographer:
 
 
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
-<soapenv:Header>
-
-</soapenv:Header>
-<soapenv:Body>
-<tal:TalentProfileData>
-<tal:TalentProfile>
-<tal:PersonNumber>98</tal:PersonNumber>
-<tal:ProfileTypeCode>PERSON</tal:ProfileTypeCode>
-<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-<tal:ProfileStatusCode>A</tal:ProfileStatusCode>
-<tal:ProfileUsageCode>P</tal:ProfileUsageCode>
-</tal:TalentProfile>
-<!--1 or more repetitions:-->
-<tal:ProfileItem>
-<tal:SourceSystemOwner>ICS_HCM_GSE</tal:SourceSystemOwner>
-
-<tal:SourceSystemId>ADDITIONAL_QUALIFICATIONS_98_PHOTOGRAPHER</tal:SourceSystemId>
-<!--Make sure that SourceSystemId is always unique-->
-<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-<tal:ContentType>ADDITIONAL_QUALIFICATIONS</tal:ContentType>
-
-<!--Can use inputs like Artist or Photographer (OOTB created) -->
-
-<tal:ContentItem>Photographer</tal:ContentItem>
-<tal:DateFrom>2017/05/31</tal:DateFrom>
-
-<!--Enter description of your choice-->
-
-<tal:ItemText24010>I'm a wild life photographer </tal:ItemText24010>
-</tal:ProfileItem>
-</tal:TalentProfileData>
-</soapenv:Body>
-</soapenv:Envelope>
+**3. Request  payload for Photographer:**
 
 
+	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
+	<soapenv:Header>
+
+	</soapenv:Header>
+	<soapenv:Body>
+	<tal:TalentProfileData>
+	<tal:TalentProfile>
+	<tal:PersonNumber>98</tal:PersonNumber>
+	<tal:ProfileTypeCode>PERSON</tal:ProfileTypeCode>
+	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
+	<tal:ProfileStatusCode>A</tal:ProfileStatusCode>
+	<tal:ProfileUsageCode>P</tal:ProfileUsageCode>
+	</tal:TalentProfile>
+	<!--1 or more repetitions:-->
+	<tal:ProfileItem>
+	<tal:SourceSystemOwner>ICS_HCM_GSE</tal:SourceSystemOwner>
+
+	<tal:SourceSystemId>ADDITIONAL_QUALIFICATIONS_98_PHOTOGRAPHER</tal:SourceSystemId>
+	<!--Make sure that SourceSystemId is always unique-->
+	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
+	<tal:ContentType>ADDITIONAL_QUALIFICATIONS</tal:ContentType>
+
+	<!--Can use inputs like Artist or Photographer (OOTB created) -->
+
+	<tal:ContentItem>Photographer</tal:ContentItem>
+	<tal:DateFrom>2017/05/31</tal:DateFrom>
+
+	<!--Enter description of your choice-->
+
+	<tal:ItemText24010>I'm a wild life photographer </tal:ItemText24010>
+	</tal:ProfileItem>
+	</tal:TalentProfileData>
+	</soapenv:Body>
+	</soapenv:Envelope>
+
+---
 
 ![](images/400/image107.png)
 
