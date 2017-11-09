@@ -48,7 +48,7 @@
 
 Select the “Orchestration” style/pattern.
 
-![](images/300/image301.png)
+![](images/300/image325.png)
 
 Enter the integration name “ICSHCM Add Talent Profile_XX”, replacing "XX" with your initials. Then, click “Create”.
 
