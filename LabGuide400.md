@@ -55,7 +55,9 @@ Before we start testing the integration, you need to activate the integration fo
 
 **1.2.7** We will be using one of the below 3 sample requests for testing each having different content item.
 
-Copy paste one of the below request in the 'Request 1 section'.
+Copy paste one of the below request in the 'Request 1 section'. 
+
+Note: Each request for Athlete or Artist or Photographer has UserXX added so that each user request is treated as a unique request and each user can verify the same user name in the HCM too.
 
 
 **1. Request  payload for Athlete:**
