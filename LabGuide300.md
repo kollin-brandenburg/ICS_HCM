@@ -118,7 +118,7 @@ Now click through the "Next" to move through the prompt screens and then finally
 
 ![](images/300/image126.png)
 
-Step 7 sends the zipped HDL file from ICS local drive to the FTP server. Notice the File Name Pattern is set. But in our implementation, this default file name pattern is overridden by the file name in the input XML data set in the Step 6.
+Step 7 sends the zipped HDL file from ICS local drive to the FTP server. Notice the File Name Pattern is set. But in our implementation, this default file name pattern is overridden by the file name in the input XML data set in the Step 6. 
 
 
 Now click through the "Next" to move through the prompt screens and then finally "close" to close the screen.
