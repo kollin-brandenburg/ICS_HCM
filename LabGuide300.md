@@ -58,19 +58,19 @@ Now, we will edit the orchestration for this integration. The first step is to s
 
 ![](images/300/image323.png)
 
-The Wizard for configuring the SOAP endpoint will now appear. Enter the name "addTalentProfileData", as shown below.
+The Wizard for configuring the SOAP endpoint will now appear. Enter the name "addTalentProfileData", as shown below, and click "Next" at the top.
 
 ![](images/300/image322.png)
 
-Next, on the Operations page, ensure that "Disable SoapAction Validation" is set to "No".
+Next, on the Operations page, ensure that "Disable SoapAction Validation" is set to "No". Then, click "Next".
 
 ![](images/300/image008.png)
 
-On the Headers page, apply the following setting:
+On the Headers page, ensure that the following is set to "No", and click "Next".
 
 ![](images/300/image009.png)
 
-Now, a summary of the new Integration is presented.
+Now, a summary of the new Integration is presented. Review it and click "Done".
 
 ![](images/300/image010.png)
 
