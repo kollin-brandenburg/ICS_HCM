@@ -295,29 +295,29 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ---
 
-**1.3.6.1** Select the `Tracking` link in the navigation bar on the left
+**1.3.5.1** Select the `Tracking` link in the navigation bar on the left
 
 ![](images/100/image030.png)
 
-**1.3.6.2** The ICS `Tracking` monitor page shows all integration flows that have been executed.
+**1.3.5.2** The ICS `Tracking` monitor page shows all integration flows that have been executed.
 
-**1.3.6.3** Select the chevron just to the right of the *Tracking* label at the top of the page to change the granularity of the Tracking report to `Last 6 Hours`
+**1.3.5.3** Select the chevron just to the right of the *Tracking* label at the top of the page to change the granularity of the Tracking report to `Last 6 Hours`
 
 ![](images/100/image031.png)
 
-**1.3.6.4** Next, drill into a `COMPLETED` integration flow by selecting the integration name.
+**1.3.5.4** Next, drill into a `COMPLETED` integration flow by selecting the integration name.
 
 ![](images/100/image032.png)
 
-**1.3.6.5** We can now see that all steps in the this ICS integration flow were successful because the arrow is green highlighting all the orchestration flow steps.
+**1.3.5.5** We can now see that all steps in the this ICS integration flow were successful because the arrow is green highlighting all the orchestration flow steps.
 
 ![](images/100/image033.png)
 
-**1.3.6.6** Select the `Close` button to go back to the ICS monitoring page.
+**1.3.5.6** Select the `Close` button to go back to the ICS monitoring page.
 
 ![](images/100/image034.png)
 
-**1.3.6.7** We are now done exploring the ICS monitoring features.
+**1.3.5.7** We are now done exploring the ICS monitoring features.
 
 You now have used Oracle Integration Cloud Service to explore an integration to HCM Cloud by taking in external data feeds, correctly formatting it for HCM Cloud.
 
