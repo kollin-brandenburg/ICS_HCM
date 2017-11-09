@@ -1,4 +1,4 @@
-# Lab 300
+# Lab 300 - Create Integration Flow
 
 ---
 
