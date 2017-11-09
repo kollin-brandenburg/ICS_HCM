@@ -1,6 +1,6 @@
 <center>
 <img src="https://cloudaccelerate.github.io/TTC-CommonContent/images/ttc-logo.png" />
-</center> 
+</center>
 
 #Step-by-step Instructions
 
@@ -8,7 +8,7 @@
 
 **To View in Interactive Labguide Format:**  
 
-[GitHub IO Pages](https://rebrand.ly/ttcicslab)
+[GitHub IO Pages](https://zhamburglar.github.io/ICSHCMWorkshop/)
 
 # ICS-HCM Integration Deep Dive
 
@@ -52,4 +52,3 @@ The objective of this lab is to expose you to the:
 ### Objectives
 
 - **Explore Integration Cloud Service by taking the external data and format it to HCM Cloud service**
-
