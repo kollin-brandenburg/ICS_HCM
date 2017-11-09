@@ -132,6 +132,17 @@ When complete, the entire integration flow should look like this:
 ![](images/300/image106.png)
 ![](images/300/image107.png)
 
+Next, enable tracing and click on "Activate".
+
+![](images/300/image318.png)
+
+Click on the info icon and note the endpoint url.
+
+![](images/300/image319.png)
+
+---
+
+NEXT PART IS TESTING IN SOAP UI 
 
 ---
 
