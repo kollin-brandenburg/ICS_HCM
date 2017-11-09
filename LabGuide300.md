@@ -86,14 +86,25 @@ Next, click the "Actions" tab in the right-hand side menu to expand it. Drag and
 
 ![](images/300/image013.png)
 
-You are now prompted to provide a name for the new action.
+You are now prompted to name the new action. Please call it "AssignFileName".
 
 ![](images/300/image014.png)
 
+Next, click the + icon to add a new variable.
+
 ![](images/300/image015.png)
+
+Edit the "Name" field of the new variable to "fileName". Then, click the pen icon to the right.
+
 ![](images/300/image016.png)
+
+In the "Expression" field, enter the following:
+concat("TP", fn:year-from-dateTime(fn:current-dateTime()), fn:month-from-dateTime(fn:current-dateTime()), fn:day-from-dateTime(fn:current-dateTime()), fn:hours-from-dateTime(fn:current-dateTime()), fn:minutes-from-dateTime(fn:current-dateTime()), xsd:integer(fn:seconds-from-dateTime(fn:current-dateTime())))
+
 ![](images/300/image017.png)
 ![](images/300/image018.png)
+
+
 ![](images/300/image019.png)
 ![](images/300/image020.png)
 ![](images/300/image021.png)
