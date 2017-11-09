@@ -55,7 +55,9 @@ Before we start testing the integration, you need to activate the integration fo
 
 **1.2.7** We will be using one of the below 3 sample requests for testing each having different content item.
 
-Copy paste one of the below request in the 'Request 1 section'.
+Copy paste one of the below request in the 'Request 1 section'. 
+
+Note: Each request for Athlete or Artist or Photographer has UserXX added so that each user request is treated as a unique request and each user can verify the same user name in the HCM too.
 
 
 **1. Request  payload for Athlete:**
@@ -85,7 +87,7 @@ Copy paste one of the below request in the 'Request 1 section'.
 
 	<!--Can use inputs like Artist or Photographer (OOTB created) -->
 
-	<tal:ContentItem>Athlete</tal:ContentItem>
+	<tal:ContentItem>AthleteUserXX</tal:ContentItem>
 	<tal:DateFrom>2017/05/31</tal:DateFrom>
 
 	<!--Enter description of your choice-->
@@ -123,7 +125,7 @@ Copy paste one of the below request in the 'Request 1 section'.
 
 	<!--Can use inputs like Artist or Photographer (OOTB created) -->
 
-	<tal:ContentItem>Artist</tal:ContentItem>
+	<tal:ContentItem>ArtistUserXX</tal:ContentItem>
 	<tal:DateFrom>2017/05/31</tal:DateFrom>
 
 	<!--Enter description of your choice-->
@@ -165,7 +167,7 @@ Copy paste one of the below request in the 'Request 1 section'.
 
 	<!--Can use inputs like Artist or Photographer (OOTB created) -->
 
-	<tal:ContentItem>Photographer</tal:ContentItem>
+	<tal:ContentItem>PhotographerUserXX</tal:ContentItem>
 	<tal:DateFrom>2017/05/31</tal:DateFrom>
 
 	<!--Enter description of your choice-->
@@ -240,7 +242,7 @@ URL - https://ucf6-fap0868-fs.oracledemos.com/homePage/faces/AtkHomePageWelcome
 
 Login as a HR Specialist - betty.anderson
 
-password - sHj53464
+password - Please ask the instructor for the password or look into the supplement provided by the instructor.
 
 ![](images/400/image113.png)
 
