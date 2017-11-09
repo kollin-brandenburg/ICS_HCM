@@ -120,17 +120,15 @@ Click "Close" again.
 
 ![](images/300/image021.png)
 
-Now, click "Invoke"
+Now, click "Invoke" in the right-hand side menu to expand it.
 
 ![](images/300/image022.png)
 
-Test
-
-![](images/300/image023.png)
-
-Test
+Under FTP, find "ICSHCM-POC-FTP_UserXX". Drag and drop it into the orchestration as follows: 
 
 ![](images/300/image024.png)
+
+
 ![](images/300/image025.png)
 ![](images/300/image026.png)
 ![](images/300/image027.png)
