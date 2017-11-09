@@ -1,20 +1,7 @@
 <img class="float-right" src="https://oracle.github.io/learning-library/workshops/common-content/images/touch-the-cloud/ttc-logo.png" width="200">
-# Lab 300 - 
+# Lab 300
 
 ---
-
-### **1.3** ICS and HCM Connections
-
-**1.3** Now, return to the dashboard and click "Integrations". Click on “ICSHCM_Add Talent Profile” or search for it if it is not in view on the screen.
-
-
-![](images/300/image103.png)
-
-If the integration is not activated, click on the slider to activate the integration. Do not enable tracing or include payload.
-
-![](images/300/image104.png)
-
----Added by RW---
 
 **1.3.1** In the top right of the Integrations page, click “Create”.
 
