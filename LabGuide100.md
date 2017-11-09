@@ -216,17 +216,6 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/100/image012s.png)
 
-### **1.2.3:** Explore ICS Agents
-
----
-
-**1.2.3.1** Select the `Hamburger` menu icon on top of the ICS Service Console to go to the `Designer` menu.
-
-**1.2.3.2** Select the `Agents` menu selection
-
-![](images/100/image110.png)
-
-**1.2.3.3** The `Execution Agent` that you see in the download dropdown is a version of ICS that can run on-premise behind the customer firewall.  You can use ICS both in the cloud and on-premise for creating integrations.
 
 ## 1.3: Explore the ICS Monitoring User Interface
 
@@ -236,15 +225,11 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.3.3.1** Select the `Hamburger` menu icon on top of the ICS Service Console to go to the `Monitoring` menu.
 
-**1.3.3.2** Select the `DESIGNER` menu selection at the top to go back to the main left-hand navigation menu level.
-
-![](images/100/image111.png)
-
-**1.3.3.3** Next, select the `Monitoring` menu selection to go the ICS monitoring capabilities.
+**1.3.3.2** Next, select the `Monitoring` menu selection to go the ICS monitoring capabilities.
 
 ![](images/100/image110a.png)
 
-**1.3.3.4** Next, select the `Dashboards` selection to go to the main ICS monitoring dashboard page.
+**1.3.3.3** Next, select the `Dashboards` selection to go to the main ICS monitoring dashboard page.
 
 ![](images/100/image110b.png)
 
@@ -266,7 +251,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ![](images/100/image018.png)
 
-**1.3.2.5** In the `Activity Stream` you can see the steps in the *Create EBS Order* integration that were executed and whether or not they were successful.
+**1.3.2.5** In the `Activity Stream` you can see the steps in the *ICSHCM_ADD_TALENT_PROFILE* integration that were executed and whether or not they were successful.
 
 ### **1.3.3:**	Explore ICS Monitoring Console - Logfiles
 
@@ -289,7 +274,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.3.3.5** Navigate into one of the server directories and examine the `ics-flow.log` file in your favorite text editor.
 
-**1.3.3.6** Here is a view of the end of the *ics-flow.log* file in the *Notepad++* text editor showing the response given by EBS of the order payload after a successful execution of the create order API call:
+**1.3.3.6** Here is a view of the end of the *ics-flow.log* file in the *Notepad++* text editor showing the response given by addTalentProfileData of the payload after a successful execution of the SOAP API call:
 
 ![](images/100/image022.png)
 
@@ -301,21 +286,12 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.3.4.1** Back in the ICS Monitoring console, select `Integrations` from the left-hand navigation.
 
-**1.3.4.2** Note that all the statistics of the _Lab 400 Create EBS Order Solution_ are shown.
+**1.3.4.2** Note that all the statistics of the _ICSHCM Add Talent Profile UserXX_ are shown.
 
 ![](images/100/image023.png)
 
-### **1.3.5:**	Explore ICS Monitoring Console - Agents
 
----
-
-**1.3.5.1** Now, select `Agents` from the left-hand navigation.
-
-**1.3.5.2** From the `Agents` monitoring console, you’ll be able to see if the ICS Connectivity Agent is up or down.  The green *sun* or *light* icon indicates that the Connectivity Agent is running fine.
-
-![](images/100/image029.png)
-
-### **1.3.6:**	Explore ICS Monitoring Console - Tracking
+### **1.3.5:**	Explore ICS Monitoring Console - Tracking
 
 ---
 
@@ -343,6 +319,6 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 **1.3.6.7** We are now done exploring the ICS monitoring features.
 
-You now have used Oracle Integration Cloud Service to explore an integration to an On-Premise Oracle Database as well as Oracle EBS.
+You now have used Oracle Integration Cloud Service to explore an integration to HCM Cloud by taking in external data feeds, correctly formatting it for HCM Cloud.
 
 This ICS Overview Lab is now completed.
