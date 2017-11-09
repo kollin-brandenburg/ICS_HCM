@@ -21,7 +21,7 @@
                 "number": "100",
                 "filename": "LabGuide100.md",
                 "title": "Lab 100: Exploring ICS",
-                "description": "Use Developer Cloud Service to create issues, tasks, and sprints"
+                "description": "Exploring the capabilities of the ICS user interface"
             },
             {
                 "number": "200",
@@ -33,13 +33,13 @@
                 "number": "300",
                 "filename": "LabGuide300.md",
                 "title": "Lab 300:  ICS Development",
-                "description": "Short description of lab 300"
+                "description": "Creating the integrations using the connections for data flow"
             },
             {
                 "number": "400",
                 "filename": "LabGuide400.md",
                 "title": "Lab 400: HCM Integration",
-                "description": "Short description of lab 400"
+                "description": "Verification of the integration data flow and check in HCM"
             }
         ]
     }
