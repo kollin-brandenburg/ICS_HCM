@@ -10,7 +10,7 @@
 
 [GitHub IO Pages](https://rebrand.ly/ttcicslab)
 
-# Deep Dive ICS
+# ICS-HCM Integration Deep Dive
 
 **Reference the following Lab Guides by opening their Documentation Files:**
 ## Required pre-work
