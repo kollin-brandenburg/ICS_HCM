@@ -54,7 +54,9 @@ Enter the integration name “ICSHCM Add Talent Profile” and click “Create�
 
 ![](images/300/image302.png)
 
-Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be "addTalentProfileData".
+Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be the SOAP trigger "ICSHCM_SOAP_TalentProfile_Input_UserXX". Find this trigger in the right-hand side menu and drag it to the empty "Start" block in the orchestration flow digram.
+
+![](images/300/image320.png)
 
 ![](images/300/image303.png)
 (MODIFY THIS SCREENSHOT TO SHOW DRAG & DROP)
