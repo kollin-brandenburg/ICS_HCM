@@ -14,6 +14,9 @@ If the integration is not activated, click on the slider to activate the integra
 
 ![](images/300/image104.png)
 
+---Added RW
+
+---
 
 Since the integration is already created and imported, we will not be recreating it. Let’s review the various steps in the ICS – HCM data load integration. Please see the below image for the entire integration flow. The orchestration flow generally matches the logic flow described earlier. Details of each node are presented in sequence in the following section.
 
