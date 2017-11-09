@@ -56,10 +56,6 @@ Enter the integration name “ICSHCM Add Talent Profile” and click “Create�
 
 Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be the SOAP trigger "ICSHCM_SOAP_TalentProfile_Input_UserXX". Find this trigger in the right-hand side menu and drag it to the empty "Start" block in the orchestration flow digram.
 
-![](images/300/image303.png)
-
-(MODIFY THIS SCREENSHOT TO SHOW DRAG & DROP)
-
 ![](images/300/image320.png)
 
 **1.3.2** The next step in the orchestration is assigning the file name. There are two file names involved in the HCM Data Loader. First, the zip file name can be any name with a zip extension. The second file name is the actual data file contained in the zip file. The HCM Data Loader defines a file name for each data object. In our case, the data file name must be "TalentProfile.dat". In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”.
