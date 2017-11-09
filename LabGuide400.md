@@ -85,7 +85,7 @@ Copy paste one of the below request in the 'Request 1 section'.
 
 	<!--Can use inputs like Artist or Photographer (OOTB created) -->
 
-	<tal:ContentItem>Athlete</tal:ContentItem>
+	<tal:ContentItem>AthleteUserXX</tal:ContentItem>
 	<tal:DateFrom>2017/05/31</tal:DateFrom>
 
 	<!--Enter description of your choice-->
@@ -123,7 +123,7 @@ Copy paste one of the below request in the 'Request 1 section'.
 
 	<!--Can use inputs like Artist or Photographer (OOTB created) -->
 
-	<tal:ContentItem>Artist</tal:ContentItem>
+	<tal:ContentItem>ArtistUserXX</tal:ContentItem>
 	<tal:DateFrom>2017/05/31</tal:DateFrom>
 
 	<!--Enter description of your choice-->
@@ -165,7 +165,7 @@ Copy paste one of the below request in the 'Request 1 section'.
 
 	<!--Can use inputs like Artist or Photographer (OOTB created) -->
 
-	<tal:ContentItem>Photographer</tal:ContentItem>
+	<tal:ContentItem>PhotographerUserXX</tal:ContentItem>
 	<tal:DateFrom>2017/05/31</tal:DateFrom>
 
 	<!--Enter description of your choice-->
@@ -240,7 +240,7 @@ URL - https://ucf6-fap0868-fs.oracledemos.com/homePage/faces/AtkHomePageWelcome
 
 Login as a HR Specialist - betty.anderson
 
-password - sHj53464
+password - Please ask the instructor for the password or look into the supplement provided by the instructor.
 
 ![](images/400/image113.png)
 
