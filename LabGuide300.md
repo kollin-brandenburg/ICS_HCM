@@ -62,6 +62,32 @@ The Wizard for configuring the SOAP endpoint will now appear. Enter the name "ad
 
 ![](images/300/image322.png)
 
+Next, on the Operations page, ensure that "Disable SoapAction Validation" is set to "No".
+
+![](images/300/image008.png)
+
+On the Headers page, apply the following setting:
+
+![](images/300/image009.png)
+
+Now, a summary of the new Integration is presented.
+
+![](images/300/image010.png)
+
+![](images/300/image011.png)
+![](images/300/image012.png)
+![](images/300/image013.png)
+![](images/300/image014.png)
+![](images/300/image015.png)
+![](images/300/image016.png)
+![](images/300/image017.png)
+![](images/300/image018.png)
+![](images/300/image019.png)
+![](images/300/image020.png)
+![](images/300/image021.png)
+
+
+
 **1.3.2** The next step in the orchestration is assigning the file name. There are two file names involved in the HCM Data Loader. First, the zip file name can be any name with a zip extension. The second file name is the actual data file contained in the zip file. The HCM Data Loader defines a file name for each data object. In our case, the data file name must be "TalentProfile.dat". In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”.
 
 (ADD SCREENSHOT)
