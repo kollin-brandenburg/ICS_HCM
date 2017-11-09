@@ -50,13 +50,13 @@ Select the “Orchestration” style/pattern.
 
 ![](images/300/image301.png)
 
-Enter the integration name “ICSHCM Add Talent Profile” and click “Create”.
+Enter the integration name “ICSHCM Add Talent Profile_XX”, replacing "XX" with your initials. Then, click “Create”.
 
 ![](images/300/image302.png)
 
 Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be the SOAP trigger "ICSHCM_SOAP_TalentProfile_Input_UserXX". Find this trigger in the right-hand side menu and drag it to the empty "Start" block in the orchestration flow digram.
 
-![](images/300/image321.png)
+![](images/300/image323.png)
 
 The Wizard for configuring the SOAP endpoint will now appear. Enter the name "addTalentProfileData", as shown below.
 
@@ -151,7 +151,7 @@ Step 11 executes a SOAP call to UCM to upload the zip file. (UploadHDLFileToUCM)
 
 ![](images/300/image313.png)
 
-Now we can execute the Data Loader SOAP call. (ScheduleImportProcessHcm)
+Now, we can execute the Data Loader SOAP call. (ScheduleImportProcessHcm)
 
 ![](images/300/image314.png)
 
