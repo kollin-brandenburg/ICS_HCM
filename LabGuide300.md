@@ -14,9 +14,11 @@ If the integration is not activated, click on the slider to activate the integra
 
 ![](images/300/image104.png)
 
----Added RW---
+---Added by RW---
 
 In the top right of the Integrations page, click “Create”.
+
+![](images/300/image300.png)
 
 ---
 
