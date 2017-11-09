@@ -20,6 +20,17 @@ In the top right of the Integrations page, click “Create”.
 
 ![](images/300/image300.png)
 
+Select the “Orchestration” style/pattern.
+
+![](images/300/image301.png)
+
+Enter the integration name “ICSHCM Add Talent Profile” and click “Create”.
+
+![](images/300/image302.png)
+
+Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration.
+
+
 ---
 
 Since the integration is already created and imported, we will not be recreating it. Let’s review the various steps in the ICS – HCM data load integration. Please see the below image for the entire integration flow. The orchestration flow generally matches the logic flow described earlier. Details of each node are presented in sequence in the following section.
