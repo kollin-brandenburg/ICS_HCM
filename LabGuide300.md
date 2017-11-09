@@ -128,11 +128,24 @@ Under FTP, find "ICSHCM-POC-FTP_UserXX". Drag and drop it into the orchestration
 
 ![](images/300/image024.png)
 
+This will open the Configuration Wizard. Name the endpoint "ftpSendZippedHDLFileUserXX" and click "Next".
 
 ![](images/300/image025.png)
+
+Ensure that the following settings are selected, and click "Next".
+
 ![](images/300/image026.png)
+
+Ensure that "No" is selected and click "Next".
+
 ![](images/300/image027.png)
+
+A summary of the Adapter Endpoint is presented. Review it and click "Done".
+
 ![](images/300/image028.png)
+
+The next step is...
+
 ![](images/300/image029.png)
 
 
