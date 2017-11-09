@@ -8,6 +8,33 @@ This is the forth of several labs that are part of the **ICS Development** works
 
 In this lab, you will test the integration that was created in Lab 300 and see how the Integration is replicated into HCM Cloud.
 
+## Part 1: Activating the ICS Integration
+
+Before we start testing the integration, you need to activate the integration for testing.
+
+**1.1** Go to Integration "ICSHCM Add Talent Profile User" created in lab 300. On the right side of the integration click on the switch button to activate the integration.
+
+![](images/400/image100.png)
+
+**1.2** Make sure to tick "enable tracing" and "include payload" when the window pops up.
+
+![](images/400/image101.png)
+
+**1.3** When the integration is activated the switch turns to green. A green tab with success messge and url endpoint pops up on top. You can close it by clicking on 'X' button.
+
+![](images/400/image102.png)
+
+**1.4** Next to green switch click on 'i' icon which gives the details about the integration. Make a note of the url endpoint which will be used for testing the integration.
+
+![](images/400/image103.png)
+
+---
+
+### **1.2**: Test Using SoapUI
+
+**3.1** Open SoapUI.  If you don't already have this installed, follow the instructions provided in the **Prerequisites** section of this workshop.
+
+
 ## Part 1: Test the ICS Integration
 
 ---
@@ -20,7 +47,7 @@ In this lab, you will test the integration that was created in Lab 300 and see h
 
 **3.2** Click on the **SOAP** button so we can create a new project for testing our new ICS SOAP Web Service
 
-![](images/300/image089.png)
+![](images/400/image089.png)
 
 **3.3** In the **New SOAP Project** dialog window, paste the WSDL URL into the **Initial WSDL** window and give a meaningful **Project Name** such as _User03 Create EBS Order Lab 400_.  Keep the checkbox selected for **create sample requests for all operations?**.  Click on the **OK** button after you've initialized the settings for your new SoapUI SOAP project.
 
