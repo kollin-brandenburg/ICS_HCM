@@ -288,20 +288,27 @@ On the right (Target) side of the mapping page, click the triangle next to "Tale
 Drag and drop each field (starting with "PersonNumber") from the Source side to the Target side, under "TalentProfile", as follows:
 
 ![](images/300/RC_image065.png)
+
+After you complete all 5 fields, the mapping should look like this:
+
 ![](images/300/RC_image066.png)
 
 Then, under Target, expand "ProfileItem".
 
 ![](images/300/RC_image067.png)
 
-Drag and drop each fields from Source to Target as before, except this time for "ProfileItem" instead of "TalentProfile". 
+Drag and drop each field from Source to Target as before, except this time for "ProfileItem" instead of "TalentProfile". Then, click "Validate" and "Close".
 
 ![](images/300/RC_image068A.png)
 
+Returning to the orchestration, the mapping component "writeInputAsHDLFormat" now appears blue, showing that it is configured.
 
-
-![](images/300/RC_image069.png)
 ![](images/300/RC_image070.png)
+
+Next, we will edit the second mapping: "ICSHCM Add Talent Profile_UserXX". Click on the pen icon as before.
+
+(INSERT SCREENSHOT)
+
 ![](images/300/RC_image071.png)
 ![](images/300/RC_image072.png)
 ![](images/300/RC_image073.png)
