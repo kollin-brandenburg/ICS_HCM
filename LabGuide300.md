@@ -82,7 +82,7 @@ The icons in the diagram can be stretched to add space, as follows:
 
 ![](images/300/image012.png)
 
-Next, expand "Actions" in the right-hand palette and add an "Assign" component to the orchestration, as follows.
+Next, click "Actions" in the right-hand palette to expand it, and add an "Assign" component to the orchestration, as follows.
 
 ![](images/300/image013.png)
 
@@ -120,15 +120,11 @@ Click "Close" again.
 
 ![](images/300/image021.png)
 
-Now, click "Invokes" in the right-hand side palette to expand it.
+Next, expand "Actions" in the right-hand side palette.
 
 ![](images/300/image022A.png)
 
-------
-------
-------
-
-Next, drag and drop a Stage File from the palette and insert it into the orchestration as follows:
+Drag and drop a Stage File from the palette and insert it into the orchestration as follows:
 
 ![](images/300/RC_image023.png)
 
