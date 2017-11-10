@@ -344,8 +344,14 @@ Here, note that the Mapping column has been updated to reflect your previous act
 Next, we will edit the fourth mapping, i.e., the one to "ftpReadZippedHDLFile".
 
 ![](images/300/RC_image078.png)
+
+Apply the mapping from Source to Target in accordance with the following table and image:
+
 ![](images/300/RC_image079.png)
 ![](images/300/RC_image080.png)
+
+
+
 ![](images/300/RC_image081.png)
 ![](images/300/RC_image082.png)
 ![](images/300/RC_image083.png)
