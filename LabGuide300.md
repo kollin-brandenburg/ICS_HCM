@@ -305,16 +305,38 @@ Returning to the orchestration, the mapping component "writeInputAsHDLFormat" no
 
 ![](images/300/RC_image070.png)
 
-Next, we will edit the second mapping: "ICSHCM Add Talent Profile_UserXX". Click on the pen icon as before.
+Next, we will edit the second mapping: "ICSHCM Add Talent Profile_UserXX". Click on the corresponding pen icon, as before.
 
 (INSERT SCREENSHOT)
 
+On the mapping page, first drag "$fileName" from Source to Target, as shown below. Then, in the Mapping column, click the field to the right of the Target "$fileName" to edit it. 
+
 ![](images/300/RC_image071.png)
+
+Click the pen icon to edit the statement.
+
 ![](images/300/RC_image072.png)
+
+On the left, expand the "Mapping Components" bar under "Source". Type "concat" in the search box and click the search icon. Then, drag and drop "concat" to "$fileName", as shown below:
+
 ![](images/300/RC_image073.png)
+
+When asked to select a parameter, choose "None" and click "OK".
+
 ![](images/300/RC_image074.png)
+
+Collapse "Mapping" and re-expand "Source". Then, move the "fileName" element below "concat" as "string1".
+
 ![](images/300/RC_image075.png)
+
+For "string2", enter the text '.zip' (with single quotes). This will append the file name with the correct extension.
+
 ![](images/300/RC_image076.png)
+
+Next, we will edit the third mapping: "ftpSendZippedHDLFile". Click on the corresponding pen icon.
+
+(INSERT SCREENSHOT)
+
 ![](images/300/RC_image077.png)
 ![](images/300/RC_image078.png)
 ![](images/300/RC_image079.png)
