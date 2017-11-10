@@ -144,14 +144,13 @@ After returning to the main Stage File Action configuration page, click the pen 
 
 ![](images/300/RC_image027A.png)
 
-This time, in the expression builder, enter ".vsf". Then, click "Save", "OK", and "Exit Expression Builder".
-
+This time, in the expression builder, enter ".vsf". As before, click "Save", "OK", and "Exit Expression Builder".
 
 ![](images/300/RC_image027B.png)
 
 Click "Next" on the Configure Operation page.
 
-![](images/300/RC_image027N.png) ----add screenshot for CO-----
+![](images/300/image027N.png)
 
 In Schema Options, selecting the existing schema from the file system, as shown below. Then, click "Next".
 
