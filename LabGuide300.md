@@ -90,19 +90,43 @@ In the subsequent Wizard, name the action "AssignFileName".
 
 ![](images/300/image014.png)
 
-Now, add a varia
+Next, click the + icon to add a new variable.
 
 ![](images/300/image015.png)
+
+Edit the "Name" field of the new variable to "fileName". Then, click the pen icon to the right.
+
 ![](images/300/image016.png)
+
+In the "Expression" field, enter the following:
+
+concat("TP_UserXX", fn:year-from-dateTime(fn:current-dateTime()), fn:month-from-dateTime(fn:current-dateTime()), fn:day-from-dateTime(fn:current-dateTime()), fn:hours-from-dateTime(fn:current-dateTime()), fn:minutes-from-dateTime(fn:current-dateTime()), xsd:integer(fn:seconds-from-dateTime(fn:current-dateTime())))
+
 ![](images/300/image017.png)
+
+Please be sure to replace "TP" with "TP_UserXX", where "XX" represents your initials.
+
 ![](images/300/image018.png)
+
+Click "Validate".
+
 ![](images/300/image019.png)
+
+The expression is now valid and ready to use. Click "Close" in the top right.
+
+![](images/300/image020.png)
+
+Click "Close" again.
+
 ![](images/300/image021.png)
+
+Now, click "Invoke" in the right-hand side menu to expand it.
+
 ![](images/300/image022.png)
 
--------
--------
--------
+------
+------
+------
 
 Next, drag and drop a Stage File from the palette and insert it into the orchestration as follows:
 
