@@ -153,7 +153,7 @@ In Schema, ensure that the radio button for "No" is selected and click "Next".
 
 ![](images/300/RC_image042.png)
 
-Here is a summary of the configuration for the adapter endpoint "ftpSendZippedHDLFile". Review it and click "Done".
+Here is a summary of the configuration for the endpoint "ftpSendZippedHDLFile". Review it and click "Done".
 
 ![](images/300/RC_image043.png)
 
@@ -161,12 +161,28 @@ Next, expand "Invokes" and "FTP" in the palette, and add the component "ICSHCM-P
 
 ![](images/300/RC_image044.png)
 
+Edit the endpoint configuration as before. In Basic Info, name the endpoint "ftpReadZippedHDLFileBase64" and click "Next".
 
 ![](images/300/RC_image045.png)
+
+In Operations, apply the following settings and click "Next".
+
 ![](images/300/RC_image046.png)
+
+In Schema, ensure that the radio button for "No" is selected and click "Next".
+
 ![](images/300/RC_image047.png)
+
+In Format Definition, click "Browse" and select the file "opaque.nxsd". Ensure that the Schema Element "opaqueData" is selected and click "Next".
+
 ![](images/300/RC_image048.png)
+
+Here is a summary of the configuration for the endpoint "ftpReadZippedHDLFileBase64". Review it and click "Done".
+
 ![](images/300/RC_image049.png)
+
+Next, in the orchestration palette, expand "". 
+
 ![](images/300/RC_image050.png)
 ![](images/300/RC_image051.png)
 ![](images/300/RC_image052.png)
