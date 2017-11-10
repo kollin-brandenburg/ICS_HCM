@@ -144,7 +144,7 @@ After returning to the main Stage File Action configuration page, click the pen 
 
 ![](images/300/RC_image027A.png)
 
-This time, in the expression builder, enter ".vsf". As before, click "Save", "OK", and "Exit Expression Builder".
+This time, in the expression builder, enter ".vsf" (with quotes). As before, click "Save", "OK", and "Exit Expression Builder".
 
 ![](images/300/RC_image027B.png)
 
@@ -184,15 +184,15 @@ On the Configure Operation page, select "Zip Files" from the drop-down menu, as 
 
 ![](images/300/RC_image034A.png)
 
-In the Expression Builder, follow the same steps as before:
+In the Expression Builder, enter "TalentProfile.dat" (with quotes) for the expression name. Then follow the same steps as before to exit the Expression Builder.
 
 ![](images/300/RC_image025B.png)
 
-Next, select the bottom pen icon.
+Next, select the bottom pen icon, corresponding to "Specify the Directory to Zip".
 
 ![](images/300/RC_image035A.png)
 
-In the Expression Builder, follow the same steps as before:
+In the Expression Builder, enter ".vsf" (with quotes), save, and exit:
 
 ![](images/300/RC_image035B.png)
 
