@@ -273,7 +273,7 @@ Here is a summary of the configuration for the endpoint "ScheduleImportProcessHC
 
 ![](images/300/RC_image056.png)
 
-As a final step, we will configure the mapping components of the orchestration. There are six of them in total. Click on the first one (writeInputAsHDLFormat), as shown below.
+As a final step, we will configure the mapping components of the orchestration. There are six of them in total. Click on the first one ("Map to "writeInputAsHDLFormat"), as shown below.
 
 ![](images/300/RC_image061.png)
 
@@ -301,11 +301,11 @@ Drag and drop each field from Source to Target as before, except this time for "
 
 ![](images/300/RC_image068A.png)
 
-Returning to the orchestration, the mapping component "writeInputAsHDLFormat" now appears blue, showing that it is configured.
+Returning to the orchestration, the mapping component to "writeInputAsHDLFormat" now appears blue, showing that it is configured.
 
 ![](images/300/RC_image070.png)
 
-Next, we will edit the second mapping: "ICSHCM Add Talent Profile_UserXX". Click on the corresponding pen icon, as before.
+Next, we will edit the second mapping, i.e., the one to "ftpSendZippedHDLFile". Click on the corresponding pen icon, as before.
 
 (INSERT SCREENSHOT)
 
@@ -333,11 +333,16 @@ For "string2", enter the text '.zip' (with single quotes). This will append the 
 
 ![](images/300/RC_image076.png)
 
-Next, we will edit the third mapping: "ftpSendZippedHDLFile". Click on the corresponding pen icon.
+Next, we will edit the third mapping, i.e., the one to "ftpReadZippedHDLFile". Click on the corresponding pen icon.
 
 (INSERT SCREENSHOT)
 
+Here, note that the Mapping column has been updated to reflect your previous actions. Drag and drop the "FileReference" element as shown below. Click "Validate" save your changes and then "Close". 
+
 ![](images/300/RC_image077.png)
+
+Next, we will edit the fourth mapping, i.e., the one to "ftpReadZippedHDLFile".
+
 ![](images/300/RC_image078.png)
 ![](images/300/RC_image079.png)
 ![](images/300/RC_image080.png)
