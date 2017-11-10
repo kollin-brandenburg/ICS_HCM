@@ -273,16 +273,33 @@ Here is a summary of the configuration for the endpoint "ScheduleImportProcessHC
 
 ![](images/300/RC_image056.png)
 
-Now, we will handle the mapping components of the orchestration.
+As a final step, we will configure the mapping components of the orchestration. There are six of them in total. Click on the first one (writeInputAsHDLFormat), as shown below.
 
 ![](images/300/RC_image061.png)
+
+Click the pen icon to edit the mapping.
+
 ![](images/300/RC_image062.png)
-![](images/300/RC_image063.png)
+
+On the right (Target) side of the mapping page, click the triangle next to "TalentProfile" to expand it.  
+
 ![](images/300/RC_image064.png)
+
+Drag and drop each field (starting with "PersonNumber") from the Source side to the Target side, under "TalentProfile", as follows:
+
 ![](images/300/RC_image065.png)
 ![](images/300/RC_image066.png)
+
+Then, under Target, expand "ProfileItem".
+
 ![](images/300/RC_image067.png)
-![](images/300/RC_image068.png)
+
+Drag and drop each fields from Source to Target as before, except this time for "ProfileItem" instead of "TalentProfile". 
+
+![](images/300/RC_image068A.png)
+
+
+
 ![](images/300/RC_image069.png)
 ![](images/300/RC_image070.png)
 ![](images/300/RC_image071.png)
@@ -312,10 +329,10 @@ Now, we will handle the mapping components of the orchestration.
 ![](images/300/RC_image095.png)
 ![](images/300/RC_image096.png)
 ![](images/300/RC_image097.png)
+![](images/300/RC_image098.png)
+![](images/300/RC_image099.png)
+![](images/300/RC_image100.png)
 
-
-
-RC_image061.png
 
 ----
 ----
