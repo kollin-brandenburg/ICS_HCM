@@ -26,7 +26,7 @@
 
   ![](images/300/image004c.png)
 
- **1.2**:Check your Connections
+ **1.2**: Check your Connections
 
   **1.1** From the Integration Cloud Dashboard, click on the "Connections".
   ICS console will be loaded in new window.
@@ -42,7 +42,7 @@
 
 ### ICS Development
 
-**1.3.1** In the top right of the Integrations page, click “Create”.
+In the top right of the Integrations page, click “Create”.
 
 ![](images/300/image300.png)
 
@@ -52,7 +52,7 @@ Select the “Orchestration” style/pattern.
 
 Enter the integration name “ICSHCM Add Talent Profile_XX”, replacing "XX" with your initials. Then, click “Create”.
 
-![](images/300/image3.png)
+![](images/300/image003.png)
 
 Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be the SOAP trigger "ICSHCM_SOAP_TalentProfile_Input_UserXX". Find this trigger in the right-hand side menu and drag it to the empty "Start" block in the orchestration flow digram.
 
