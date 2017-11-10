@@ -156,11 +156,15 @@ In Schema Options, click the radio button for "Select an existing schema from th
 
 ![](images/300/RC_image028.png)
 
-In Format Definition, click "Browse" to open your local file explorer.
+In Format Definition, click "Choose File" to open your local file explorer.
 
-![](images/300/image030B.png)
+![](images/300/image030C.png)
 
-From the provided lab artifacts folder, select the following filw: TalentProfileFileData from the drop-down menu, as shown below, and click "Next".
+From the provided lab artifacts folder, select the file "hcm-talentprofile.nxsd".
+
+![](images/300/image030D.png)
+
+
 
 ![](images/300/RC_image029.png)
 
