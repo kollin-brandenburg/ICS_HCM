@@ -335,15 +335,15 @@ For "string2", enter the text '.zip' (with single quotes). This will append the 
 
 Next, we will edit the third mapping, i.e., the one to "ftpReadZippedHDLFile". Click on the corresponding pen icon.
 
-(INSERT SCREENSHOT)
+![](images/300/RC_image078.png)
 
 Here, note that the Mapping column has been updated to reflect your previous actions. Drag and drop the "FileReference" element as shown below. Click "Validate" save your changes and then "Close". 
 
 ![](images/300/RC_image077.png)
 
-Next, we will edit the fourth mapping, i.e., the one to "ftpReadZippedHDLFile".
+Next, we will edit the fourth mapping, i.e., the one to "ftpSendZippedHDLFile".
 
-![](images/300/RC_image078.png)
+(INSERT SCREENSHOT)
 
 Apply the mapping from Source to Target in accordance with the following table and image:
 
