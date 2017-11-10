@@ -172,16 +172,17 @@ Here is a summary of the configuration for the Stage File Action "writeInputAsHD
 
 ![](images/300/RC_image031.png)
 
-Next, in the orchestration flow, add a Stage File component as follows.
+Next, in the orchestration palette, expand "Actions" and add a Stage File component as follows.
 
 ![](images/300/RC_image032.png)
 
-Edit the configuration for the Stage File Action. In the Basic Info page of the Wizard, name the action "zipHDLFile" and click "Next".
+Here is the configuration wizard. In the Basic Info page, name the action "zipHDLFile" and click "Next".
 
 ![](images/300/RC_image033.png)
-![](images/300/RC_image034.png)
-![](images/300/RC_image035.png)
-![](images/300/RC_image036.png)
+![](images/300/RC_image034A.png)
+![](images/300/RC_image034A.png)
+![](images/300/RC_image035A.png)
+![](images/300/RC_image035B.png)
 
 Here is a summary of the configuration for the Stage File Action "zipHDLFile". Review it and click "Done".
 
