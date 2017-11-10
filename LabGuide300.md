@@ -87,19 +87,19 @@ Next, click the pen icon to edit the Mapping component, as follows:
 ![](images/300/RC_image013.png)
 
 
+-------
+-------
+-------
 
-![](images/300/RC_image013.png)
-![](images/300/RC_image014.png)
-![](images/300/RC_image015.png)
-![](images/300/RC_image016.png)
-![](images/300/RC_image017.png)
-![](images/300/RC_image018.png)
-![](images/300/RC_image019.png)
-![](images/300/RC_image020.png)
-![](images/300/RC_image021.png)
-![](images/300/RC_image022.png)
+Next, drag and drop a Stage File from the palette and insert it into the orchestration as follows:
+
 ![](images/300/RC_image023.png)
+
+Edit the configuration for the Stage File Action. In the Wizard, name the action "writeInputAsHDLFormat" and click "Next".
+
 ![](images/300/RC_image024.png)
+
+
 ![](images/300/RC_image025.png)
 ![](images/300/RC_image026.png)
 ![](images/300/RC_image027.png)
