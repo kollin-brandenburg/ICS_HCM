@@ -82,9 +82,9 @@ The digram can be stretched to add space, as follows:
 
 ![](images/300/image012.png)
 
-Next, click the "Actions" tab in the right-hand side menu to expand it. Drag and drop an "Assign" action to insert it into the flow as follows:
+Next, click the pen icon to edit the Mapping component, as follows:
 
-![](images/300/image013.png)
+![](images/300/RC_image013.png)
 
 You are now prompted to name the new action. Please call it "AssignFileName".
 
