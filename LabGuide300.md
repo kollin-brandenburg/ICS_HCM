@@ -86,7 +86,7 @@ Next, expand "Actions" in the right-hand palette and add an "Assign" component t
 
 ![](images/300/image013.png)
 
-In the subsequent Wizard, name the action "AssignFileName".
+You are prompted to name the action. Call it "AssignFileName".
 
 ![](images/300/image014.png)
 
@@ -104,7 +104,7 @@ concat("TP_UserXX", fn:year-from-dateTime(fn:current-dateTime()), fn:month-from-
 
 ![](images/300/image017.png)
 
-Please be sure to replace "TP" with "TP_UserXX", where "XX" represents your initials.
+Please be sure to replace "XX" with your initials.
 
 ![](images/300/image018.png)
 
@@ -120,9 +120,9 @@ Click "Close" again.
 
 ![](images/300/image021.png)
 
-Now, click "Invoke" in the right-hand side menu to expand it.
+Now, click "Invokes" in the right-hand side palette to expand it.
 
-![](images/300/image022.png)
+![](images/300/image022A.png)
 
 ------
 ------
