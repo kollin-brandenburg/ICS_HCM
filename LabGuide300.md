@@ -164,9 +164,9 @@ From the provided lab artifacts folder, select the file "hcm-talentprofile.nxsd"
 
 ![](images/300/image030D.png)
 
+In the drop-down for "Select the Schema Element", select
 
-
-![](images/300/RC_image029.png)
+![](images/300/RC_image030.png)
 
 Here is a summary of the configuration for the Stage File Action "writeInputAsHDLFormat".
 
