@@ -132,7 +132,7 @@ Edit the configuration for the Stage File Action. In the Basic Info page of the 
 
 ![](images/300/RC_image024.png)
 
-On the Configure Operation page, 
+On the Configure Operation page, select "Write File" from the drop-down menu, as shown below. Then, click the pen icon corresponding to "Specify the File Name".
 
 ![](images/300/RC_image025.png)
 ![](images/300/RC_image026.png)
