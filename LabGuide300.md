@@ -183,8 +183,17 @@ Here is the configuration wizard. In the Basic Info page, name the action "zipHD
 On the Configure Operation page, select "Zip Files" from the drop-down menu, as shown below. Then, click the pen icon corresponding to "Specify the File Name".
 
 ![](images/300/RC_image034A.png)
-![](images/300/RC_image034B.png)
+
+In the Expression Builder, follow the same steps as before:
+
+![](images/300/RC_image025B.png)
+
+Next, select the bottom pen icon.
+
 ![](images/300/RC_image035A.png)
+
+In the Expression Builder, follow the same steps as before:
+
 ![](images/300/RC_image035B.png)
 
 Here is a summary of the configuration for the Stage File Action "zipHDLFile". Review it and click "Done".
