@@ -152,14 +152,17 @@ Click "Next" on the Configure Operation page.
 
 ![](images/300/image027N.png)
 
-In Schema Options, selecting the existing schema from the file system, as shown below. Then, click "Next".
+In Schema Options, click the radio button for "Select an existing schema from the file system", as shown below. Then, click "Next".
 
 ![](images/300/RC_image028.png)
-![](images/300/RC_image029.png)
 
-In Format Definition, select TalentProfileFileData from the drop-down menu, as shown below, and click "Next".
+In Format Definition, click "Browse" to open your local file explorer.
 
 ![](images/300/RC_image030.png)
+
+From the provided lab artifacts folder, select the following filw: TalentProfileFileData from the drop-down menu, as shown below, and click "Next".
+
+![](images/300/RC_image029.png)
 
 Here is a summary of the configuration for the Stage File Action "writeInputAsHDLFormat".
 
