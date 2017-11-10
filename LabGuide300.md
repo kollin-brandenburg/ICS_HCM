@@ -136,21 +136,22 @@ On the Configure Operation page, select "Write File" from the drop-down menu, as
 
 ![](images/300/RC_image025A.png)
 
-This is the Expression Builder page. Enter the Expression "TalentProfile.dat" (with quotes) and click "Save". Then, click "Exit Expression Builder".
+This is the Expression Builder page. Enter the Expression "TalentProfile.dat" (with quotes) and click "Save". Then, click "OK" in the popup, followed by "Exit Expression Builder".
+
 ![](images/300/RC_image025B.png)
 
 After returning to the main Stage File Action configuration page, click the pen icon corresponding to "Specify the Output Directory".
 
 ![](images/300/RC_image027A.png)
 
-This time, in the expression builder, enter ".vsf". Then, click "Save" and "Exit Expression Builder".
+This time, in the expression builder, enter ".vsf". Then, click "Save", "OK", and "Exit Expression Builder".
 
 
 ![](images/300/RC_image027B.png)
 
 Click "Next" on the Configure Operation page.
 
-![](images/300/RC_image027A.png) ----add screenshot for CO-----
+![](images/300/RC_image027N.png) ----add screenshot for CO-----
 
 In Schema Options, selecting the existing schema from the file system, as shown below. Then, click "Next".
 
