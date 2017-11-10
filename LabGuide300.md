@@ -134,20 +134,23 @@ Edit the configuration for the Stage File Action. In the Basic Info page of the 
 
 On the Configure Operation page, select "Write File" from the drop-down menu, as shown below. Then, click the pen icon corresponding to "Specify the File Name".
 
-![](images/300/RC_image025.png)
+![](images/300/RC_image025A.png)
 
 This is the Expression Builder page. Enter the Expression "TalentProfile.dat" (with quotes) and click "Save". Then, click "Exit Expression Builder".
-![](images/300/RC_image026.png)
+![](images/300/RC_image025B.png)
 
 After returning to the main Stage File Action configuration page, click the pen icon corresponding to "Specify the Output Directory".
 
----(missing image)---
+![](images/300/RC_image027A.png)
 
-This time, in the expression builder, enter ".vsf". Click "Save" and "Exit Expression Builder".
+This time, in the expression builder, enter ".vsf". Then, click "Save" and "Exit Expression Builder".
 
----(missing image)---
 
-![](images/300/RC_image027.png)
+![](images/300/RC_image027B.png)
+
+Click "Next" on the Configure Operation page.
+
+![](images/300/RC_image027A.png) ----add screenshot for CO-----
 
 In Schema Options, selecting the existing schema from the file system, as shown below. Then, click "Next".
 
