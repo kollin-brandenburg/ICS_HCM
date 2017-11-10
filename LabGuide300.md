@@ -179,8 +179,11 @@ Next, in the orchestration palette, expand "Actions" and add a Stage File compon
 Here is the configuration wizard. In the Basic Info page, name the action "zipHDLFile" and click "Next".
 
 ![](images/300/RC_image033.png)
+
+On the Configure Operation page, select "Zip Files" from the drop-down menu, as shown below. Then, click the pen icon corresponding to "Specify the File Name".
+
 ![](images/300/RC_image034A.png)
-![](images/300/RC_image034A.png)
+![](images/300/RC_image034B.png)
 ![](images/300/RC_image035A.png)
 ![](images/300/RC_image035B.png)
 
