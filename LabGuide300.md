@@ -158,7 +158,7 @@ In Schema Options, click the radio button for "Select an existing schema from th
 
 In Format Definition, click "Browse" to open your local file explorer.
 
-![](images/300/image030A.png)
+![](images/300/image030B.png)
 
 From the provided lab artifacts folder, select the following filw: TalentProfileFileData from the drop-down menu, as shown below, and click "Next".
 
