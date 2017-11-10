@@ -135,7 +135,18 @@ Edit the configuration for the Stage File Action. In the Basic Info page of the 
 On the Configure Operation page, select "Write File" from the drop-down menu, as shown below. Then, click the pen icon corresponding to "Specify the File Name".
 
 ![](images/300/RC_image025.png)
+
+This is the Expression Builder page. Enter the Expression "TalentProfile.dat" (with quotes) and click "Save". Then, click "Exit Expression Builder".
 ![](images/300/RC_image026.png)
+
+After returning to the main Stage File Action configuration page, click the pen icon corresponding to "Specify the Output Directory".
+
+---(missing image)---
+
+This time, in the expression builder, enter ".vsf". Click "Save" and "Exit Expression Builder".
+
+---(missing image)---
+
 ![](images/300/RC_image027.png)
 
 In Schema Options, selecting the existing schema from the file system, as shown below. Then, click "Next".
@@ -170,9 +181,6 @@ Next, expand "Invokes" in the right-side palette, followed by "FTP". Then, selec
 
 ![](images/300/RC_image038.png)
 
-
-
-![](images/300/RC_image039.png)
 
 On the Basic Info page of the Endpoint Configuration Wizard, name the endpoint "ftpSendZippedHDLFile" and click "Next".
 
