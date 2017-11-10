@@ -95,31 +95,73 @@ Next, drag and drop a Stage File from the palette and insert it into the orchest
 
 ![](images/300/RC_image023.png)
 
-Edit the configuration for the Stage File Action. In the Wizard, name the action "writeInputAsHDLFormat" and click "Next".
+Edit the configuration for the Stage File Action. In the Basic Info page of the Wizard, name the action "writeInputAsHDLFormat" and click "Next".
 
 ![](images/300/RC_image024.png)
 
+On the Configure Operation page, 
 
 ![](images/300/RC_image025.png)
 ![](images/300/RC_image026.png)
 ![](images/300/RC_image027.png)
+
+In Schema Options, selecting the existing schema from the file system, as shown below. Then, click "Next".
+
 ![](images/300/RC_image028.png)
 ![](images/300/RC_image029.png)
+
+In Format Definition, select TalentProfileFileData from the drop-down menu, as shown below, and click "Next".
+
 ![](images/300/RC_image030.png)
+
+Here is a summary of the configuration for the Stage File Action "writeInputAsHDLFormat".
+
 ![](images/300/RC_image031.png)
+
+Next, in the orchestration flow, add a Stage File component as follows.
+
 ![](images/300/RC_image032.png)
+
+Edit the configuration for the Stage File Action. In the Basic Info page of the Wizard, name the action "zipHDLFile" and click "Next".
+
 ![](images/300/RC_image033.png)
 ![](images/300/RC_image034.png)
 ![](images/300/RC_image035.png)
 ![](images/300/RC_image036.png)
+
+Here is a summary of the configuration for the Stage File Action "zipHDLFile". Review it and click "Done".
+
 ![](images/300/RC_image037.png)
+
+Next, expand "Invokes" in the right-side palette, followed by "FTP". Then, select "ICSHCM-POC-FTP_UserXX" and add it to the orchestration as follows: 
+
 ![](images/300/RC_image038.png)
+
+
+
 ![](images/300/RC_image039.png)
+
+On the Basic Info page of the Endpoint Configuration Wizard, name the endpoint "ftpSendZippedHDLFile" and click "Next".
+
 ![](images/300/RC_image040.png)
+
+In Operations, apply the following settings and click "Next".
+
 ![](images/300/RC_image041.png)
+
+In Schema, ensure that the radio button for "No" is selected and click "Next".
+
 ![](images/300/RC_image042.png)
+
+Here is a summary of the configuration for the adapter endpoint "ftpSendZippedHDLFile". Review it and click "Done".
+
 ![](images/300/RC_image043.png)
+
+Next, expand "Invokes" and "FTP" in the palette, and add the component "ICSHCM-POC-FTP_UserXX" to the orchestration as follows: 
+
 ![](images/300/RC_image044.png)
+
+
 ![](images/300/RC_image045.png)
 ![](images/300/RC_image046.png)
 ![](images/300/RC_image047.png)
