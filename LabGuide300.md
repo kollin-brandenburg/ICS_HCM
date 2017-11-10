@@ -82,6 +82,17 @@ Note that the icons in the diagram can be stretched to add space, as follows:
 
 ![](images/300/image012.png)
 
+The next step is to add a 
+
+![](images/300/image013.png)
+![](images/300/image014.png)
+![](images/300/image015.png)
+![](images/300/image016.png)
+![](images/300/image017.png)
+![](images/300/image018.png)
+![](images/300/image019.png)
+![](images/300/image021.png)
+![](images/300/image022.png)
 
 -------
 -------
