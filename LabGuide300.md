@@ -181,14 +181,32 @@ Here is a summary of the configuration for the endpoint "ftpReadZippedHDLFileBas
 
 ![](images/300/RC_image049.png)
 
-Next, in the orchestration palette, expand "". 
+Next, in the orchestration palette, expand "Invokes" and then "SOAP". Add "ICSHCM-POC-FA-UCM-Conn_UserXX" to the orchestration as follows:  
 
 ![](images/300/RC_image050.png)
+
+Edit the SOAP endpoint configuration. On the Basic Info page, name the endpoint "UploadFileToUCM". Click "Next" until you reach the Summary page.
+
 ![](images/300/RC_image051.png)
+
+Review the configuration for the endpoint "UploadFileToUCM" and click "Done".
+
 ![](images/300/RC_image052.png)
+
+Next, in the orchestration palette, expand "Invokes" and then "SOAP", as before. This time, select "ICSHCM-POC-FA-HCM-Conn_UserXX" and add it to the orchestration as follows:
+
 ![](images/300/RC_image053.png)
+
+Edit the configuration for this SOAP endpoint. On the Basic Info page, name the endpoint "ScheduleImportProcessHCM". Click "Next" until you reach the Summary page.
+
 ![](images/300/RC_image054.png)
+
+In Operations, select the operation "importAndLoadData" and click "Next".
+
 ![](images/300/RC_image055.png)
+
+Here is a summary of the configuration for the endpoint "ScheduleImportProcessHCM". Review it and click "Done".
+
 ![](images/300/RC_image056.png)
 
 --------
