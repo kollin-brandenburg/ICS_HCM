@@ -54,11 +54,11 @@ Enter the integration name “ICSHCM Add Talent Profile_XX”, replacing "XX" wi
 
 ![](images/300/image003.png)
 
-Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be the SOAP trigger "ICSHCM_SOAP_TalentProfile_Input_UserXX". Find this trigger in the right-hand side menu and drag it to the empty "Start" block in the orchestration flow digram.
+Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be the SOAP trigger "ICSHCM_SOAP_TalentProfile_Input_UserXX", which you can find by expanding "Triggers" and then "SOAP" in the right-hand side palette. Drag the copmonent to the empty "Start" block in the orchestration flow digram, as follows:
 
 ![](images/300/image323.png)
 
-The Wizard for configuring the SOAP endpoint will now appear. Enter the name "addTalentProfileData", as shown below, and click "Next" at the top.
+The Wizard for configuring the SOAP endpoint will appear. On the Basic Info page, enter the name "AddTalentProfileData_UserXX", as shown below, replacing "XX" with your initials. Then,  click "Next" at the top.
 
 ![](images/300/image007.png)
 
@@ -70,7 +70,7 @@ On the Headers page, ensure that the following is set to "No", and click "Next".
 
 ![](images/300/image009.png)
 
-Now, a summary of the new Integration is presented. Review it and click "Done".
+A summary of the new endpoint is presented. Review it and click "Done".
 
 ![](images/300/image010.png)
 
@@ -78,13 +78,9 @@ The orchestration flow should now look like this:
 
 ![](images/300/image011.png)
 
-The digram can be stretched to add space, as follows:
+Note that the icons in the diagram can be stretched to add space, as follows:
 
 ![](images/300/image012.png)
-
-Next, click the pen icon to edit the Mapping component, as follows:
-
-![](images/300/RC_image013.png)
 
 
 -------
