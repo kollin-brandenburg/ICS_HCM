@@ -307,7 +307,7 @@ Returning to the orchestration, the mapping component to "writeInputAsHDLFormat"
 
 Next, we will edit the second mapping, i.e., the one to "ftpSendZippedHDLFile". Click on the corresponding pen icon, as before.
 
-(INSERT SCREENSHOT)
+![](images/300/RC_image070A.png)
 
 On the mapping page, first drag "$fileName" from Source to Target, as shown below. Then, in the Mapping column, click the field to the right of the Target "$fileName" to edit it. 
 
