@@ -343,33 +343,74 @@ Here, note that the Mapping column has been updated to reflect your previous act
 
 Next, we will edit the fourth mapping, i.e., the one to "UploadHDLFileToUCM".
 
-(INSERT SCREENSHOT)
+![](images/300/RC_image081.png)
 
 Apply the mapping from Source to Target in accordance with the following table and image:
 
 ![](images/300/RC_image079.png)
 ![](images/300/RC_image080.png)
 
+Under Target on the right side, click "Field" and then "Repeat Element".
 
-
-![](images/300/RC_image081.png)
 ![](images/300/RC_image082.png)
+
+Expand "Document" as follows:
+
 ![](images/300/RC_image083.png)
+
+Drag and drop "fileName" from Source to Target Field 1 of 7 as follows, changing the mapping:
+
 ![](images/300/RC_image084.png)
+
+Click "Mapping Components" to expand it.
+
 ![](images/300/RC_image085.png)
+
+Enter "upper" in the search box and click the search icon. Drag and drop the "upper case" element as follows. Then, click "Save" and "Close". 
+
 ![](images/300/RC_image086.png)
+
+For Field 2 under Target, click to enter text.
+
 ![](images/300/RC_image087.png)
+
+Enter "anonymous" and then click "Save" and "Close".
+
 ![](images/300/RC_image088.png)
+
+For Field 3, drag and drop "fileName" from Source to Target as you did for Field 1. For Fields 4 to 7, enter the following text as you did for Field 2:
+
 ![](images/300/RC_image089.png)
+
+Next, drag "opaqueData" to "Contents".
+
 ![](images/300/RC_image090.png)
+
+Set "name" as "primaryFile".
+
 ![](images/300/RC_image091.png)
+
+Drag "fileName" to "href", as follows:
+
 ![](images/300/RC_image092.png)
+
+Expand "Mapping Components". Type "concat" in the search box and click the search icon. Drag and drop the "concat" element as follows:
+
 ![](images/300/RC_image093.png)
+
+When prompted to select a parameter, choose "string2" and click "OK".
+
 ![](images/300/RC_image094.png)
+
+
+
 ![](images/300/RC_image095.png)
 ![](images/300/RC_image096.png)
 ![](images/300/RC_image097.png)
 ![](images/300/RC_image098.png)
+
+Click "Validate" and "Close".
+
 ![](images/300/RC_image099.png)
 ![](images/300/RC_image100.png)
 ![](images/300/RC_image101.png)
