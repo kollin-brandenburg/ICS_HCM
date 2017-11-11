@@ -372,6 +372,11 @@ Apply the mapping from Source to Target in accordance with the following table a
 ![](images/300/RC_image098.png)
 ![](images/300/RC_image099.png)
 ![](images/300/RC_image100.png)
+![](images/300/RC_image101.png)
+![](images/300/RC_image102.png)
+![](images/300/RC_image103.png)
+![](images/300/RC_image104.png)
+![](images/300/RC_image105.png)
 
 
 ----
