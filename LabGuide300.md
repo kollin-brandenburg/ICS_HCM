@@ -200,7 +200,7 @@ Here is a summary of the configuration for the Stage File Action "zipHDLFile". R
 
 ![](images/300/RC_image037.png)
 
-Next, expand "Invokes" in the right-side palette, followed by "FTP". Then, select "ICSHCM-POC-FTP_UserXX" and add it to the orchestration as follows: 
+Next, expand "Invokes" in the right-side palette, followed by "FTP". Then, select "ICSHCM-POC-FTP_UserXX" and add it to the orchestration as follows:
 
 ![](images/300/RC_image038.png)
 
@@ -221,7 +221,7 @@ Here is a summary of the configuration for the endpoint "ftpSendZippedHDLFile". 
 
 ![](images/300/RC_image043.png)
 
-Next, expand "Invokes" and "FTP" in the palette, and add the component "ICSHCM-POC-FTP_UserXX" to the orchestration as follows: 
+Next, expand "Invokes" and "FTP" in the palette, and add the component "ICSHCM-POC-FTP_UserXX" to the orchestration as follows:
 
 ![](images/300/RC_image044.png)
 
@@ -309,7 +309,7 @@ Next, we will edit the second mapping: the one to "ftpSendZippedHDLFile". Click 
 
 ![](images/300/RC_image070B.png)
 
-On the mapping page, first drag "$fileName" from Source to Target, as shown below. Then, in the Mapping column, click the field to the right of the Target "$fileName" to edit it. 
+On the mapping page, first drag "$fileName" from Source to Target, as shown below. Then, in the Mapping column, click the field to the right of the Target "$fileName" to edit it.
 
 ![](images/300/RC_image071.png)
 
@@ -329,7 +329,7 @@ For "string2", enter the text '.zip' (with single quotes). This will append the 
 
 ![](images/300/RC_image076.png)
 
-Finally, drag and drop the "FileReference" element as shown below. Click "Validate" to save your changes and then "Close". 
+Finally, drag and drop the "FileReference" element as shown below. Click "Validate" to save your changes and then "Close".
 
 ![](images/300/RC_image077.png)
 
@@ -341,7 +341,7 @@ Apply the mapping from Source to Target in accordance with the following table:
 
 ![](images/300/RC_image079.png)
 
-When the mapping is complete, the page should look as follows. Click "Validate" to save your changes and then "Close". 
+When the mapping is complete, the page should look as follows. Click "Validate" to save your changes and then "Close".
 
 ![](images/300/RC_image080.png)
 
@@ -366,11 +366,11 @@ You will enter the Mapping Builder. Click "Mapping Components" menu at the botto
 
 ![](images/300/RC_image085.png)
 
-Enter "upper" in the search box and click the search icon. Drag and drop the element "upper-case" as follows. Then, click "Save" and "Close". 
+Enter "upper" in the search box and click the search icon. Drag and drop the element "upper-case" as follows. Then, click "Save" and "Close".
 
 ![](images/300/RC_image086.png)
 
-Repeat this step for Field (3 of 7). 
+Repeat this step for Field (3 of 7).
 
 Click on Field (2 of 7) under Target to enter a static value.
 
@@ -409,7 +409,7 @@ The result should be as follows:
 
 ![](images/300/RC_image095.png)
 
-Next, enter '/hcm/dataloader/import/' (with single quotes) for string1. Then, type "upper" in the search box and click the search icon. Drag and drop the "upper-case" function on the "fileName" element (originally string2) as follows: 
+Next, enter '/hcm/dataloader/import/' (with single quotes) for string1. Then, type "upper" in the search box and click the search icon. Drag and drop the "upper-case" function on the "fileName" element (originally string2) as follows:
 
 ![](images/300/RC_image096.png)
 
@@ -436,7 +436,7 @@ Drag "fileName" (Source) to "ContentId" (Target), changing the mapping, as shown
 
 ![](images/300/RC_image102.png)
 
-Expand "Mapping Components" and type "upper" in the search box. Then, click the search icon. Drag the element "upper-case" as follows. Click "Save" and "Close". 
+Expand "Mapping Components" and type "upper" in the search box. Then, click the search icon. Drag the element "upper-case" as follows. Click "Save" and "Close".
 
 ![](images/300/RC_image103.png)
 
@@ -452,9 +452,10 @@ Drag "result" from Source to Target as shown below. Then, click "Validate" and "
 
 
 ----
-----
+
 ----
 
+### Completed Integration
 
 When complete, the entire integration flow should look like this:
 
@@ -469,4 +470,3 @@ Next, enable tracing and click on "Activate".
 Click on the info icon and note the endpoint url.
 
 ![](images/300/image319.png)
-
