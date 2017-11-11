@@ -305,7 +305,7 @@ Returning to the orchestration, the mapping component to "writeInputAsHDLFormat"
 
 ![](images/300/RC_image070.png)
 
-Next, we will edit the second mapping, i.e., the one to "ftpSendZippedHDLFile". Click on the corresponding pen icon, as before.
+Next, we will edit the second mapping: the one to "ftpSendZippedHDLFile". Click on the corresponding pen icon, as before.
 
 ![](images/300/RC_image070A.png)
 
@@ -333,7 +333,7 @@ For "string2", enter the text '.zip' (with single quotes). This will append the 
 
 ![](images/300/RC_image076.png)
 
-Next, we will edit the third mapping, i.e., the one to "ftpReadZippedHDLFile". Click on the corresponding pen icon.
+Next, we will edit the third mapping: the one to "ftpReadZippedHDLFile". Click on the corresponding pen icon.
 
 ![](images/300/RC_image078.png)
 
@@ -341,7 +341,7 @@ Here, note that the Mapping column has been updated to reflect your previous act
 
 ![](images/300/RC_image077.png)
 
-Next, we will edit the fourth mapping, i.e., the one to "UploadHDLFileToUCM".
+Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM".
 
 ![](images/300/RC_image081.png)
 
@@ -413,7 +413,7 @@ Click "Validate" and "Close".
 
 ![](images/300/RC_image099.png)
 
-Next, we will edit the fifth mapping, i.e., the one to "ScheduleImportProcessHCM".
+Next, we will edit the fifth mapping: the one to "ScheduleImportProcessHCM".
 
 ![](images/300/RC_image101.png)
 
@@ -424,22 +424,22 @@ Drag "fileName" (Source) to "ContentId" (Target), changing the mapping, as shown
 Expand "Mapping Components" and type "upper" in the search box. Then, click the search icon. Drag the element "upper-case" as follows. Click "Save" and "Close". 
 
 ![](images/300/RC_image103.png)
+
+Click "Validate" and then "Close".
+
 ![](images/300/RC_image104.png)
+
+Now, we will edit the sixth and final mapping: the one to "AddTalentProfileData".
+
 ![](images/300/RC_image111.png)
-![](images/300/RC_image112.png)
-![](images/300/_RC_image102.png)
-![](images/300/_RC_image103.png)
-![](images/300/_RC_image104.png)
-![](images/300/_RC_image105.png)
 
-
+Drag "result" from Source to Target as shown below. Then, click "Validate" and "Close".
 
 
 ----
 ----
 ----
-----
-----
+
 
 When complete, the entire integration flow should look like this:
 
@@ -455,6 +455,3 @@ Click on the info icon and note the endpoint url.
 
 ![](images/300/image319.png)
 
----
-
-NEXT PART IS TESTING IN SOAP UI
