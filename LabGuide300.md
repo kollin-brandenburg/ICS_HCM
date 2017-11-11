@@ -307,7 +307,7 @@ Returning to the orchestration, the mapping component to "writeInputAsHDLFormat"
 
 Next, we will edit the second mapping: the one to "ftpSendZippedHDLFile". Click on the corresponding pen icon, as before.
 
-![](images/300/RC_image070A.png)
+![](images/300/RC_image070B.png)
 
 On the mapping page, first drag "$fileName" from Source to Target, as shown below. Then, in the Mapping column, click the field to the right of the Target "$fileName" to edit it. 
 
@@ -321,48 +321,48 @@ On the left, expand the "Mapping Components" bar under "Source". Type "concat" i
 
 ![](images/300/RC_image073.png)
 
-When asked to select a parameter, choose "None" and click "OK".
+When asked to select a parameter, choose "string1" and click "OK".
 
-![](images/300/RC_image074.png)
-
-Collapse "Mapping" and re-expand "Source". Then, move the "fileName" element below "concat" as "string1".
-
-![](images/300/RC_image075.png)
+![](images/300/RC_image074A.png)
 
 For "string2", enter the text '.zip' (with single quotes). This will append the file name with the correct extension.
 
 ![](images/300/RC_image076.png)
 
-Next, we will edit the third mapping: the one to "ftpReadZippedHDLFile". Click on the corresponding pen icon.
-
-![](images/300/RC_image078.png)
-
-Here, note that the Mapping column has been updated to reflect your previous actions. Drag and drop the "FileReference" element as shown below. Click "Validate" save your changes and then "Close". 
+Finally, drag and drop the "FileReference" element as shown below. Click "Validate" to save your changes and then "Close". 
 
 ![](images/300/RC_image077.png)
 
-Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM".
+Next, we will edit the third mapping: the one to "ftpReadZippedHDLFileBased64". Click on the corresponding pen icon.
 
-![](images/300/RC_image081.png)
+![](images/300/RC_image078.png)
 
-Apply the mapping from Source to Target in accordance with the following table and image:
+Apply the mapping from Source to Target in accordance with the following table:
 
 ![](images/300/RC_image079.png)
+
+When the mapping is complete, the page should look as follows. Click "Validate" to save your changes and then "Close". 
+
 ![](images/300/RC_image080.png)
 
-Under Target on the right side, click "Field" and then "Repeat Element".
+
+Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM".
+
+![](images/300/RC_image081A.png)
+
+Under Target on the right side, click on the "Field" element, right-click and select "Repeat Element".
 
 ![](images/300/RC_image082.png)
 
-Expand "Document" as follows:
+Repeat the above steps 5 more times until you see the elements as below:
 
 ![](images/300/RC_image083.png)
 
-Drag and drop "fileName" from Source to Target Field 1 of 7 as follows, changing the mapping:
+First, drag and drop "fileName" from Source to Target Field (1 of 7). Then, click on the corresponding "fileName" Mapping as follows:
 
 ![](images/300/RC_image084.png)
 
-Click "Mapping Components" to expand it.
+You will enter the Mapping Builder. Click "Mapping Components" menu at the bottom to expand it.
 
 ![](images/300/RC_image085.png)
 
@@ -370,7 +370,9 @@ Enter "upper" in the search box and click the search icon. Drag and drop the ele
 
 ![](images/300/RC_image086.png)
 
-For Field 2 under Target, click to enter text.
+Repeat this step for Field (3 of 7). 
+
+Click on Field (2 of 7) under Target to enter a static value.
 
 ![](images/300/RC_image087.png)
 
@@ -378,7 +380,7 @@ Enter "anonymous" and then click "Save" and "Close".
 
 ![](images/300/RC_image088.png)
 
-For Field 3, drag and drop "fileName" from Source to Target as you did for Field 1. For Fields 4 to 7, enter the following text as you did for Field 2:
+For Fields 4 to 7, enter the following static text as you did for Field (2 of 7):
 
 ![](images/300/RC_image089.png)
 
@@ -394,7 +396,7 @@ Drag "fileName" to "href", as follows:
 
 ![](images/300/RC_image092.png)
 
-Expand "Mapping Components". Type "concat" in the search box and click the search icon. Drag and drop the "concat" element as follows:
+Expand "Mapping Components". Type "concat" in the search box and click the search icon. Drag and drop the "concat" function as follows:
 
 ![](images/300/RC_image093.png)
 
@@ -403,13 +405,26 @@ When prompted to select a parameter, choose "string2" and click "OK".
 ![](images/300/RC_image094.png)
 
 
+The result should be as follows:
 
 ![](images/300/RC_image095.png)
+
+Next, enter '/hcm/dataloader/import/' (with single quotes) for string1. Then, type "upper" in the search box and click the search icon. Drag and drop the "upper-case" function on the "fileName" element (originally string2) as follows: 
+
 ![](images/300/RC_image096.png)
+
+When the mapping is complete, the page should look as follows. Then, click "Save" and "Close".
+
 ![](images/300/RC_image097.png)
+
+Finally, enter the following static values for the 2 target elements.
+
+Value for "ldcService": 'CHECKIN_UNIVERSAL' (with single quotes)
+Value for "webKey": 'cs' (with single quotes)
+
 ![](images/300/RC_image098.png)
 
-Click "Validate" and "Close".
+Review the mapping. Then, click "Validate" and "Close".
 
 ![](images/300/RC_image099.png)
 
