@@ -366,7 +366,7 @@ Click "Mapping Components" to expand it.
 
 ![](images/300/RC_image085.png)
 
-Enter "upper" in the search box and click the search icon. Drag and drop the "upper case" element as follows. Then, click "Save" and "Close". 
+Enter "upper" in the search box and click the search icon. Drag and drop the element "upper-case" as follows. Then, click "Save" and "Close". 
 
 ![](images/300/RC_image086.png)
 
@@ -412,9 +412,17 @@ When prompted to select a parameter, choose "string2" and click "OK".
 Click "Validate" and "Close".
 
 ![](images/300/RC_image099.png)
-![](images/300/RC_image100.png)
+
+Next, we will edit the fifth mapping, i.e., the one to "ScheduleImportProcessHCM".
+
 ![](images/300/RC_image101.png)
+
+Drag "fileName" (Source) to "ContentId" (Target), changing the mapping, as shown below:
+
 ![](images/300/RC_image102.png)
+
+Expand "Mapping Components" and type "upper" in the search box. Then, click the search icon. Drag the element "upper-case" as follows. Click "Save" and "Close". 
+
 ![](images/300/RC_image103.png)
 ![](images/300/RC_image104.png)
 ![](images/300/RC_image111.png)
