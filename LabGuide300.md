@@ -341,7 +341,7 @@ Here, note that the Mapping column has been updated to reflect your previous act
 
 ![](images/300/RC_image077.png)
 
-Next, we will edit the fourth mapping, i.e., the one to "ftpSendZippedHDLFile".
+Next, we will edit the fourth mapping, i.e., the one to "UploadHDLFileToUCM".
 
 (INSERT SCREENSHOT)
 
