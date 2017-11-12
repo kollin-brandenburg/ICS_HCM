@@ -63,11 +63,14 @@ This connection is used to call the importAndLoadData operation of the HCM Dat
 We need to access the file "TalentProfile.wsdl" for our next step. The file is located in the Artifacts folder given as part of the workshop by the instructor. Please make sure you have the file before moving on to next step.
 
 **1.7** Click on **Configure Connectivity** under **Connection Properties** section.
+
 Check the box under the **Upload File** column.
-Then click on the **Upload Button**
 
 Open up the folder Artifacts that was provided to you and locate the file "TalentProfile.wsdl".
+
 Select this file and click **OK**.
+
+Then click on the **Upload Button**
 
 Then click **Ok** to close.
 
@@ -128,11 +131,11 @@ This connection is used to call the importAndLoadData operation of the HCM Dat
 
 ![](images/200/image145.png)
 
-**2.7** click **Create**
+**2.5** click **Create**
 
 ![](images/200/image141.png)
 
-**2.8** Click on **Configure Connectivity**.
+**2.6** Click on **Configure Connectivity**.
 
 ![](images/200/image141.png)
 
@@ -144,10 +147,10 @@ Then click **Ok** to close.
 
 >***Note*** The default security configuration is set to **Basic Authentication**, which by the way, is the only option available for REST trigger connections. When invoking the trigger, we will use our ICS username/password.
 
-**2.9** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
+**2.7** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
 
 
-**2.10** You will now be asked to create the Security credentials for your SOAP connection.
+**2.8** You will now be asked to create the Security credentials for your SOAP connection.
 
 Leave the **Security Policy** as **Basic Authentication**, or else change it if something else is selected.
 
@@ -158,15 +161,15 @@ Now click on **Ok** to close the prompt.
 ![](images/200/image154.png)
 
 
-**2.11** Click on **Test**
+**2.9** Click on **Test**
 
 ![](images/200/image007.png)
 
-**2.12** Click **Save**
+**2.10** Click **Save**
 
 ![](images/200/image008.png)
 
-**2.13** Click on the **Close** link in the upper right
+**2.11** Click on the **Close** link in the upper right
 
 Your connection appears in the list of configured connections and is even marked as **New** !
 
