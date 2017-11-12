@@ -281,7 +281,7 @@ As a final step, we will configure the mapping components of the orchestration. 
 
 ![](images/300/RC_image061.png)
 
-Click the pen icon to edit the mapping.
+This step maps an input XML data to a full XML data set that contains additional meta data labels required by HDL.Click the pen icon to edit the mapping.
 
 ![](images/300/RC_image062.png)
 
@@ -337,7 +337,7 @@ Finally, drag and drop the "FileReference" element as shown below. Click "Valida
 
 ![](images/300/RC_image077.png)
 
-Next, we will edit the third mapping: the one to "ftpReadZippedHDLFileBased64". Click on the corresponding pen icon.
+Next, we will edit the third mapping: the one to "ftpReadZippedHDLFileBased64". This step maps the file name and directory from the output of Step 7 to the input of Step 9. Click on the corresponding pen icon to edit.
 
 ![](images/300/RC_image078.png)
 
@@ -350,7 +350,9 @@ When the mapping is complete, the page should look as follows. Click "Validate" 
 ![](images/300/RC_image080.png)
 
 
-Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM".
+Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM". At this point of the integration, a Base64 encoded text representing the zipped HDL data is ready to be uploaded to UCM. This step creates the XML payload required to invoke UCM Generic Soap Service to check in (upload) the file.The most import fields are
+•	dDocName: its value is used as content ID for this document. Content ID is required in invoking HCM importAndLoadData SOAP service.
+•	Contents: this field contains the actual Base64 encoded HDL data
 
 ![](images/300/RC_image081A.png)
 
@@ -432,7 +434,7 @@ Review the mapping. Then, click "Validate" and "Close".
 
 ![](images/300/RC_image099.png)
 
-Next, we will edit the fifth mapping: the one to "ScheduleImportProcessHCM".
+Next, we will edit the fifth mapping: the one to "ScheduleImportProcessHCM". This step prepares XML payload for invoking HCM SOAP Data Loader. The required Content ID value should be taken from the dDocName field from the UCM XML payload.
 
 ![](images/300/RC_image101.png)
 
@@ -448,7 +450,7 @@ Click "Validate" and then "Close".
 
 ![](images/300/RC_image104.png)
 
-Now, we will edit the sixth and final mapping: the one to "AddTalentProfileData".
+Now, we will edit the sixth and final mapping: the one to "AddTalentProfileData". Finally, map the process ID returned from HCM to response XML payload.
 
 ![](images/300/RC_image111.png)
 
