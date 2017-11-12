@@ -222,7 +222,7 @@ Leave the **Security Policy** as **Basic Authentication**, or else change it if 
 
 For the **User Name** use the **User name** from supplement.
 
-In the **Password** field use the password from supplement.
+In the **Password** field use the **Password** from supplement.
 
 Now click on **Ok** to close the prompt.
 
