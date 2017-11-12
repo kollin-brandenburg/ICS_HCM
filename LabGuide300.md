@@ -458,7 +458,7 @@ Click on the "Actions" to add tracking. This wll help individual instances to be
 
 Add the following fields to the tracking
 
-![](images/300/Tracking.PNG)
+![](images/300/Tracking1.PNG)
 
 ----
 
