@@ -152,9 +152,7 @@ Then click **Ok** to close.
 
 Leave the **Security Policy** as **Basic Authentication**, or else change it if something else is selected.
 
-For the **User Name** use the "faadmin".
-
-In the **Password** field use "fusionfa1"
+We need configure **User Name** and **Password**. The **User Name** and **Password** can be obtained from the supplement guide provided by the instructor. 
 
 Now click on **Ok** to close the prompt.
 
