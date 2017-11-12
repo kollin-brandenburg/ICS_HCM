@@ -82,7 +82,9 @@ The icons in the diagram can be stretched to add space, as follows:
 
 ![](images/300/image012.png)
 
-Next, click "Actions" in the right-hand palette to expand it, and add an "Assign" component to the orchestration, as follows.
+There are two file names involved in HCM Data Loader. First, the zip file name can be any name with a zip extension. Second file name is the actual data file contained in the zip file. HCM Data Loader defines a file name for each data object. In our case, the data file name must be TalentProfile.dat. In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”. The zip extension is appended in a later step. 
+
+Next we will define the username pattern. Click "Actions" in the right-hand palette to expand it, and add an "Assign" component to the orchestration, as follows.
 
 ![](images/300/image013.png)
 
@@ -120,7 +122,9 @@ Click "Close" again.
 
 ![](images/300/image021.png)
 
-Next, expand "Actions" in the right-hand side palette.
+The next step uses an early adopter feature called Stage File.The Stage File activity allows read, write and zip operations to files local to ICS instance. When reading and writing files, Stage File allows translation of file content between XML and native format via a native schema file (.nxsd). For common native formats such CSV (Comma Separated Values), Stage File supplies a mapping tool for drag and drop mapping. At this step of integration, Stage File is used to write the full XML data set with labels from step 3 to a temporary file with a translation defined by hcm-talentprofile.nxsd. The resulting HDL Format data file looks like TalentProfile.dat. Notice that the file name is fixed to TalentProfile.dat as required by HCM Data Loader.
+
+To accomplish this, expand "Actions" in the right-hand side palette.
 
 ![](images/300/image022A.png)
 
@@ -204,7 +208,6 @@ Next, expand "Invokes" in the right-side palette, followed by "FTP". Then, selec
 
 ![](images/300/RC_image038.png)
 
-
 On the Basic Info page of the Endpoint Configuration Wizard, name the endpoint "ftpSendZippedHDLFile" and click "Next".
 
 ![](images/300/RC_image040.png)
@@ -221,6 +224,7 @@ Here is a summary of the configuration for the endpoint "ftpSendZippedHDLFile". 
 
 ![](images/300/RC_image043.png)
 
+Step 9 does the actual read operation. It encodes zipped binary data with Base64.
 Next, expand "Invokes" and "FTP" in the palette, and add the component "ICSHCM-POC-FTP_UserXX" to the orchestration as follows:
 
 ![](images/300/RC_image044.png)
@@ -245,7 +249,7 @@ Here is a summary of the configuration for the endpoint "ftpReadZippedHDLFileBas
 
 ![](images/300/RC_image049.png)
 
-Next, in the orchestration palette, expand "Invokes" and then "SOAP". Add "ICSHCM-POC-FA-UCM-Conn_UserXX" to the orchestration as follows:  
+Step 11 executes a SOAP call to UCM to upload the zip file.In the orchestration palette, expand "Invokes" and then "SOAP". Add "ICSHCM-POC-FA-UCM-Conn_UserXX" to the orchestration as follows:  
 
 ![](images/300/RC_image050.png)
 
@@ -257,7 +261,7 @@ Review the configuration for the endpoint "UploadFileToUCM" and click "Done".
 
 ![](images/300/RC_image052.png)
 
-Next, in the orchestration palette, expand "Invokes" and then "SOAP", as before. This time, select "ICSHCM-POC-FA-HCM-Conn_UserXX" and add it to the orchestration as follows:
+Now we can execute the Data Loader SOAP call. In the orchestration palette, expand "Invokes" and then "SOAP", as before. This time, select "ICSHCM-POC-FA-HCM-Conn_UserXX" and add it to the orchestration as follows:
 
 ![](images/300/RC_image053.png)
 
