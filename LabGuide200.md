@@ -146,7 +146,6 @@ Then click **Ok** to close.
 
 **2.9** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
 
-![](images/200/image135.png)
 
 **2.10** You will now be asked to create the Security credentials for your SOAP connection.
 
