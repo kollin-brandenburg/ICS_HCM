@@ -353,6 +353,7 @@ When the mapping is complete, the page should look as follows. Click "Validate" 
 Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM". At this point of the integration, a Base64 encoded text representing the zipped HDL data is ready to be uploaded to UCM. This step creates the XML payload required to invoke UCM Generic Soap Service to check in (upload) the file.The most import fields are
 
 •	dDocName: its value is used as content ID for this document. Content ID is required in invoking HCM importAndLoadData SOAP service.
+
 •	Contents: this field contains the actual Base64 encoded HDL data
 
 ![](images/300/RC_image081A.png)
@@ -488,3 +489,5 @@ Now let us activate the flow. Click on "Activate".
 Click on the info icon and note the endpoint url.
 
 ![](images/300/image319.png)
+
+Congratulations. Your flow is ready to tested.
