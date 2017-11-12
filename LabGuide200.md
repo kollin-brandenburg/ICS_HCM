@@ -179,30 +179,30 @@ Your connection appears in the list of configured connections and is even marked
 This connection is used to call the GenericSoapPort service of UCM to upload the data file to UCM. Basic authentication must be configured. The WSDL URL points to the UCM instance associated with the HCM instance.
 
 
-**1.1** Click on the **Connection** section
+**3.1** Click on the **Connection** section
 
 ![](images/200/image002.png)
 
-**2.2** Click on **Create** in the upper right of the screen
+**3.2** Click on **Create** in the upper right of the screen
 
 ![](images/200/image003.png)
 
-**2.3** Select the **SOAP** Connection, by either doing a search, or by scrolling down to the **SOAP** connection, by clicking on the **Select** button of the **SOAP** connection.
+**3.3** Select the **SOAP** Connection, by either doing a search, or by scrolling down to the **SOAP** connection, by clicking on the **Select** button of the **SOAP** connection.
 
 ![](images/200/image139.png)
 
-**2.4** Fill in the information for the new connection
+**3.4** Fill in the information for the new connection
 
 - **Name** in the form of _ICSHCM-POC-FA-HCM-Conn_UserXX_ where XX is the number in your allocated user.
 - **Role** _Invoke_ since we going to use the connection as an invoke to start the integration
 
 ![](images/200/image140.png)
 
-**2.7** click **Create**
+**3.5** click **Create**
 
 ![](images/200/image141.png)
 
-**2.8** Click on **Configure Connectivity**.
+**3.6** Click on **Configure Connectivity**.
 In the **WSDL URL** field enter "https://ucf6-fap0868-hcm.oracledemos.com/hcmCommonDataLoader/HCMDataLoader?WSDL"
 
 Then click **Ok** to close.
@@ -211,11 +211,9 @@ Then click **Ok** to close.
 
 >***Note*** The default security configuration is set to **Basic Authentication**, which by the way, is the only option available for REST trigger connections. When invoking the trigger, we will use our ICS username/password.
 
-**2.9** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
+**3.7** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
 
-![](images/200/image135.png)
-
-**2.10** In another tab, go to demo environment launch pad, click on the **Get SaaS Passwords** to get latest username and passwords for UCM cloud. Write these down to use in the next step.
+**3.8** In another tab, go to demo environment launch pad, click on the **Get SaaS Passwords** to get latest username and passwords for UCM cloud. Write these down to use in the next step.
 
 ![](images/200/image142.png)
 
