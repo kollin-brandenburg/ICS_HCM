@@ -213,19 +213,16 @@ Then click **Ok** to close.
 
 **3.7** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
 
-**3.8** In another tab, go to demo environment launch pad, click on the **Get SaaS Passwords** to get latest username and passwords for UCM cloud. Write these down to use in the next step.
-
-![](images/200/image142.png)
+**3.8** We need configure **User Name** and **Password**. The **User Name** and **Password** can be obtained from the supplement guide provided by the instructor.
 
 
-
-**2.11** You will now be asked to create the Security credentials for your FTP connection.
+**3.9** You will now be asked to create the Security credentials for your FTP connection.
 
 Leave the **Security Policy** as **Basic Authentication**, or else change it if something else is selected.
 
-For the **User Name** use the **User name** that you previously saved from step **2.10**.
+For the **User Name** use the **User name** that you used in step **3.8**.
 
-In the **Password** field use the password that you found in step **2.10**
+In the **Password** field use the password that you used in step **3.8**
 
 Now click on **Ok** to close the prompt.
 
