@@ -449,6 +449,7 @@ Now, we will edit the sixth and final mapping: the one to "AddTalentProfileData"
 ![](images/300/RC_image111.png)
 
 Drag "result" from Source to Target as shown below. Then, click "Validate" and "Close".
+
 ![](images/300/FinalMap.PNG)
 
 ----
