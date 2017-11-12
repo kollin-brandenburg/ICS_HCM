@@ -351,6 +351,7 @@ When the mapping is complete, the page should look as follows. Click "Validate" 
 
 
 Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM". At this point of the integration, a Base64 encoded text representing the zipped HDL data is ready to be uploaded to UCM. This step creates the XML payload required to invoke UCM Generic Soap Service to check in (upload) the file.The most import fields are
+
 •	dDocName: its value is used as content ID for this document. Content ID is required in invoking HCM importAndLoadData SOAP service.
 •	Contents: this field contains the actual Base64 encoded HDL data
 
@@ -458,14 +459,6 @@ Drag "result" from Source to Target as shown below. Then, click "Validate" and "
 
 ![](images/300/FinalMap.PNG)
 
-Click on the "Actions" to add tracking. This wll help individual instances to be tracked.
-
-![](images/300/Tracking2.PNG)
-
-Add the following fields to the tracking
-
-![](images/300/Tracking1.PNG)
-
 ----
 
 ----
@@ -478,7 +471,17 @@ When complete, the entire integration flow should look like this:
 ![](images/300/image106.png)
 ![](images/300/image107.png)
 
-Next, enable tracing and click on "Activate".
+Next, enable tracing 
+
+Click on the "Actions" to add tracking. This wll help individual instances to be tracked.
+
+![](images/300/Tracking2.PNG)
+
+Add the following fields to the tracking
+
+![](images/300/Tracking1.PNG)
+
+Now let us activate the flow. Click on "Activate".
 
 ![](images/300/image318.png)
 
