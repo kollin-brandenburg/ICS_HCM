@@ -55,11 +55,9 @@ This connection is used to call the importAndLoadData operation of the HCM Dat
 
 ![](images/200/image141.png)
 
-**1.6** In a separate window, go to: https://publicdocs-corp.documents.us2.oraclecloud.com/documents/link/LF68D22147B666DFAD2B6F76F6C3FF17C1177E4725F3/folder/FA2DEBB51750375B7979D4C4F6C3FF17C1177E4725F3/_ICS_HCM_Workshop
-and download the following zip file called "ICS Artifacts.zip"
-Open the zip file to decompress the file.
+**1.6** We need to access the file "TalentProfile.wsdl" for our next step. The file is located in the Artifacts folder given as part of the workshop by the instructor. Please make sure you have the file before moving on to next step.
 
-**1.7** Click on **Configure Connectivity**.
+**1.7** Click on **Configure Connectivity** under **Connection Properties** section.
 Check the box under the **Upload File** column.
 Then click on the **Upload Button**
 
@@ -71,11 +69,11 @@ Then click **Ok** to close.
 ![](images/200/image149.png)
 
 
-**1.7** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
+**1.8** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your SOAP Security.
 
 ![](images/200/image135.png)
 
-**1.8** You will now be asked to create the Security credentials for your SOAP connection.
+**1.9** You will now be asked to create the Security credentials for your SOAP connection.
 
 Leave the **Security Policy** as **Username Password Token**, or else change it if something else is selected.
 
@@ -86,15 +84,15 @@ Now click on **Ok** to close the prompt.
 ![](images/200/image150.png)
 
 
-**1.9** Click on **Test**
+**1.10** Click on **Test**
 
 ![](images/200/image007.png)
 
-**1.10** Click **Save**
+**1.11** Click **Save**
 
 ![](images/200/image008.png)
 
-**1.11** Click on the **Close** link in the upper right
+**1.12** Click on the **Close** link in the upper right
 
 Your connection appears in the list of configured connections and is even marked as **New** !
 
@@ -107,7 +105,7 @@ Your connection appears in the list of configured connections and is even marked
 This connection is used to call the importAndLoadData operation of the HCM Data Loader SOAP API. Its WSDL URL points to an HCM Cloud instance in Oracle’s demo environment.
 
 
-**1.1** Click on the **Connection** section
+**2.1** Click on the **Connection** section
 
 ![](images/200/image002.png)
 
