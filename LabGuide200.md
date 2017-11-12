@@ -220,24 +220,24 @@ Then click **Ok** to close.
 
 Leave the **Security Policy** as **Basic Authentication**, or else change it if something else is selected.
 
-For the **User Name** use the **User name** that you used in step **3.8**.
+For the **User Name** use the **User name** from supplement.
 
-In the **Password** field use the password that you used in step **3.8**
+In the **Password** field use the password from supplement.
 
 Now click on **Ok** to close the prompt.
 
 ![](images/200/image143.png)
 
 
-**2.12** Click on **Test**
+**3.10** Click on **Test**
 
 ![](images/200/image007.png)
 
-**2.13** Click **Save**
+**3.11** Click **Save**
 
 ![](images/200/image008.png)
 
-**2.14** Click on the **Close** link in the upper right
+**3.12** Click on the **Close** link in the upper right
 
 Your first connection appears in the list of configured connections and is even marked as **New** !
 
@@ -247,14 +247,14 @@ Your first connection appears in the list of configured connections and is even 
 
 ### Creating an FTP Connection
 
-**1.1** Go to the cloud dashboard page and click on **Integration** service. Ex: https://myservices.us2.oraclecloud.com/mycloud/faces/dashboard.jspx
+**4.1** Go to the cloud dashboard page and click on **Integration** service. Ex: https://myservices.us2.oraclecloud.com/mycloud/faces/dashboard.jspx
 
 Every domain will have FTP server associated with it. We will use this FTP server to host our files.
 
 
 ![](images/200/image086.png)
 
-**1.2** Check the Additional Information. The FTP server details are given.
+**4.2** Check the Additional Information. The FTP server details are given.
 
 Copy Domain SFTP User Name, Host, port, and save it somewhere.
 
@@ -267,15 +267,15 @@ This will be the FTP user which is used in FTP connection creation.
 
 ![](images/200/image087.png)
 
-**1.3** You can also access this info by clicking  on **Users** on the top right  ->SFTP Users  Username
+**4.3** You can also access this info by clicking  on **Users** on the top right  ->SFTP Users  Username
 
 ![](images/200/image088.png)
 
-**1.4** Now click on the SFTP Users in the panel to see the users with Secure FTP user accounts.
+**4.4** Now click on the SFTP Users in the panel to see the users with Secure FTP user accounts.
 
 ![](images/200/image089.png)
 
-**1.5** Navigate back to the ICS console
+**4.5** Navigate back to the ICS console
 
 ![](images/200/image090.png)
 
@@ -285,7 +285,7 @@ Now click on the **Connections**
 
 ![](images/200/image092.png)
 
-**1.6** On the top bar click on **Create** to bring up the menu to create a new Connection.
+**4.6** On the top bar click on **Create** to bring up the menu to create a new Connection.
 
 ![](images/200/image130.png)
 
@@ -293,17 +293,17 @@ The following prompt should pop up. Either scroll down and select or search for 
 
 ![](images/200/image131.png)
 
-**1.7** The following screen should display when you click to create a new FTP Connection.
+**4.7** The following screen should display when you click to create a new FTP Connection.
 
 ![](images/200/image133.png)
 
 
-**1.8** In the **Name** field enter "ICSHCM-POC-FTP_UserXX" and replace the "XX" with your assigned user name.
+**4.8** In the **Name** field enter "ICSHCM-POC-FTP_UserXX" and replace the "XX" with your assigned user name.
 
 Set the Role to **Trigger and Invoke**
 
 
-**1.9** Click on **Configure Connectivity**. Use the
+**4.9** Click on **Configure Connectivity**. Use the
 Domain **SFTP Host** as **FTP server host address** from step **1.2** which was retrieved from dashboard, without the port included.
 
 Enter the **Port** as found in step **1.2**. It is most likely **22**.
@@ -317,23 +317,23 @@ Then click **Ok** to close.
 
 ![](images/200/image134.png)
 
-**1.10** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your FTP Security.
+**4.10** Scroll down the same page and then click on the **Configure Security**. This will bring up the prompt to configure your FTP Security.
 
 ![](images/200/image135.png)
 
-**1.11** You will now be asked to create the Security credentials for your FTP connection.
+**4.11** You will now be asked to create the Security credentials for your FTP connection.
 
 Leave the **Security Policy** as **FTP Server Access Policy**, or else change it if something else is selected.
 
-For the **User Name** use the **Domain SFTP User Name** that you previously saved from step **1.2**.
+For the **User Name** use the **Domain SFTP User Name** that you previously saved from step **4.2**.
 
-In the **Password** field user the password that you originally used to log into Oracle Cloud. It will be the password for either the cloud.admin or UserXX users.
+In the **Password** field user the password that you originally used to log into Oracle Cloud provided by the instructor. It will be the password for either the cloud.admin or UserXX users.
 
 Now click on **Ok** to close the prompt.
 
 ![](images/200/image136.png)
 
-**1.12** Then click **Test** in order to test the connect. A green bar should come across the top of the screen that reads, "Connection ICSHCM-POC-FTP_UserXX was tested successfully."
+**4.12** Then click **Test** in order to test the connect. A green bar should come across the top of the screen that reads, "Connection ICSHCM-POC-FTP_UserXX was tested successfully."
 
 ![](images/200/image137.png)
 
