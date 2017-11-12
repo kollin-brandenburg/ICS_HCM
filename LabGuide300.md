@@ -452,6 +452,14 @@ Drag "result" from Source to Target as shown below. Then, click "Validate" and "
 
 ![](images/300/FinalMap.PNG)
 
+Click on the "Actions" to add tracking. This wll help individual instances to be tracked.
+
+![](images/300/Tracking1.PNG)
+
+Add the following fields to the tracking
+
+![](images/300/Tracking.PNG)
+
 ----
 
 ----
