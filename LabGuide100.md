@@ -21,7 +21,6 @@ We’ll look at the following:
 1.	Oracle Cloud Services Dashboard
 2.	ICS Designer User Interface
 3.	ICS Monitoring User Interface
-4.  ICS Connectivity Agents - view more about them [here](https://www.youtube.com/watch?v=nsbvR027GXY&list=PLKCk3OyNwIzumLMaNpSEDXCaYqyRCBAX-&index=13)
 
 Here is a description of what is happening with ICS integration that we'll be working in the lab:
 
