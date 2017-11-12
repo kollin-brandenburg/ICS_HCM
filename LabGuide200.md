@@ -55,13 +55,18 @@ This connection is used to call the importAndLoadData operation of the HCM Dat
 
 ![](images/200/image141.png)
 
-**1.6** We need to access the file "TalentProfile.wsdl" for our next step. The file is located in the Artifacts folder given as part of the workshop by the instructor. Please make sure you have the file before moving on to next step.
+
+**1.6** Click on the connection you just created. It opens up the window for you to configure different properties for the adapter.
+
+![](images/200/image1000.png)
+
+We need to access the file "TalentProfile.wsdl" for our next step. The file is located in the Artifacts folder given as part of the workshop by the instructor. Please make sure you have the file before moving on to next step.
 
 **1.7** Click on **Configure Connectivity** under **Connection Properties** section.
 Check the box under the **Upload File** column.
 Then click on the **Upload Button**
 
-Open up the folder that was created when you opened the zip file in step **1.6**. In the folder "ICS-HCM" there is a file called TalentProfile.wsdl.
+Open up the folder Artifacts that was provided to you and locate the file "TalentProfile.wsdl".
 Select this file and click **OK**.
 
 Then click **Ok** to close.
