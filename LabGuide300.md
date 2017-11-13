@@ -55,11 +55,11 @@ Now we are ready to check the connections.
 
 ----
 
-## **3.2** Creating Integration
+## **3.2** ICS Development
 
 ---
 
-### **3.2.1** ICS Development
+### **3.2.1** Creating Integration 
 
 In the top right of the Integrations page, click “Create”.
 
