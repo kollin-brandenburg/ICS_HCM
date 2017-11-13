@@ -253,7 +253,7 @@ password - Please ask the instructor for the password or look into the supplemen
 
 **1.3.3** Search for the person “doug” targeted in the data loading.
 
-![](images/400/image500.png)
+![](images/400/image550.png)
 
 
 
