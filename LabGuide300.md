@@ -13,12 +13,14 @@ In this lab, you will learn how to create a basic ICS Integration using the conn
 ---
 ## 3.1: Check your Connections
 
+---
+
 ### **3.1.1**: Login to the ICS Service Console
 
- ---
+---
 
- **3.1.1.1** If you are not already logged in: From your browser (Firefox or Chrome recommended) login to the ICS Console using the following URL:
- <https://ttcics-gse00011451.integration.us2.oraclecloud.com/ics/faces/global>
+**3.1.1.1** If you are not already logged in: From your browser (Firefox or Chrome recommended) login to the ICS Console using the following URL:
+<https://ttcics-gse00011451.integration.us2.oraclecloud.com/ics/faces/global>
 
  **3.1.1.2** Enter your `User Name` and `Password` and click **Sign In**
 
@@ -32,9 +34,13 @@ In this lab, you will learn how to create a basic ICS Integration using the conn
 
  **3.1.1.4** You will now be presented with the ICS Service Console from which you will be performing the rest of this workshop lab.
 
-  ![](images/300/image004c.png)
+![](images/300/image004c.png)
+  
+  
 
  **3.1.2**: Check your Connections
+ 
+ ---
 
   **1.1** From the Integration Cloud Dashboard, click on the "Connections".
   ICS console will be loaded in new window.
@@ -49,6 +55,8 @@ In this lab, you will learn how to create a basic ICS Integration using the conn
 ----
 
 ## **3.2** Creating Integration
+
+---
 
 ### **3.2.1** ICS Development
 
@@ -476,7 +484,7 @@ Drag "result" from Source to Target as shown below. Then, click "Validate" and "
 
 ## **3.3** Completed Integration
 
-----
+---
 
 ### **3.3.1** Checking Your Integration
 
