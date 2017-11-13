@@ -11,32 +11,30 @@ In this lab, you will learn how to create a basic ICS Integration using the conn
 - Create your first Integration using the SOAP and FTP connections that were previously created in lab 200, before testing them in Lab 400.
 
 ---
-## Check your Connections
+## 3.1: Check your Connections
 
-### Part 1: Create the ICS Connections
-
- **1.1**: Login to the ICS Service Console
+### **3.1.1**: Login to the ICS Service Console
 
  ---
 
- **1.1.1** If you are not already logged in: From your browser (Firefox or Chrome recommended) login to the ICS Console using the following URL:
+ **3.1.1.1** If you are not already logged in: From your browser (Firefox or Chrome recommended) login to the ICS Console using the following URL:
  <https://ttcics-gse00011451.integration.us2.oraclecloud.com/ics/faces/global>
 
- **1.1.2** Enter your `User Name` and `Password` and click **Sign In**
+ **3.1.1.2** Enter your `User Name` and `Password` and click **Sign In**
 
  ***NOTE:*** the **User Name and Password** values will be given to you by your instructor.
 
  ![](images/300/image003.png)  
 
- **1.1.3** You may be presented with the tutorial overlay for the ICS Service Console - since we already went through ICS in Lab 100, dismiss the tutorial by clicking on _Got It!_
+ **3.1.1.3** You may be presented with the tutorial overlay for the ICS Service Console - since we already went through ICS in Lab 100, dismiss the tutorial by clicking on _Got It!_
 
  ![](images/300/image004d.png)
 
- **1.1.4** You will now be presented with the ICS Service Console from which you will be performing the rest of this workshop lab.
+ **3.1.1.4** You will now be presented with the ICS Service Console from which you will be performing the rest of this workshop lab.
 
   ![](images/300/image004c.png)
 
- **1.2**: Check your Connections
+ **3.1.2**: Check your Connections
 
   **1.1** From the Integration Cloud Dashboard, click on the "Connections".
   ICS console will be loaded in new window.
@@ -50,7 +48,9 @@ In this lab, you will learn how to create a basic ICS Integration using the conn
 
 ----
 
-### ICS Development
+## **3.2** Creating Integration
+
+### **3.2.1** ICS Development
 
 In the top right of the Integrations page, click “Create”.
 
@@ -474,7 +474,11 @@ Drag "result" from Source to Target as shown below. Then, click "Validate" and "
 
 ----
 
-### Completed Integration
+## **3.3** Completed Integration
+
+----
+
+### **3.3.1** Checking Your Integration
 
 When complete, the entire integration flow should look like this:
 
