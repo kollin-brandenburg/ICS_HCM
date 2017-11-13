@@ -1,5 +1,15 @@
 # Lab 300 - Create Integration Flow
 
+## Introduction
+
+This is the third of several labs that are part of the **ICS HCM Development Workshop**.
+
+In this lab, you will learn how to create a basic ICS Integration using the connections that you created in the previous lab.
+
+## Objectives
+
+- Create your first Integration using the SOAP and FTP connections that were previously created in lab 200, before testing them in Lab 400.
+
 ---
 ## Check your Connections
 
@@ -82,7 +92,7 @@ The icons in the diagram can be stretched to add space, as follows:
 
 ![](images/300/image012.png)
 
-There are two file names involved in HCM Data Loader. First, the zip file name can be any name with a zip extension. Second file name is the actual data file contained in the zip file. HCM Data Loader defines a file name for each data object. In our case, the data file name must be TalentProfile.dat. In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”. The zip extension is appended in a later step. 
+There are two file names involved in HCM Data Loader. First, the zip file name can be any name with a zip extension. Second file name is the actual data file contained in the zip file. HCM Data Loader defines a file name for each data object. In our case, the data file name must be TalentProfile.dat. In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”. The zip extension is appended in a later step.
 
 Next we will define the username pattern. Click "Actions" in the right-hand palette to expand it, and add an "Assign" component to the orchestration, as follows.
 
@@ -472,7 +482,7 @@ When complete, the entire integration flow should look like this:
 ![](images/300/image106.png)
 ![](images/300/image107.png)
 
-Next, enable tracing 
+Next, enable tracing
 
 Click on the "Actions" to add tracking. This wll help individual instances to be tracked.
 

@@ -11,7 +11,7 @@ In this lab, you will learn how to create a basic ICS connection, using a basic 
 
 ## Objectives
 
-- Create your first integration to echo an input to the output
+- Create your first FTP and SOAP connections to later be used in the Integration that will be created in Lab 300.
 
 ## Required Artifacts
 
@@ -154,7 +154,7 @@ Then click **Ok** to close.
 
 Leave the **Security Policy** as **Basic Authentication**, or else change it if something else is selected.
 
-We need configure **User Name** and **Password**. The **User Name** and **Password** can be obtained from the supplement guide provided by the instructor. 
+We need configure **User Name** and **Password**. The **User Name** and **Password** can be obtained from the supplement guide provided by the instructor.
 
 Now click on **Ok** to close the prompt.
 
