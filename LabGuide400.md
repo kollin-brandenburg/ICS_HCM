@@ -250,29 +250,47 @@ password - Please ask the instructor for the password or look into the supplemen
 
 ![](images/400/image114.png)
 
-**1.3.3** Search for the person “doug” targeted in the data loading and you see “Additional Qualifications” section is added to that person’s profile.
 
-![](images/400/image115.png)
+**1.3.3** Search for the person “doug” targeted in the data loading.
+
+![](images/400/image500.png)
 
 
-**1.3.4** Click on “Edit “ to check the description.
+
+**1.3.4** Click on the person “Doug Stonewood” when the pop up comes up.
+
+![](images/400/image501.png)
+
+
+
+**1.3.5** Click on "Skills and Qualifications” on left hand side panel view. You will see “Additional Qualifications” section is added to that person’s profile.
+
+![](images/400/image502.png)
+
+
+
+**1.3.6** Click on “Edit “ to check the description.
 
 ![](images/400/image116.png)
 
 
-**1.3.5** Testing is complete. Below given steps is additional info on debugging issues. If you want to debug  the data load issues  click on navigator and under 'My Workforce' click on 'Data Exchange' to check the data uploaded process details  using HCM user betty.anderson
+**1.3.7** Testing is complete. Below given steps is additional info on debugging issues. If you want to debug  the data load issues  click on navigator and under 'My Workforce' click on 'Data Exchange' to check the data uploaded process details  using HCM user betty.anderson.
 
 ![](images/400/image117.png)
 
 
-**1.3.6** Click on task icon on the right hand side of the page.
+**1.3.8** Click on task icon on the right hand side of the page.
 
 ![](images/400/image118.png)
 
 
-**1.3.7** Click on Import and load data. The summary of data upload is shown. The status and process details can be seen. Logs can also be downloaded to debug issues.
+**1.3.9** Click on Import and load data. The summary of data upload is shown. The status and process details can be seen. Logs can also be downloaded to debug issues.
+
+
+![](images/400/image503.png)
 
 ![](images/400/image119.png)
+
 ![](images/400/image120.png)
 
 
