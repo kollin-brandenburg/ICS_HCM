@@ -116,7 +116,7 @@ concat("TP_UserXX", fn:year-from-dateTime(fn:current-dateTime()), fn:month-from-
 
 ![](images/300/image017.png)
 
-Please be sure to replace "XX" with your initials.
+Please be sure to replace "XX" with your User Number.
 
 ![](images/300/image018.png)
 
