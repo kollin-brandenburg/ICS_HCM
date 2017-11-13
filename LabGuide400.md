@@ -289,7 +289,9 @@ password - Please ask the instructor for the password or look into the supplemen
 
 ![](images/400/image503.png)
 
+
 ![](images/400/image119.png)
+
 
 ![](images/400/image120.png)
 
