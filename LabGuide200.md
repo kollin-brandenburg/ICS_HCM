@@ -156,6 +156,10 @@ Leave the **Security Policy** as **Basic Authentication**, or else change it if 
 
 We need configure **User Name** and **Password**. The **User Name** and **Password** can be obtained from the supplement guide provided by the instructor.
 
+If a User Name and Password are not provided, use the default settings:
+**User Name:** faadmin
+**Password:** fusionfa1
+
 Now click on **Ok** to close the prompt.
 
 ![](images/200/image154.png)
