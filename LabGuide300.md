@@ -60,7 +60,7 @@ Select the “Orchestration” style/pattern.
 
 ![](images/300/image325.png)
 
-Enter the integration name “ICSHCM Add Talent Profile_XX”, replacing "XX" with your initials. Then, click “Create”.
+Enter the integration name “ICSHCM Add Talent Profile_XX”, replacing "XX" with your User Number. Then, click “Create”.
 
 ![](images/300/image003.png)
 
@@ -68,7 +68,7 @@ Now, we will edit the orchestration for this integration. The first step is to s
 
 ![](images/300/image323.png)
 
-The Wizard for configuring the SOAP endpoint will appear. On the Basic Info page, enter the name "AddTalentProfileData_UserXX", as shown below, replacing "XX" with your initials. Then,  click "Next" at the top.
+The Wizard for configuring the SOAP endpoint will appear. On the Basic Info page, enter the name "AddTalentProfileData_UserXX", as shown below, replacing "XX" with your assigned User Number. Then,  click "Next" at the top.
 
 ![](images/300/image007.png)
 
@@ -116,7 +116,7 @@ concat("TP_UserXX", fn:year-from-dateTime(fn:current-dateTime()), fn:month-from-
 
 ![](images/300/image017.png)
 
-Please be sure to replace "XX" with your initials.
+Please be sure to replace "XX" with your User Number.
 
 ![](images/300/image018.png)
 
