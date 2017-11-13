@@ -15,11 +15,11 @@
 **Reference the following Lab Guides by opening their Documentation Files:**
 ## Required pre-work
 
-**Documentation**: ics000.md
+**Documentation**: [Pre-Work](ics000.md)
 
 ## Lab 100: Exploring ICS
 
-**Documenation**: LabGuide100.md
+**Documenation**: [Lab Guide 100](LabGuide100.md)
 
 ### Objectives
 The objective of this lab is to expose you to:
@@ -28,7 +28,7 @@ The objective of this lab is to expose you to:
 
 ## Lab 200: Verifying Connections
 
-**Documenation**: LabGuide200.md
+**Documenation**: [Lab Guide 200](LabGuide200.md)
 
 ### Objectives
 The objective of this lab is to expose you to:
@@ -38,7 +38,7 @@ The objective of this lab is to expose you to:
 
 ## Lab 300: ICS Development
 
-**Documenation**: LabGuide300.md
+**Documenation**: [Lab Guide 300](LabGuide300.md)
 
 ### Objectives
 The objective of this lab is to expose you to the:
@@ -47,7 +47,7 @@ The objective of this lab is to expose you to the:
 
 ## Lab 400: HCM Integration
 
-**Documentation**: LabGuide400.md
+**Documentation**: [Lab Guide 400](LabGuide400.md)
 
 ### Objectives
 
