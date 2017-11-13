@@ -35,22 +35,23 @@ In this lab, you will learn how to create a basic ICS Integration using the conn
  **3.1.1.4** You will now be presented with the ICS Service Console from which you will be performing the rest of this workshop lab.
 
 ![](images/300/image004c.png)
-  
-  
 
- **3.1.2**: Check your Connections
+Now we are ready to check the connections.
+  
+  
+### **3.1.2**: Check your Connections
  
  ---
 
-  **1.1** From the Integration Cloud Dashboard, click on the "Connections".
+  **3.1.2.1** From the Integration Cloud Dashboard, click on the "Connections".
   ICS console will be loaded in new window.
  If you see anything other than green checks, then go back to the previous steps
 
   ![](images/300/image102.png)
 
- **1.3**:ICS and HCM Connections
+ **3.1.2.2**:ICS and HCM Connections
 
-  **1.3** Now go back to the dashboard and go to the "Integrations". Click on “ICSHCM_Add Talent Profile” or search if it is not in view on the screen.
+**3.1.2.3** Now go back to the dashboard and go to the "Integrations". Click on “ICSHCM_Add Talent Profile” or search if it is not in view on the screen.
 
 ----
 
