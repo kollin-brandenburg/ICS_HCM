@@ -408,7 +408,7 @@ Under Target on the right side, click on the "Field" element, right-click and se
 
 ![](images/300/RC_image082.png)
 
-Repeat the above steps 5 more times until you see the elements as below:
+Repeat the above steps 5 more times until you see the elements below. To access "fileName", expand the following fields:
 
 ![](images/300/image083A.png)
 
