@@ -516,11 +516,11 @@ Review the mapping. Then, click "Validate" and "Close".
 
 ----
 
-## **3.3** Completed Integration
+## **3.4** Completed Integration
 
 ---
 
-### **3.3.1** Checking Your Integration
+### **3.4.1** Checking Your Integration
 
 When complete, the entire integration flow should look like this:
 
