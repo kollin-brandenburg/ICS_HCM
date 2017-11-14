@@ -410,7 +410,7 @@ Under Target on the right side, click on the "Field" element, right-click and se
 
 Repeat the above steps 5 more times until you see the elements as below:
 
-![](images/300/RC_image083.png)
+![](images/300/RC_image083A.png)
 
 First, drag and drop "fileName" from Source to Target Field (1 of 7). Then, click on the corresponding "fileName" Mapping as follows:
 
