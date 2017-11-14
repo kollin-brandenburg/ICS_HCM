@@ -1,3 +1,5 @@
+Updated: 11-14-17
+
 <img class="float-right" src="https://oracle.github.io/learning-library/workshops/common-content/images/touch-the-cloud/ttc-logo.png" width="200">
 # Lab 100 - Explore Integration Cloud Service
 

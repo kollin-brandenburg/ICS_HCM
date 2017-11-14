@@ -1,5 +1,3 @@
-![](images/200/Picture-lab.png)  
-Updated: 11-6-17
 
 # Lab 200 - Creating ICS Connections
 
