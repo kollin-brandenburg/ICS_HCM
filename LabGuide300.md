@@ -310,7 +310,11 @@ Here is a summary of the configuration for the endpoint "ScheduleImportProcessHC
 
 ![](images/300/RC_image056.png)
 
-### **3.2.7** Mapping Orchestrations("writeInputAsHDLFormat") 
+## **3.3** Mapping Orchestrations
+
+---
+
+### **3.3.1** ("writeInputAsHDLFormat") 
 
 
 In the next step, we will configure the mapping components of the orchestration. There are six of them in total. Click on the first one ("Map to "writeInputAsHDLFormat"), as shown below.
@@ -345,7 +349,7 @@ Returning to the orchestration, the mapping component to "writeInputAsHDLFormat"
 
 ![](images/300/RC_image070.png)
 
-### **3.2.8** Mapping Orchestrations("ftpSendZippedHDLFile") 
+### **3.3.2** ("ftpSendZippedHDLFile") 
 
 
 Next, we will edit the second mapping: the one to "ftpSendZippedHDLFile". Click on the corresponding pen icon, as before.
@@ -376,7 +380,7 @@ Finally, drag and drop the "FileReference" element as shown below. Click "Valida
 
 ![](images/300/RC_image077.png)
 
-### **3.2.9** Mapping Orchestrations("ftpReadZippedHDLFileBased64") 
+### **3.3.3** ("ftpReadZippedHDLFileBased64") 
 
 Next, we will edit the third mapping: the one to "ftpReadZippedHDLFileBased64". This step maps the file name and directory from the output of Step 7 to the input of Step 9. Click on the corresponding pen icon to edit.
 
@@ -390,7 +394,7 @@ When the mapping is complete, the page should look as follows. Click "Validate" 
 
 ![](images/300/RC_image080.png)
 
-### **3.2.10** Mapping Orchestrations("UploadHDLFileToUCM") 
+### **3.3.4** ("UploadHDLFileToUCM") 
 
 Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM". At this point of the integration, a Base64 encoded text representing the zipped HDL data is ready to be uploaded to UCM. This step creates the XML payload required to invoke UCM Generic Soap Service to check in (upload) the file.The most import fields are
 
@@ -478,33 +482,33 @@ Review the mapping. Then, click "Validate" and "Close".
 
 ![](images/300/RC_image099.png)
 
-### **3.2.11** Mapping Orchestrations("ScheduleImportProcessHCM") 
+### **3.3.5** ("ScheduleImportProcessHCM") 
 
 
-**3.2.11.1** Next, we will edit the fifth mapping: the one to "ScheduleImportProcessHCM". This step prepares XML payload for invoking HCM SOAP Data Loader. The required Content ID value should be taken from the dDocName field from the UCM XML payload.
+**3.3.5.1** Next, we will edit the fifth mapping: the one to "ScheduleImportProcessHCM". This step prepares XML payload for invoking HCM SOAP Data Loader. The required Content ID value should be taken from the dDocName field from the UCM XML payload.
 
 ![](images/300/RC_image101.png)
 
-**3.2.11.2** Drag "fileName" (Source) to "ContentId" (Target), changing the mapping, as shown below:
+**3.3.5.2** Drag "fileName" (Source) to "ContentId" (Target), changing the mapping, as shown below:
 
 ![](images/300/RC_image102.png)
 
-**3.2.11.3** Expand "Mapping Components" and type "upper" in the search box. Then, click the search icon. Drag the element "upper-case" as follows. Click "Save" and "Close".
+**3.3.5.3** Expand "Mapping Components" and type "upper" in the search box. Then, click the search icon. Drag the element "upper-case" as follows. Click "Save" and "Close".
 
 ![](images/300/RC_image103.png)
 
-**3.2.11.4** Click "Validate" and then "Close".
+**3.3.5.4** Click "Validate" and then "Close".
 
 ![](images/300/RC_image104.png)
 
-### **3.2.12** Mapping Orchestrations("AddTalentProfileData") 
+### **3.3.6** ("AddTalentProfileData") 
 
 
-**3.2.12.1:** Now, we will edit the sixth and final mapping: the one to "AddTalentProfileData". Finally, map the process ID returned from HCM to response XML payload.
+**3.3.5.1:** Now, we will edit the sixth and final mapping: the one to "AddTalentProfileData". Finally, map the process ID returned from HCM to response XML payload.
 
 ![](images/300/RC_image111.png)
 
-**3.2.12.1:** Drag "result" from Source to Target as shown below. Then, click "Validate" and "Close".
+**3.3.5.2:** Drag "result" from Source to Target as shown below. Then, click "Validate" and "Close".
 
 ![](images/300/FinalMap.PNG)
 
