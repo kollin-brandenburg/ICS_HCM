@@ -61,35 +61,38 @@ Now we are ready to check the connections.
 
 ### **3.2.1** Creating Integration 
 
-In the top right of the Integrations page, click “Create”.
+**3.2.1.1** In the top right of the Integrations page, click “Create”.
 
 ![](images/300/image300.png)
 
-Select the “Orchestration” style/pattern.
+**3.2.1.2** Select the “Orchestration” style/pattern.
 
 ![](images/300/image325.png)
 
-Enter the integration name “ICSHCM Add Talent Profile_XX”, replacing "XX" with your User Number. Then, click “Create”.
+
+**3.2.1.3** Enter the integration name “ICSHCM Add Talent Profile_XX”, replacing "XX" with your User Number. Then, click “Create”.
 
 ![](images/300/image003.png)
 
-Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be the SOAP trigger "ICSHCM_SOAP_TalentProfile_Input_UserXX", which you can find by expanding "Triggers" and then "SOAP" in the right-hand side palette. Drag the copmonent to the empty "Start" block in the orchestration flow digram, as follows:
+### **3.2.2** Adding First SOAP Connection 
+
+**3.2.2.1** Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be the SOAP trigger "ICSHCM_SOAP_TalentProfile_Input_UserXX", which you can find by expanding "Triggers" and then "SOAP" in the right-hand side palette. Drag the component to the empty "Start" block in the orchestration flow digram, as follows:
 
 ![](images/300/image323.png)
 
-The Wizard for configuring the SOAP endpoint will appear. On the Basic Info page, enter the name "AddTalentProfileData_UserXX", as shown below, replacing "XX" with your assigned User Number. Then,  click "Next" at the top.
+**3.2.2.2** The Wizard for configuring the SOAP endpoint will appear. On the Basic Info page, enter the name "AddTalentProfileData_UserXX", as shown below, replacing "XX" with your assigned User Number. Then,  click "Next" at the top.
 
 ![](images/300/image007.png)
 
-Next, on the Operations page, ensure that "Disable SoapAction Validation" is set to "No". Then, click "Next".
+**3.2.2.3** Next, on the Operations page, ensure that "Disable SoapAction Validation" is set to "No". Then, click "Next".
 
 ![](images/300/image008.png)
 
-On the Headers page, ensure that the following is set to "No", and click "Next".
+**3.2.2.4** On the Headers page, ensure that the following is set to "No", and click "Next".
 
 ![](images/300/image009.png)
 
-A summary of the new endpoint is presented. Review it and click "Done".
+**3.2.2.5** A summary of the new endpoint is presented. Review it and click "Done".
 
 ![](images/300/image010.png)
 
@@ -97,25 +100,28 @@ The orchestration flow should now look like this:
 
 ![](images/300/image011.png)
 
-The icons in the diagram can be stretched to add space, as follows:
+**3.2.2.6** The icons in the diagram can be stretched to add space, as follows:
 
 ![](images/300/image012.png)
 
 There are two file names involved in HCM Data Loader. First, the zip file name can be any name with a zip extension. Second file name is the actual data file contained in the zip file. HCM Data Loader defines a file name for each data object. In our case, the data file name must be TalentProfile.dat. In our implementation, the zip file name has a pattern of “TPyyyymmddhhmmss”. The zip extension is appended in a later step.
 
-Next we will define the username pattern. Click "Actions" in the right-hand palette to expand it, and add an "Assign" component to the orchestration, as follows.
+### **3.2.3** Action to Assign the Filename 
+
+
+**3.2.3.1** Next we will define the username pattern. Click "Actions" in the right-hand palette to expand it, and add an "Assign" component to the orchestration, as follows.
 
 ![](images/300/image013.png)
 
-You are prompted to name the action. Call it "AssignFileName".
+**3.2.3.2** You are prompted to name the action. Call it "AssignFileName".
 
 ![](images/300/image014.png)
 
-Next, click the + icon to add a new variable.
+**3.2.3.3** Next, click the + icon to add a new variable.
 
 ![](images/300/image015.png)
 
-Edit the "Name" field of the new variable to "fileName". Then, click the pen icon to the right.
+**3.2.3.4** Edit the "Name" field of the new variable to "fileName". Then, click the pen icon to the right.
 
 ![](images/300/image016.png)
 
@@ -129,17 +135,19 @@ Please be sure to replace "XX" with your User Number.
 
 ![](images/300/image018.png)
 
-Click "Validate".
+**3.2.3.5** Click "Validate".
 
 ![](images/300/image019.png)
 
-The expression is now valid and ready to use. Click "Close" in the top right.
+**3.2.3.6** The expression is now valid and ready to use. Click "Close" in the top right.
 
 ![](images/300/image020.png)
 
 Click "Close" again.
 
 ![](images/300/image021.png)
+
+### **3.2.4** Staging the File 
 
 The next step uses an early adopter feature called Stage File.The Stage File activity allows read, write and zip operations to files local to ICS instance. When reading and writing files, Stage File allows translation of file content between XML and native format via a native schema file (.nxsd). For common native formats such CSV (Comma Separated Values), Stage File supplies a mapping tool for drag and drop mapping. At this step of integration, Stage File is used to write the full XML data set with labels from step 3 to a temporary file with a translation defined by hcm-talentprofile.nxsd. The resulting HDL Format data file looks like TalentProfile.dat. Notice that the file name is fixed to TalentProfile.dat as required by HCM Data Loader.
 
@@ -223,6 +231,9 @@ Here is a summary of the configuration for the Stage File Action "zipHDLFile". R
 
 ![](images/300/RC_image037.png)
 
+### **3.2.5** Invoking the FTP Connection
+
+
 Next, expand "Invokes" in the right-side palette, followed by "FTP". Then, select "ICSHCM-POC-FTP_UserXX" and add it to the orchestration as follows:
 
 ![](images/300/RC_image038.png)
@@ -268,6 +279,9 @@ Here is a summary of the configuration for the endpoint "ftpReadZippedHDLFileBas
 
 ![](images/300/RC_image049.png)
 
+### **3.2.6** Adding the UCM SOAP Connection 
+
+
 Step 11 executes a SOAP call to UCM to upload the zip file.In the orchestration palette, expand "Invokes" and then "SOAP". Add "ICSHCM-POC-FA-UCM-Conn_UserXX" to the orchestration as follows:  
 
 ![](images/300/RC_image050.png)
@@ -296,7 +310,10 @@ Here is a summary of the configuration for the endpoint "ScheduleImportProcessHC
 
 ![](images/300/RC_image056.png)
 
-As a final step, we will configure the mapping components of the orchestration. There are six of them in total. Click on the first one ("Map to "writeInputAsHDLFormat"), as shown below.
+### **3.2.7** Mapping Orchestrations("writeInputAsHDLFormat") 
+
+
+In the next step, we will configure the mapping components of the orchestration. There are six of them in total. Click on the first one ("Map to "writeInputAsHDLFormat"), as shown below.
 
 ![](images/300/RC_image061.png)
 
@@ -328,6 +345,9 @@ Returning to the orchestration, the mapping component to "writeInputAsHDLFormat"
 
 ![](images/300/RC_image070.png)
 
+### **3.2.8** Mapping Orchestrations("ftpSendZippedHDLFile") 
+
+
 Next, we will edit the second mapping: the one to "ftpSendZippedHDLFile". Click on the corresponding pen icon, as before.
 
 ![](images/300/RC_image070B.png)
@@ -356,6 +376,8 @@ Finally, drag and drop the "FileReference" element as shown below. Click "Valida
 
 ![](images/300/RC_image077.png)
 
+### **3.2.9** Mapping Orchestrations("ftpReadZippedHDLFileBased64") 
+
 Next, we will edit the third mapping: the one to "ftpReadZippedHDLFileBased64". This step maps the file name and directory from the output of Step 7 to the input of Step 9. Click on the corresponding pen icon to edit.
 
 ![](images/300/RC_image078.png)
@@ -368,6 +390,7 @@ When the mapping is complete, the page should look as follows. Click "Validate" 
 
 ![](images/300/RC_image080.png)
 
+### **3.2.10** Mapping Orchestrations("UploadHDLFileToUCM") 
 
 Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM". At this point of the integration, a Base64 encoded text representing the zipped HDL data is ready to be uploaded to UCM. This step creates the XML payload required to invoke UCM Generic Soap Service to check in (upload) the file.The most import fields are
 
@@ -455,27 +478,33 @@ Review the mapping. Then, click "Validate" and "Close".
 
 ![](images/300/RC_image099.png)
 
-Next, we will edit the fifth mapping: the one to "ScheduleImportProcessHCM". This step prepares XML payload for invoking HCM SOAP Data Loader. The required Content ID value should be taken from the dDocName field from the UCM XML payload.
+### **3.2.11** Mapping Orchestrations("ScheduleImportProcessHCM") 
+
+
+**3.2.11.1** Next, we will edit the fifth mapping: the one to "ScheduleImportProcessHCM". This step prepares XML payload for invoking HCM SOAP Data Loader. The required Content ID value should be taken from the dDocName field from the UCM XML payload.
 
 ![](images/300/RC_image101.png)
 
-Drag "fileName" (Source) to "ContentId" (Target), changing the mapping, as shown below:
+**3.2.11.2** Drag "fileName" (Source) to "ContentId" (Target), changing the mapping, as shown below:
 
 ![](images/300/RC_image102.png)
 
-Expand "Mapping Components" and type "upper" in the search box. Then, click the search icon. Drag the element "upper-case" as follows. Click "Save" and "Close".
+**3.2.11.3** Expand "Mapping Components" and type "upper" in the search box. Then, click the search icon. Drag the element "upper-case" as follows. Click "Save" and "Close".
 
 ![](images/300/RC_image103.png)
 
-Click "Validate" and then "Close".
+**3.2.11.4** Click "Validate" and then "Close".
 
 ![](images/300/RC_image104.png)
 
-Now, we will edit the sixth and final mapping: the one to "AddTalentProfileData". Finally, map the process ID returned from HCM to response XML payload.
+### **3.2.12** Mapping Orchestrations("AddTalentProfileData") 
+
+
+**3.2.12.1:** Now, we will edit the sixth and final mapping: the one to "AddTalentProfileData". Finally, map the process ID returned from HCM to response XML payload.
 
 ![](images/300/RC_image111.png)
 
-Drag "result" from Source to Target as shown below. Then, click "Validate" and "Close".
+**3.2.12.1:** Drag "result" from Source to Target as shown below. Then, click "Validate" and "Close".
 
 ![](images/300/FinalMap.PNG)
 
