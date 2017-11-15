@@ -408,15 +408,15 @@ Under Target on the right side, expand "Document". Click on the "Field" element,
 
 Click "Field (1 of 7)" and click to edit "name".
 
-![](images/300/image083A.png)
+![](images/300/image082A.png)
 
 Enter 'dDocName' for the name.
 
-![](images/300/image083B.png)
+![](images/300/image082B.png)
 
 The Field should then appear as follows:
 
-![](images/300/image083C.png)
+![](images/300/image082C.png)
 
 Repeat the above steps 5 more times until you see the elements below. To access "fileName", expand the following fields:
 
