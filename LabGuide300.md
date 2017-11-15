@@ -406,6 +406,18 @@ Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM". At this 
 
 Under Target on the right side, expand "Document". Click on the "Field" element, right-click and select "Repeat Element".
 
+Click "Field (1 of 7)" and click to edit "name".
+
+![](images/300/image083A.png)
+
+Enter 'dDocName' for the name.
+
+![](images/300/image083B.png)
+
+The Field should then appear as follows:
+
+![](images/300/image083C.png)
+
 Repeat the above steps 5 more times until you see the elements below. To access "fileName", expand the following fields:
 
 ![](images/300/image083A.png)
