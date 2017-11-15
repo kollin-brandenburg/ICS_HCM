@@ -450,6 +450,9 @@ Enter "anonymous" and then click "Save" and "Close".
 
 ![](images/300/RC_image088.png)
 
+
+For field 3, repeat the step you followed for filed 1.
+
 For Fields 4 to 7, enter the following static text as you did for Field (2 of 7):
 
 ![](images/300/RC_image089.png)
