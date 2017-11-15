@@ -453,7 +453,7 @@ Enter "anonymous" and then click "Save" and "Close".
 
 
 
-For field 3, repeat the step you followed for filed 1.
+For field 3, repeat the step you followed for field 1.
 
 For Fields 4 to 7, enter the following static text as you did for Field (2 of 7):
 
