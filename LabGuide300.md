@@ -404,9 +404,7 @@ Next, we will edit the fourth mapping: the one to "UploadHDLFileToUCM". At this 
 
 ![](images/300/RC_image081A.png)
 
-Under Target on the right side, click on the "Field" element, right-click and select "Repeat Element".
-
-![](images/300/RC_image082.png)
+Under Target on the right side, expand "Document". Click on the "Field" element, right-click and select "Repeat Element".
 
 Repeat the above steps 5 more times until you see the elements below. To access "fileName", expand the following fields:
 
