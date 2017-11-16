@@ -63,7 +63,7 @@ Copy paste the below request in the 'Request 1 section'.
 **Request  payload for Photographer:**
 
 
-	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
    <soapenv:Body>
       <tal:TalentProfileData>
          <tal:TalentProfile>
@@ -89,6 +89,7 @@ Copy paste the below request in the 'Request 1 section'.
       </tal:TalentProfileData>
    </soapenv:Body>
 </soapenv:Envelope>
+
 
 
 ---
