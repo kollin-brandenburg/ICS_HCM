@@ -145,39 +145,32 @@ Note: Each request for Athlete or Artist or Photographer has UserXX added so tha
 
 
 	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
-	<soapenv:Header>
+   <soapenv:Body>
+      <tal:TalentProfileData>
+         <tal:TalentProfile>
+            <tal:PersonNumber>98</tal:PersonNumber>
+            <tal:ProfileTypeCode>PERSON</tal:ProfileTypeCode>
+            <tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
+            <tal:ProfileStatusCode>A</tal:ProfileStatusCode>
+            <tal:ProfileUsageCode>P</tal:ProfileUsageCode>
+         </tal:TalentProfile>
+         <!--1 or more repetitions:-->
+         <tal:ProfileItem>
+            <tal:SourceSystemOwner>ICS_HCM_GSE</tal:SourceSystemOwner>
+            <tal:SourceSystemId>ADDITIONAL_QUALIFICATIONS_98_PHOTOGRAPHER</tal:SourceSystemId>
+            <!--Make sure that SourceSystemId is always unique-->
+            <tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
+            <tal:ContentType>ADDITIONAL_QUALIFICATIONS</tal:ContentType>
+            <!--Can use inputs like Artist or Photographer (OOTB created)-->
+            <tal:ContentItem>Photographer</tal:ContentItem>
+            <tal:DateFrom>2017/05/31</tal:DateFrom>
+            <!--Enter description of your choice-->
+            <tal:ItemText24010>I'm a wild life photographer from UserXX</tal:ItemText24010>
+         </tal:ProfileItem>
+      </tal:TalentProfileData>
+   </soapenv:Body>
+</soapenv:Envelope>
 
-	</soapenv:Header>
-	<soapenv:Body>
-	<tal:TalentProfileData>
-	<tal:TalentProfile>
-	<tal:PersonNumber>98</tal:PersonNumber>
-	<tal:ProfileTypeCode>PERSON</tal:ProfileTypeCode>
-	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-	<tal:ProfileStatusCode>A</tal:ProfileStatusCode>
-	<tal:ProfileUsageCode>P</tal:ProfileUsageCode>
-	</tal:TalentProfile>
-	<!--1 or more repetitions:-->
-	<tal:ProfileItem>
-	<tal:SourceSystemOwner>ICS_HCM_GSE</tal:SourceSystemOwner>
-
-	<tal:SourceSystemId>ADDITIONAL_QUALIFICATIONS_98_PHOTOGRAPHER</tal:SourceSystemId>
-	<!--Make sure that SourceSystemId is always unique-->
-	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-	<tal:ContentType>ADDITIONAL_QUALIFICATIONS</tal:ContentType>
-
-	<!--Can use inputs like Artist or Photographer (OOTB created) -->
-
-	<tal:ContentItem>PhotographerUserXX</tal:ContentItem>
-	<tal:DateFrom>2017/05/31</tal:DateFrom>
-
-	<!--Enter description of your choice-->
-
-	<tal:ItemText24010>I'm a wild life photographer </tal:ItemText24010>
-	</tal:ProfileItem>
-	</tal:TalentProfileData>
-	</soapenv:Body>
-	</soapenv:Envelope>
 
 ---
 
