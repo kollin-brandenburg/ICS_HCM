@@ -56,92 +56,11 @@ Before we start testing the integration, you need to activate the integration fo
 
 **4.2.7** We will be using one of the below 3 sample requests for testing each having different content item.
 
-Copy paste one of the below request in the 'Request 1 section'. 
-
-Note: Each request for Athlete or Artist or Photographer has UserXX added so that each user request is treated as a unique request and each user can verify the same user name in the HCM too.
-
-
-**1. Request  payload for Athlete:**
-
-
-	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
-	<soapenv:Header>
-
-	</soapenv:Header>
-	<soapenv:Body>
-	<tal:TalentProfileData>
-	<tal:TalentProfile>
-	<tal:PersonNumber>98</tal:PersonNumber>
-	<tal:ProfileTypeCode>PERSON</tal:ProfileTypeCode>
-	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-	<tal:ProfileStatusCode>A</tal:ProfileStatusCode>
-	<tal:ProfileUsageCode>P</tal:ProfileUsageCode>
-	</tal:TalentProfile>
-	<!--1 or more repetitions:-->
-	<tal:ProfileItem>
-	<tal:SourceSystemOwner>ICS_HCM_GSE</tal:SourceSystemOwner>
-
-	<tal:SourceSystemId>ADDITIONAL_QUALIFICATIONS_98_ATHELETE</tal:SourceSystemId>
-	<!--Make sure that SourceSystemId is always unique-->
-	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-	<tal:ContentType>ADDITIONAL_QUALIFICATIONS</tal:ContentType>
-
-	<!--Can use inputs like Artist or Photographer (OOTB created) -->
-
-	<tal:ContentItem>AthleteUserXX</tal:ContentItem>
-	<tal:DateFrom>2017/05/31</tal:DateFrom>
-
-	<!--Enter description of your choice-->
-
-	<tal:ItemText24010>I'm an athlete </tal:ItemText24010>
-	</tal:ProfileItem>
-	</tal:TalentProfileData>
-	</soapenv:Body>
-	</soapenv:Envelope>
-
-**2. Request  payload for Artist:**
-
-
-	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
-	<soapenv:Header>
-
-	</soapenv:Header>
-	<soapenv:Body>
-	<tal:TalentProfileData>
-	<tal:TalentProfile>
-	<tal:PersonNumber>98</tal:PersonNumber>
-	<tal:ProfileTypeCode>PERSON</tal:ProfileTypeCode>
-	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-	<tal:ProfileStatusCode>A</tal:ProfileStatusCode>
-	<tal:ProfileUsageCode>P</tal:ProfileUsageCode>
-	</tal:TalentProfile>
-	<!--1 or more repetitions:-->
-	<tal:ProfileItem>
-	<tal:SourceSystemOwner>ICS_HCM_GSE</tal:SourceSystemOwner>
-
-	<tal:SourceSystemId>ADDITIONAL_QUALIFICATIONS_98_ARTIST</tal:SourceSystemId>
-	<!--Make sure that SourceSystemId is always unique-->
-	<tal:ProfileCode>PERS_300000047881516</tal:ProfileCode>
-	<tal:ContentType>ADDITIONAL_QUALIFICATIONS</tal:ContentType>
-
-	<!--Can use inputs like Artist or Photographer (OOTB created) -->
-
-	<tal:ContentItem>ArtistUserXX</tal:ContentItem>
-	<tal:DateFrom>2017/05/31</tal:DateFrom>
-
-	<!--Enter description of your choice-->
-
-	<tal:ItemText24010>I'm a painter </tal:ItemText24010>
-	</tal:ProfileItem>
-	</tal:TalentProfileData>
-	</soapenv:Body>
-	</soapenv:Envelope>
+Copy paste the below request in the 'Request 1 section'. 
 
 
 
-
-
-**3. Request  payload for Photographer:**
+**Request  payload for Photographer:**
 
 
 	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tal="http://icshcmpoc.oracle.com/TalentProfileData">
