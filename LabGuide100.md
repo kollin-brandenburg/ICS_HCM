@@ -224,7 +224,7 @@ Let’s start by logging into the Oracle Cloud account and explore the Services 
 
 ---
 
-**1.3.3.1** Select the `Hamburger` menu icon on top of the ICS Service Console to go to the `Monitoring` menu.
+**1.3.3.1** Select the `Hamburger` menu icon on top of the ICS Service Console and click the back arrow to see the `Monitoring` menu if it isn't visible.
 
 **1.3.3.2** Next, select the `Monitoring` menu selection to go the ICS monitoring capabilities.
 
