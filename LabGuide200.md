@@ -32,7 +32,7 @@ This connection is used to call the importAndLoadData operation of the HCM Dat
 
 **2.2.1.1** Click on the **Connections** section
 
-![](images/200/image002.png)
+![](images/200/image005.png)
 
 **2.2.1.2** Click on **Create** in the upper right of the screen
 
@@ -112,7 +112,7 @@ This connection is used to call the importAndLoadData operation of the HCM Dat
 
 **2.2.2.1** Click on the **Connection** section
 
-![](images/200/image002.png)
+![](images/200/image005.png)
 
 **2.2.2.2** Click on **Create** in the upper right of the screen
 
@@ -186,7 +186,7 @@ This connection is used to call the GenericSoapPort service of UCM to upload t
 
 **2.2.3.1** Click on the **Connection** section
 
-![](images/200/image002.png)
+![](images/200/image005.png)
 
 **2.2.3.2** Click on **Create** in the upper right of the screen
 
