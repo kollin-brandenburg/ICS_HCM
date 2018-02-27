@@ -288,7 +288,7 @@ This will be the FTP user which is used in FTP connection creation.
 
 Now click on the **Connections**
 
-![](images/200/image092.png)
+![](images/200/image005.png)
 
 **2.2.4.6** On the top bar click on **Create** to bring up the menu to create a new Connection.
 
