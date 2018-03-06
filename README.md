@@ -8,7 +8,7 @@ Step-by-step Instructions
 
 **To View in Interactive Labguide Format:**  
 
-[GitHub IO Pages](https://zhamburglar.github.io/ICSHCMWorkshop/)
+[GitHub IO Pages](https://oraclecps.github.io/ICS_HCM/)
 
 # ICS-HCM Integration Deep Dive
 
