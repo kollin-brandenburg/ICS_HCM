@@ -53,8 +53,7 @@ Now we are ready to check the connections.
 ### **STEP 3**: ICS Development
 
 
-
-- Creating Integration
+ Creating Integration
 
 - In the top of the page navigate to the integrations tab and then to the *Integrations* section if you are not already there.
 
@@ -78,7 +77,7 @@ Now we are ready to check the connections.
 
 ### **STEP 4**: Adding First SOAP Connection
 
-- Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be the SOAP trigger "ICSHCM_SOAP_TalentProfile_Input_UserXX", which you can find by expanding "Triggers" and then "SOAP" in the right-hand side palette. Drag the component to the empty "Start" block in the orchestration flow digram, as follows:
+Now, we will edit the orchestration for this integration. The first step is to select an application that will trigger the integration. This will be the SOAP trigger "ICSHCM_SOAP_TalentProfile_Input_UserXX", which you can find by expanding "Triggers" and then "SOAP" in the right-hand side palette. Drag the component to the empty "Start" block in the orchestration flow digram, as follows:
 
  ![](images/300/image323.png)
 
